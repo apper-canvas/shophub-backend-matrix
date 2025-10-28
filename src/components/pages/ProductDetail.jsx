@@ -576,13 +576,13 @@ const handleAddToCart = async () => {
                     window.scrollTo(0, 0);
                   }}
                 />
-              ))}
+))}
             </div>
           </div>
         </div>
-      )}
 )}
     </div>
   );
+};
 
 export default ProductDetail;
