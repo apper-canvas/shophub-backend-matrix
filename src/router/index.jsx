@@ -6,7 +6,6 @@ import Layout from "@/components/organisms/Layout";
 const Home = lazy(() => import("@/components/pages/Home"));
 const ProductListing = lazy(() => import("@/components/pages/ProductListing"));
 const ProductDetail = lazy(() => import("@/components/pages/ProductDetail"));
-const OrderConfirmation = lazy(() => import("@/components/pages/OrderConfirmation"));
 const NotFound = lazy(() => import("@/components/pages/NotFound"));
 // Wrap lazy components with Suspense
 const withSuspense = (Component) => (
@@ -29,9 +28,9 @@ const mainRoutes = [
     path: "product/:id",
     element: withSuspense(ProductDetail)
   },
-  {
+{
     path: "order-confirmation/:orderId",
-    element: withSuspense(OrderConfirmation)
+    element: withSuspense(lazy(() => import("@/components/pages/OrderConfirmation")))
   },
   {
     path: "*",
