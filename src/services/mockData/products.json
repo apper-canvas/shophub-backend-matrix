@@ -514,10 +514,269 @@
       "Capacity": "5.5 Quarts",
       "Material": "Enameled cast iron",
       "Oven safe": "Up to 500°F",
-      "Lifetime": "Warranty included",
-      "Colors": "Multiple available"
-    },
+      "Lifetime": "Warranty included"
+},
     "brand": "Le Creuset",
     "tags": ["cookware", "cast-iron", "french", "premium"]
+  },
+  {
+    "Id": 21,
+    "title": "ASUS ROG Zephyrus G14 Gaming Laptop",
+    "description": "14-inch QHD gaming laptop with AMD Ryzen 9, RTX 4060, and 16GB RAM",
+    "price": 1599.99,
+    "originalPrice": 1899.99,
+    "category": "electronics",
+    "subcategory": "laptops",
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 14,
+    "isPrime": true,
+    "specifications": {
+      "Processor": "AMD Ryzen 9 7940HS",
+      "Graphics": "NVIDIA RTX 4060",
+      "RAM": "16GB DDR5",
+      "Storage": "1TB SSD",
+      "Display": "14-inch QHD 165Hz"
+    },
+    "brand": "ASUS",
+    "tags": ["gaming", "laptop", "performance", "portable"]
+  },
+  {
+    "Id": 22,
+    "title": "Logitech MX Keys Wireless Keyboard",
+    "description": "Premium wireless illuminated keyboard with perfect stroke keys and smart backlighting",
+    "price": 119.99,
+    "originalPrice": 139.99,
+    "category": "electronics",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Wireless",
+      "Connectivity": "Bluetooth, USB receiver",
+      "Battery": "Up to 10 days, 5 months without backlight",
+      "Keys": "Perfect stroke keys",
+      "Compatibility": "Windows, Mac, Linux, iOS, Android"
+    },
+    "brand": "Logitech",
+    "tags": ["keyboard", "wireless", "productivity", "premium"]
+  },
+  {
+    "Id": 23,
+    "title": "Michael Kors Jet Set Travel Tote",
+    "description": "Saffiano leather large tote bag with multiple pockets and gold-tone hardware",
+    "price": 298.00,
+    "originalPrice": 358.00,
+    "category": "fashion",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": false,
+    "specifications": {
+      "Material": "Saffiano leather",
+      "Dimensions": "15.5 x 11 x 6 inches",
+      "Features": "Top zip closure, multiple pockets",
+      "Hardware": "Gold-tone",
+      "Strap": "Double handles"
+    },
+    "brand": "Michael Kors",
+    "tags": ["handbag", "tote", "leather", "designer"]
+  },
+  {
+    "Id": 24,
+    "title": "Nespresso Vertuo Plus Coffee Maker",
+    "description": "Single serve coffee and espresso machine with aeroccino milk frother",
+    "price": 189.95,
+    "originalPrice": 229.95,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Brew Sizes": "5oz, 8oz, 12oz, 18oz",
+      "Technology": "Centrifusion extraction",
+      "Tank Capacity": "40oz",
+      "Included": "Aeroccino milk frother",
+      "Auto Shutoff": "9 minutes"
+    },
+    "brand": "Nespresso",
+    "tags": ["coffee", "espresso", "single-serve", "kitchen"]
+  },
+  {
+    "Id": 25,
+    "title": "Apple Watch Series 9 GPS 45mm",
+    "description": "Advanced health and fitness tracking with always-on Retina display and crash detection",
+    "price": 429.00,
+    "originalPrice": 459.00,
+    "category": "electronics",
+    "subcategory": "wearables",
+    "images": [
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 9876,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Display": "45mm Always-On Retina",
+      "Chip": "S9 SiP",
+      "Sensors": "ECG, blood oxygen, heart rate",
+      "Battery": "Up to 18 hours",
+      "Water Resistance": "50 meters"
+    },
+    "brand": "Apple",
+    "tags": ["smartwatch", "fitness", "health", "wearable"]
+  },
+  {
+    "Id": 26,
+    "title": "The Silent Patient by Alex Michaelides",
+    "description": "A shocking psychological thriller about a woman's act of violence against her husband",
+    "price": 14.99,
+    "originalPrice": 17.99,
+    "category": "books",
+    "subcategory": "thriller",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 45678,
+    "inStock": true,
+    "stockCount": 189,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Alex Michaelides",
+      "Pages": "336",
+      "Publisher": "Celadon Books",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Celadon Books",
+    "tags": ["thriller", "mystery", "psychological", "bestseller"]
+  },
+  {
+    "Id": 27,
+    "title": "LEGO DUPLO Creative Building Set",
+    "description": "Large building blocks for toddlers with 120 pieces in bright colors",
+    "price": 59.99,
+    "originalPrice": 69.99,
+    "category": "toys",
+    "subcategory": "building-sets",
+    "images": [
+      "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 3456,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "120",
+      "Age": "1.5-5 years",
+      "Size": "Large blocks safe for toddlers",
+      "Theme": "Creative building",
+      "Skills": "Motor skills, creativity"
+    },
+    "brand": "LEGO",
+    "tags": ["lego", "duplo", "toddler", "educational"]
+  },
+  {
+    "Id": 28,
+    "title": "Samsung Galaxy Tab S9 11-inch 128GB",
+    "description": "Premium Android tablet with Dynamic AMOLED display and S Pen included",
+    "price": 799.99,
+    "originalPrice": 899.99,
+    "category": "electronics",
+    "subcategory": "tablets",
+    "images": [
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2345,
+    "inStock": true,
+    "stockCount": 29,
+    "isPrime": true,
+    "specifications": {
+      "Display": "11-inch Dynamic AMOLED 2X",
+      "Processor": "Snapdragon 8 Gen 2",
+      "RAM": "8GB",
+      "Storage": "128GB expandable",
+      "Included": "S Pen"
+    },
+    "brand": "Samsung",
+    "tags": ["tablet", "android", "s-pen", "premium"]
+  },
+  {
+    "Id": 29,
+    "title": "The North Face Thermoball Eco Jacket",
+    "description": "Lightweight insulated jacket with recycled materials and water-resistant finish",
+    "price": 199.00,
+    "originalPrice": 229.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": false,
+    "specifications": {
+      "Insulation": "ThermoBall Eco",
+      "Material": "100% recycled polyester",
+      "Features": "Water-resistant, packable",
+      "Fit": "Regular",
+      "Sizes": "XS-XXL"
+    },
+    "brand": "The North Face",
+    "tags": ["jacket", "insulated", "eco-friendly", "outdoor"]
+  },
+  {
+    "Id": 30,
+    "title": "Vitamix Professional Series 750 Blender",
+    "description": "Professional-grade blender with 5 pre-programmed settings and 64oz container",
+    "price": 549.95,
+    "originalPrice": 599.95,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1585515320310-259814833f62?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 7890,
+    "inStock": true,
+    "stockCount": 16,
+    "isPrime": true,
+    "specifications": {
+      "Motor": "2.2 peak horsepower",
+      "Container": "64oz low-profile",
+      "Programs": "5 pre-programmed settings",
+      "Speeds": "Variable speed control",
+      "Warranty": "7 years"
+    },
+    "brand": "Vitamix",
+    "tags": ["blender", "professional", "kitchen", "smoothies"]
   }
 ]

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import ApperIcon from "@/components/ApperIcon";
 
 const ProductCard = ({ 
-  product, 
-  onAddToCart, 
-  onClick, 
+  product,
+  onAddToCart,
+  onClick,
+  className = "",
   showBestseller = false,
-  showNew = false,
-  className = "" 
+  showNew = false
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -43,19 +43,19 @@ const ProductCard = ({
 
   return (
     <div
-      className={`bg-white rounded-lg shadow-sm border hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer group ${className}`}
+className={`bg-white rounded-lg shadow-sm border hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group ${className}`}
       onClick={handleClick}
     >
       <div className="relative p-4">
         {/* Badges */}
         <div className="absolute top-2 left-2 z-10 flex flex-col gap-1">
           {showBestseller && (
-            <span className="bg-amazon-success text-white text-xs px-2 py-1 rounded-full font-medium">
-              #1 Best Seller
+            <span className="bg-amazon-success text-white text-xs px-2 py-1 rounded-full font-medium shadow-sm">
+              Best Seller
             </span>
           )}
           {showNew && (
-            <span className="bg-amazon-info text-white text-xs px-2 py-1 rounded-full font-medium">
+            <span className="bg-amazon-info text-white text-xs px-2 py-1 rounded-full font-medium shadow-sm">
               New
             </span>
           )}
@@ -74,9 +74,9 @@ const ProductCard = ({
         )}
 
         {/* Wishlist Button */}
-        <button
+<button
           onClick={(e) => e.stopPropagation()}
-          className="absolute top-2 right-2 z-10 w-8 h-8 bg-white rounded-full shadow-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-50"
+          className="absolute top-2 right-2 z-10 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-red-50 hover:scale-110"
           style={{ marginTop: product.isPrime ? "24px" : "0" }}
         >
           <ApperIcon name="Heart" size={16} className="text-gray-400 hover:text-red-500 transition-colors" />
@@ -98,18 +98,18 @@ const ProductCard = ({
             onError={handleImageError}
           />
           
-          {/* Quick Add Button */}
+{/* Quick Add Button */}
           <button
             onClick={handleAddToCart}
             disabled={isAddingToCart || !product.inStock}
-            className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-amazon-orange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-amazon-orange hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-400 flex items-center gap-2 shadow-lg hover:shadow-xl"
           >
             {isAddingToCart ? (
               <div className="spinner border-white w-4 h-4"></div>
             ) : (
               <>
-                <ApperIcon name="Plus" size={14} />
-                Quick Add
+                <ApperIcon name="ShoppingCart" size={16} />
+                Add to Cart
               </>
             )}
           </button>
@@ -130,31 +130,31 @@ const ProductCard = ({
           )}
 
           {/* Rating */}
-          <div className="flex items-center gap-2">
-            <div className="star-rating">
+<div className="flex items-center gap-2">
+            <div className="star-rating flex items-center">
               {[1, 2, 3, 4, 5].map((star) => (
                 <ApperIcon
                   key={star}
                   name="Star"
-                  size={12}
+                  size={14}
                   className={star <= Math.floor(product.rating) ? "star-filled" : "star-empty"}
                   fill={star <= Math.floor(product.rating) ? "currentColor" : "none"}
                 />
               ))}
             </div>
-            <span className="text-xs text-gray-600">
+            <span className="text-sm text-gray-600 font-medium">
               ({product.reviewCount?.toLocaleString() || 0})
             </span>
           </div>
 
           {/* Price */}
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="price-current text-lg font-semibold">
+<div className="flex items-center gap-2 flex-wrap">
+            <span className="price-current text-xl font-bold">
               ${product.price.toFixed(2)}
             </span>
             
             {product.originalPrice && product.originalPrice > product.price && (
-              <span className="price-original text-sm">
+              <span className="price-original text-sm font-medium">
                 ${product.originalPrice.toFixed(2)}
               </span>
             )}
@@ -188,12 +188,12 @@ const ProductCard = ({
         </div>
       </div>
 
-      {/* Add to Cart Button */}
+{/* Add to Cart Button */}
       <div className="px-4 pb-4">
         <button
           onClick={handleAddToCart}
           disabled={isAddingToCart || !product.inStock}
-          className="w-full bg-amazon-orange hover:bg-orange-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white py-2 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
+          className="w-full bg-amazon-orange hover:bg-orange-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2.5 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
         >
           {isAddingToCart ? (
             <>
@@ -202,7 +202,7 @@ const ProductCard = ({
             </>
           ) : (
             <>
-              <ApperIcon name="ShoppingCart" size={16} />
+              <ApperIcon name="ShoppingCart" size={18} />
               Add to Cart
             </>
           )}
