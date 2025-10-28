@@ -3,7 +3,6 @@ import { useParams, useNavigate, useOutletContext } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
 import ProductCard from "@/components/molecules/ProductCard";
 import ImageGallery from "@/components/molecules/ImageGallery";
-import ProductTabs from "@/components/molecules/ProductTabs";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
 import { productService } from "@/services/api/productService";
@@ -391,7 +390,6 @@ const ProductDetail = () => {
         </div>
 
         {/* Product Details Tabs */}
-        <ProductTabs product={product} />
 
         {/* Recommendations */}
         {recommendations.length > 0 && (
