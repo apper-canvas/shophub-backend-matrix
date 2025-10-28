@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
 
 const ProductCard = ({ 
@@ -9,6 +10,7 @@ const ProductCard = ({
   showBestseller = false,
   showNew = false
 }) => {
+  const navigate = useNavigate();
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
   const [isAddingToCart, setIsAddingToCart] = useState(false);
@@ -25,9 +27,11 @@ const ProductCard = ({
     }
   };
 
-  const handleClick = () => {
+const handleClick = () => {
     if (onClick) {
       onClick(product);
+    } else {
+      navigate(`/product/${product.Id}`);
     }
   };
 

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "@/components/organisms/Header";
+import { cartService } from "@/services/api/cartService";
 import CategoryNav from "@/components/organisms/CategoryNav";
 import Footer from "@/components/organisms/Footer";
+import Header from "@/components/organisms/Header";
 import CartDrawer from "@/components/organisms/CartDrawer";
-import { cartService } from "@/services/api/cartService";
 
 const Layout = () => {
   const location = useLocation();
@@ -75,11 +75,11 @@ const Layout = () => {
     location.pathname.startsWith(path)
   );
 
-  return (
+return (
     <div className="min-h-screen bg-background">
       <Header 
-        cartCount={cartCount}
         onCartClick={() => setIsCartOpen(true)}
+        cartCount={cartCount}
       />
       
       {!hideCategoryNav && <CategoryNav />}

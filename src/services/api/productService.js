@@ -293,8 +293,50 @@ class ProductService {
         label: brand,
         count: this.products.filter(p => p.brand === brand).length
       })),
-      priceRange
+priceRange
     };
+  }
+
+  // Product view history management
+  addToHistory(productId) {
+    try {
+      const historyKey = 'product_view_history';
+      let history = JSON.parse(localStorage.getItem(historyKey) || '[]');
+      
+      // Remove if already exists to update timestamp
+      history = history.filter(item => item.Id !== productId);
+      
+      // Add to beginning with timestamp
+      history.unshift({
+        Id: productId,
+        viewedAt: new Date().toISOString()
+      });
+      
+      // Keep only last 10 items
+      history = history.slice(0, 10);
+      
+      localStorage.setItem(historyKey, JSON.stringify(history));
+    } catch (error) {
+      console.error('Failed to save view history:', error);
+    }
+  }
+
+  getHistory() {
+    try {
+      const historyKey = 'product_view_history';
+      return JSON.parse(localStorage.getItem(historyKey) || '[]');
+    } catch (error) {
+      console.error('Failed to load view history:', error);
+      return [];
+    }
+  }
+
+  clearHistory() {
+    try {
+      localStorage.removeItem('product_view_history');
+    } catch (error) {
+      console.error('Failed to clear view history:', error);
+    }
   }
 }
 
