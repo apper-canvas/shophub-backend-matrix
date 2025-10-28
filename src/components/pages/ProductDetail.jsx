@@ -24,17 +24,28 @@ const [isAddingToCart, setIsAddingToCart] = useState(false);
   const [isAddingToWishlist, setIsAddingToWishlist] = useState(false);
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
-  useEffect(() => {
-    if (id) {
+useEffect(() => {
+    if (id && !isNaN(Number(id))) {
       loadProduct();
+    } else if (id) {
+      setError('Invalid product ID');
+      setLoading(false);
     }
   }, [id]);
 
-  const loadProduct = async () => {
+const loadProduct = async () => {
     try {
       setLoading(true);
       setError(null);
-      const data = await productService.getById(parseInt(id));
+      
+      const productId = parseInt(id);
+      
+      if (isNaN(productId)) {
+        setError('Invalid product ID');
+        return;
+      }
+      
+      const data = await productService.getById(productId);
       
       if (!data) {
         setError('Product not found');
