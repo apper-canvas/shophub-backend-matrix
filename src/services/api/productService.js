@@ -218,10 +218,10 @@ class ProductService {
         product.brand.toLowerCase().includes(searchTerm) ||
         product.tags.some(tag => tag.toLowerCase().includes(searchTerm))
       )
-      .sort((a, b) => {
+.sort((a, b) => {
         // Prioritize exact title matches
-        const aExact = product.title.toLowerCase().includes(searchTerm) ? 1 : 0;
-        const bExact = product.title.toLowerCase().includes(searchTerm) ? 1 : 0;
+        const aExact = a.title.toLowerCase().includes(searchTerm) ? 1 : 0;
+        const bExact = b.title.toLowerCase().includes(searchTerm) ? 1 : 0;
         if (aExact !== bExact) return bExact - aExact;
         
         // Then by rating and reviews
