@@ -1,0 +1,523 @@
+[
+  {
+    "Id": 1,
+    "title": "Apple iPhone 15 Pro Max 256GB - Natural Titanium",
+    "description": "The most advanced iPhone with titanium design, A17 Pro chip, and pro camera system",
+    "price": 1199.99,
+    "originalPrice": 1299.99,
+    "category": "electronics",
+    "subcategory": "smartphones",
+    "images": [
+      "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 2847,
+    "inStock": true,
+    "stockCount": 15,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "256GB",
+      "Color": "Natural Titanium",
+      "Display": "6.7-inch Super Retina XDR",
+      "Chip": "A17 Pro",
+      "Camera": "48MP Main + 12MP Ultra Wide + 12MP Telephoto"
+    },
+    "brand": "Apple",
+    "tags": ["smartphone", "ios", "premium", "5g"]
+  },
+  {
+    "Id": 2,
+    "title": "Samsung 65\" QLED 4K Smart TV QN90C",
+    "description": "Neo QLED 4K TV with Quantum HDR 32X and Object Tracking Sound",
+    "price": 1799.99,
+    "originalPrice": 2199.99,
+    "category": "electronics",
+    "subcategory": "televisions",
+    "images": [
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 1234,
+    "inStock": true,
+    "stockCount": 8,
+    "isPrime": true,
+    "specifications": {
+      "Size": "65 inches",
+      "Resolution": "4K UHD",
+      "Technology": "Neo QLED",
+      "Smart Platform": "Tizen OS",
+      "HDR": "Quantum HDR 32X"
+    },
+    "brand": "Samsung",
+    "tags": ["tv", "smart-tv", "4k", "qled"]
+  },
+  {
+    "Id": 3,
+    "title": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+    "description": "Industry-leading noise canceling with premium sound quality and 30-hour battery life",
+    "price": 349.99,
+    "originalPrice": 399.99,
+    "category": "electronics",
+    "subcategory": "audio",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 42,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Over-ear",
+      "Connectivity": "Bluetooth 5.2",
+      "Battery Life": "30 hours",
+      "Noise Canceling": "Advanced",
+      "Weight": "250g"
+    },
+    "brand": "Sony",
+    "tags": ["headphones", "wireless", "noise-canceling", "premium"]
+  },
+  {
+    "Id": 4,
+    "title": "Women's Levi's 501 Original Fit Jeans",
+    "description": "The original blue jean since 1873. Classic straight leg fit with authentic details",
+    "price": 89.50,
+    "originalPrice": 98.00,
+    "category": "fashion",
+    "subcategory": "women-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 3456,
+    "inStock": true,
+    "stockCount": 128,
+    "isPrime": false,
+    "specifications": {
+      "Fit": "Original",
+      "Rise": "High",
+      "Leg": "Straight",
+      "Material": "100% Cotton",
+      "Sizes": "24-34"
+    },
+    "brand": "Levi's",
+    "tags": ["jeans", "denim", "classic", "women"]
+  },
+  {
+    "Id": 5,
+    "title": "Nike Air Max 270 Running Shoes",
+    "description": "Lifestyle running shoes with large Max Air unit in the heel for all-day comfort",
+    "price": 150.00,
+    "originalPrice": 180.00,
+    "category": "fashion",
+    "subcategory": "shoes",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Running/Lifestyle",
+      "Upper": "Mesh and synthetic",
+      "Sole": "Foam midsole with Max Air unit",
+      "Sizes": "6-15",
+      "Colors": "Multiple colorways available"
+    },
+    "brand": "Nike",
+    "tags": ["shoes", "running", "air-max", "lifestyle"]
+  },
+  {
+    "Id": 6,
+    "title": "KitchenAid Artisan Stand Mixer 5-Qt",
+    "description": "Professional-grade stand mixer with 10 speeds and tilt-head design",
+    "price": 449.99,
+    "originalPrice": 499.99,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 12456,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "5 Quarts",
+      "Speeds": "10",
+      "Motor": "325 Watts",
+      "Design": "Tilt-head",
+      "Attachments": "Flat beater, dough hook, wire whip"
+    },
+    "brand": "KitchenAid",
+    "tags": ["mixer", "kitchen", "baking", "professional"]
+  },
+  {
+    "Id": 7,
+    "title": "Dyson V15 Detect Cordless Vacuum",
+    "description": "Advanced cordless vacuum with laser dust detection and powerful suction",
+    "price": 749.99,
+    "originalPrice": 849.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 2345,
+    "inStock": true,
+    "stockCount": 18,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Cordless stick",
+      "Battery": "Up to 60 minutes",
+      "Filtration": "Advanced whole-machine",
+      "Bin Capacity": "0.77 liters",
+      "Weight": "3.1 kg"
+    },
+    "brand": "Dyson",
+    "tags": ["vacuum", "cordless", "cleaning", "premium"]
+  },
+  {
+    "Id": 8,
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "description": "A captivating novel about a reclusive Hollywood icon who finally decides to tell her story",
+    "price": 16.99,
+    "originalPrice": 19.99,
+    "category": "books",
+    "subcategory": "fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 67890,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Taylor Jenkins Reid",
+      "Pages": "400",
+      "Publisher": "Atria Books",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Atria Books",
+    "tags": ["fiction", "romance", "hollywood", "bestseller"]
+  },
+  {
+    "Id": 9,
+    "title": "LEGO Creator Expert Taj Mahal",
+    "description": "Authentic replica of the famous Taj Mahal with 5923 pieces for advanced builders",
+    "price": 369.99,
+    "originalPrice": 399.99,
+    "category": "toys",
+    "subcategory": "building-sets",
+    "images": [
+      "https://images.unsplash.com/photo-1558060370-d644479c6b77?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1567,
+    "inStock": true,
+    "stockCount": 12,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "5923",
+      "Age": "16+",
+      "Dimensions": "20 x 20 x 8 inches when built",
+      "Theme": "Creator Expert",
+      "Difficulty": "Advanced"
+    },
+    "brand": "LEGO",
+    "tags": ["lego", "building", "architecture", "collector"]
+  },
+  {
+    "Id": 10,
+    "title": "MacBook Air M2 13-inch 256GB - Midnight",
+    "description": "Supercharged by M2 chip with 8-core CPU and up to 20 hours of battery life",
+    "price": 1099.99,
+    "originalPrice": 1199.99,
+    "category": "electronics",
+    "subcategory": "laptops",
+    "images": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 3421,
+    "inStock": true,
+    "stockCount": 27,
+    "isPrime": true,
+    "specifications": {
+      "Chip": "Apple M2",
+      "Display": "13.6-inch Liquid Retina",
+      "Storage": "256GB SSD",
+      "Memory": "8GB unified memory",
+      "Battery": "Up to 20 hours"
+    },
+    "brand": "Apple",
+    "tags": ["laptop", "macbook", "m2", "portable"]
+  },
+  {
+    "Id": 11,
+    "title": "Adidas Ultraboost 22 Running Shoes",
+    "description": "Premium running shoes with responsive Boost midsole and Primeknit upper",
+    "price": 180.00,
+    "originalPrice": 190.00,
+    "category": "fashion",
+    "subcategory": "shoes",
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": false,
+    "specifications": {
+      "Type": "Running",
+      "Upper": "Primeknit",
+      "Midsole": "Boost",
+      "Drop": "10mm",
+      "Weight": "10.9 oz (men's size 9)"
+    },
+    "brand": "Adidas",
+    "tags": ["running", "boost", "performance", "comfort"]
+  },
+  {
+    "Id": 12,
+    "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "description": "Multi-functional cooker: pressure cook, slow cook, rice cooker, steamer, saute, yogurt maker and warmer",
+    "price": 99.95,
+    "originalPrice": 119.99,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1574781330855-d0db47ed4451?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 89123,
+    "inStock": true,
+    "stockCount": 156,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "6 Quarts",
+      "Functions": "7-in-1",
+      "Material": "Stainless steel",
+      "Safety": "10 safety mechanisms",
+      "Accessories": "Trivet, manual, recipe book"
+    },
+    "brand": "Instant Pot",
+    "tags": ["pressure-cooker", "multi-cooker", "kitchen", "convenient"]
+  },
+  {
+    "Id": 13,
+    "title": "Canon EOS R6 Mark II Mirrorless Camera Body",
+    "description": "24.2MP full-frame mirrorless camera with 8K video recording and advanced autofocus",
+    "price": 2499.00,
+    "originalPrice": 2699.00,
+    "category": "electronics",
+    "subcategory": "cameras",
+    "images": [
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 876,
+    "inStock": true,
+    "stockCount": 7,
+    "isPrime": true,
+    "specifications": {
+      "Resolution": "24.2MP",
+      "Sensor": "Full-frame CMOS",
+      "Video": "8K30p, 4K60p",
+      "Autofocus": "1053 AF points",
+      "ISO": "100-102400"
+    },
+    "brand": "Canon",
+    "tags": ["camera", "mirrorless", "professional", "photography"]
+  },
+  {
+    "Id": 14,
+    "title": "Ralph Lauren Polo Bear Hoodie",
+    "description": "Classic cotton hoodie featuring the iconic Polo Bear graphic",
+    "price": 148.00,
+    "originalPrice": 165.00,
+    "category": "fashion",
+    "subcategory": "men-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.3,
+    "reviewCount": 2109,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": false,
+    "specifications": {
+      "Material": "100% Cotton",
+      "Fit": "Classic",
+      "Features": "Polo Bear graphic, kangaroo pocket",
+      "Care": "Machine wash",
+      "Sizes": "S-XXL"
+    },
+    "brand": "Ralph Lauren",
+    "tags": ["hoodie", "polo-bear", "classic", "mens"]
+  },
+  {
+    "Id": 15,
+    "title": "Roomba j7+ Robot Vacuum with Self-Empty Base",
+    "description": "Smart robot vacuum that learns your home and avoids obstacles, with automatic dirt disposal",
+    "price": 799.99,
+    "originalPrice": 899.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 4567,
+    "inStock": true,
+    "stockCount": 21,
+    "isPrime": true,
+    "specifications": {
+      "Navigation": "Smart mapping",
+      "Self-empty": "60 days capacity",
+      "Runtime": "75 minutes",
+      "Connectivity": "WiFi, app control",
+      "Filters": "High-efficiency"
+    },
+    "brand": "iRobot",
+    "tags": ["robot-vacuum", "smart-home", "self-empty", "automation"]
+  },
+  {
+    "Id": 16,
+    "title": "Harry Potter Complete 8-Film Collection 4K UHD",
+    "description": "Complete collection of all 8 Harry Potter films in stunning 4K Ultra HD with bonus content",
+    "price": 149.99,
+    "originalPrice": 199.99,
+    "category": "books",
+    "subcategory": "movies",
+    "images": [
+      "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": true,
+    "specifications": {
+      "Format": "4K UHD Blu-ray",
+      "Films": "8 complete movies",
+      "Runtime": "Over 20 hours",
+      "Audio": "Dolby Atmos",
+      "Bonus": "45+ hours extras"
+    },
+    "brand": "Warner Bros",
+    "tags": ["movies", "4k", "collection", "fantasy"]
+  },
+  {
+    "Id": 17,
+    "title": "Nintendo Switch OLED Model - White",
+    "description": "Enhanced Nintendo Switch with 7-inch OLED screen, 64GB storage, and improved audio",
+    "price": 349.99,
+    "originalPrice": 349.99,
+    "category": "toys",
+    "subcategory": "gaming",
+    "images": [
+      "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 43,
+    "isPrime": true,
+    "specifications": {
+      "Screen": "7-inch OLED",
+      "Storage": "64GB internal",
+      "Battery": "4.5-9 hours",
+      "Modes": "TV, Tabletop, Handheld",
+      "Connectivity": "WiFi, Bluetooth"
+    },
+    "brand": "Nintendo",
+    "tags": ["gaming", "console", "portable", "oled"]
+  },
+  {
+    "Id": 18,
+    "title": "AirPods Pro (2nd Generation)",
+    "description": "Active Noise Cancellation, Transparency mode, Personalized Spatial Audio with MagSafe charging case",
+    "price": 249.00,
+    "originalPrice": 279.00,
+    "category": "electronics",
+    "subcategory": "audio",
+    "images": [
+      "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 15678,
+    "inStock": true,
+    "stockCount": 156,
+    "isPrime": true,
+    "specifications": {
+      "Chip": "H2",
+      "Battery": "6 hours + 24 hours with case",
+      "Features": "Active Noise Cancellation",
+      "Charging": "MagSafe, wireless",
+      "Water resistance": "IPX4"
+    },
+    "brand": "Apple",
+    "tags": ["earbuds", "wireless", "noise-canceling", "apple"]
+  },
+  {
+    "Id": 19,
+    "title": "Patagonia Better Sweater Fleece Jacket",
+    "description": "Classic fleece jacket made from recycled polyester with a timeless silhouette",
+    "price": 99.00,
+    "originalPrice": 119.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 3421,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": false,
+    "specifications": {
+      "Material": "100% recycled polyester",
+      "Fit": "Regular",
+      "Features": "Full-zip, two hand pockets",
+      "Sizes": "XS-XXL",
+      "Care": "Machine washable"
+    },
+    "brand": "Patagonia",
+    "tags": ["fleece", "sustainable", "outdoor", "jacket"]
+  },
+  {
+    "Id": 20,
+    "title": "Le Creuset Dutch Oven 5.5-Qt Cast Iron",
+    "description": "Enameled cast iron Dutch oven perfect for braising, roasting, and baking",
+    "price": 349.95,
+    "originalPrice": 379.95,
+    "category": "home",
+    "subcategory": "cookware",
+    "images": [
+      "https://images.unsplash.com/photo-1584990347732-64c2d4ac9440?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 19,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "5.5 Quarts",
+      "Material": "Enameled cast iron",
+      "Oven safe": "Up to 500°F",
+      "Lifetime": "Warranty included",
+      "Colors": "Multiple available"
+    },
+    "brand": "Le Creuset",
+    "tags": ["cookware", "cast-iron", "french", "premium"]
+  }
+]

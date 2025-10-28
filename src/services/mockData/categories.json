@@ -1,0 +1,278 @@
+[
+  {
+    "Id": 1,
+    "name": "Electronics",
+    "slug": "electronics",
+    "icon": "Smartphone",
+    "featured": true,
+    "productCount": 1247,
+    "subcategories": [
+      {
+        "id": 101,
+        "name": "Smartphones",
+        "slug": "smartphones",
+        "productCount": 156
+      },
+      {
+        "id": 102,
+        "name": "Laptops",
+        "slug": "laptops",
+        "productCount": 89
+      },
+      {
+        "id": 103,
+        "name": "Televisions",
+        "slug": "televisions",
+        "productCount": 78
+      },
+      {
+        "id": 104,
+        "name": "Audio",
+        "slug": "audio",
+        "productCount": 234
+      },
+      {
+        "id": 105,
+        "name": "Cameras",
+        "slug": "cameras",
+        "productCount": 67
+      },
+      {
+        "id": 106,
+        "name": "Gaming",
+        "slug": "gaming",
+        "productCount": 123
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "name": "Fashion",
+    "slug": "fashion",
+    "icon": "Shirt",
+    "featured": true,
+    "productCount": 2156,
+    "subcategories": [
+      {
+        "id": 201,
+        "name": "Women's Clothing",
+        "slug": "women-clothing",
+        "productCount": 856
+      },
+      {
+        "id": 202,
+        "name": "Men's Clothing",
+        "slug": "men-clothing",
+        "productCount": 634
+      },
+      {
+        "id": 203,
+        "name": "Shoes",
+        "slug": "shoes",
+        "productCount": 423
+      },
+      {
+        "id": 204,
+        "name": "Accessories",
+        "slug": "accessories",
+        "productCount": 243
+      },
+      {
+        "id": 205,
+        "name": "Jewelry",
+        "slug": "jewelry",
+        "productCount": 178
+      },
+      {
+        "id": 206,
+        "name": "Handbags",
+        "slug": "handbags",
+        "productCount": 145
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "name": "Home & Kitchen",
+    "slug": "home",
+    "icon": "Home",
+    "featured": true,
+    "productCount": 1834,
+    "subcategories": [
+      {
+        "id": 301,
+        "name": "Kitchen Appliances",
+        "slug": "kitchen-appliances",
+        "productCount": 345
+      },
+      {
+        "id": 302,
+        "name": "Cookware",
+        "slug": "cookware",
+        "productCount": 267
+      },
+      {
+        "id": 303,
+        "name": "Furniture",
+        "slug": "furniture",
+        "productCount": 456
+      },
+      {
+        "id": 304,
+        "name": "Bedding",
+        "slug": "bedding",
+        "productCount": 234
+      },
+      {
+        "id": 305,
+        "name": "Bath",
+        "slug": "bath",
+        "productCount": 189
+      },
+      {
+        "id": 306,
+        "name": "Cleaning",
+        "slug": "cleaning",
+        "productCount": 123
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "name": "Books",
+    "slug": "books",
+    "icon": "Book",
+    "featured": true,
+    "productCount": 987,
+    "subcategories": [
+      {
+        "id": 401,
+        "name": "Fiction",
+        "slug": "fiction",
+        "productCount": 345
+      },
+      {
+        "id": 402,
+        "name": "Non-Fiction",
+        "slug": "non-fiction",
+        "productCount": 267
+      },
+      {
+        "id": 403,
+        "name": "Textbooks",
+        "slug": "textbooks",
+        "productCount": 156
+      },
+      {
+        "id": 404,
+        "name": "Children's Books",
+        "slug": "childrens-books",
+        "productCount": 98
+      },
+      {
+        "id": 405,
+        "name": "Comics & Manga",
+        "slug": "comics-manga",
+        "productCount": 78
+      },
+      {
+        "id": 406,
+        "name": "Movies & TV",
+        "slug": "movies",
+        "productCount": 43
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "name": "Toys & Games",
+    "slug": "toys",
+    "icon": "Gamepad2",
+    "featured": true,
+    "productCount": 756,
+    "subcategories": [
+      {
+        "id": 501,
+        "name": "Building Sets",
+        "slug": "building-sets",
+        "productCount": 234
+      },
+      {
+        "id": 502,
+        "name": "Action Figures",
+        "slug": "action-figures",
+        "productCount": 156
+      },
+      {
+        "id": 503,
+        "name": "Board Games",
+        "slug": "board-games",
+        "productCount": 123
+      },
+      {
+        "id": 504,
+        "name": "Gaming",
+        "slug": "gaming",
+        "productCount": 89
+      },
+      {
+        "id": 505,
+        "name": "Educational",
+        "slug": "educational",
+        "productCount": 78
+      },
+      {
+        "id": 506,
+        "name": "Outdoor Play",
+        "slug": "outdoor-play",
+        "productCount": 76
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "name": "Sports & Outdoors",
+    "slug": "sports",
+    "icon": "Dumbbell",
+    "featured": true,
+    "productCount": 654,
+    "subcategories": [
+      {
+        "id": 601,
+        "name": "Fitness Equipment",
+        "slug": "fitness-equipment",
+        "productCount": 167
+      },
+      {
+        "id": 602,
+        "name": "Outdoor Recreation",
+        "slug": "outdoor-recreation",
+        "productCount": 134
+      },
+      {
+        "id": 603,
+        "name": "Team Sports",
+        "slug": "team-sports",
+        "productCount": 123
+      },
+      {
+        "id": 604,
+        "name": "Water Sports",
+        "slug": "water-sports",
+        "productCount": 89
+      },
+      {
+        "id": 605,
+        "name": "Winter Sports",
+        "slug": "winter-sports",
+        "productCount": 76
+      },
+      {
+        "id": 606,
+        "name": "Camping & Hiking",
+        "slug": "camping-hiking",
+        "productCount": 65
+      }
+    ]
+  }
+]

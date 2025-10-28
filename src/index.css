@@ -1,0 +1,310 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F3F3F3;
+}
+
+.Toastify__toast-container {
+  width: 320px;
+  font-family: 'Inter', sans-serif;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  font-size: 14px;
+  min-height: 64px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Toastify__toast--success {
+  background: #067D62;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: #C7302A;
+  color: white;
+}
+
+.Toastify__toast--warning {
+  background: #F0C14B;
+  color: #131921;
+}
+
+.Toastify__toast--info {
+  background: #007185;
+  color: white;
+}
+
+.Toastify__progress-bar {
+  height: 3px;
+  border-radius: 1.5px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Skeleton loading animation */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Search autocomplete */
+.search-dropdown {
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Product grid responsive gaps */
+.product-grid {
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    gap: 16px;
+  }
+}
+
+/* Hero carousel indicators */
+.carousel-indicators {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: background 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background: #FF9900;
+}
+
+/* Cart drawer animation */
+.cart-drawer {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Star rating */
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-filled {
+  color: #FF9900;
+}
+
+.star-empty {
+  color: #D5D9D9;
+}
+
+/* Prime badge */
+.prime-badge {
+  background: linear-gradient(135deg, #00A8CC 0%, #0073E6 100%);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Category mega menu */
+.mega-menu {
+  background: white;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.mega-menu-column {
+  border-right: 1px solid #E7E7E7;
+}
+
+.mega-menu-column:last-child {
+  border-right: none;
+}
+
+/* Price styling */
+.price-current {
+  color: #B12704;
+  font-weight: 600;
+}
+
+.price-original {
+  color: #565959;
+  text-decoration: line-through;
+}
+
+.price-discount {
+  color: #067D62;
+  font-weight: 600;
+}
+
+/* Button loading state */
+.btn-loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Quantity input */
+.quantity-input {
+  -moz-appearance: textfield;
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Filter chips */
+.filter-chip {
+  background: #E7F6FF;
+  color: #007185;
+  border: 1px solid #007185;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.filter-chip:hover {
+  background: #007185;
+  color: white;
+}
+
+/* Image zoom */
+.image-zoom {
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.image-zoom img {
+  transition: transform 0.3s ease;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.2);
+}
+
+/* Breadcrumb */
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #999;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #D5D9D9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #FF9900 0%, #FFB84D 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Loading skeleton variants */
+.skeleton-text {
+  height: 16px;
+  border-radius: 4px;
+}
+
+.skeleton-title {
+  height: 24px;
+  border-radius: 4px;
+}
+
+.skeleton-image {
+  border-radius: 8px;
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}
