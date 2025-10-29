@@ -750,7 +750,7 @@
       "Fit": "Regular",
       "Sizes": "XS-XXL"
     },
-    "brand": "The North Face",
+"brand": "The North Face",
     "tags": ["jacket", "insulated", "eco-friendly", "outdoor"]
   },
   {
@@ -778,5 +778,2604 @@
     },
     "brand": "Vitamix",
     "tags": ["blender", "professional", "kitchen", "smoothies"]
+  },
+  {
+    "Id": 31,
+    "title": "Google Pixel 8 Pro 128GB - Obsidian",
+    "description": "Powered by Google Tensor G3 with advanced AI features and stunning camera",
+    "price": 999.00,
+    "originalPrice": 1099.00,
+    "category": "electronics",
+    "subcategory": "smartphones",
+    "images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 3421,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "128GB",
+      "Color": "Obsidian",
+      "Display": "6.7-inch LTPO OLED",
+      "Chip": "Google Tensor G3",
+      "Camera": "50MP Main + 48MP Ultra Wide + 48MP Telephoto"
+    },
+    "brand": "Google",
+    "tags": ["smartphone", "android", "ai", "5g"]
+  },
+  {
+    "Id": 32,
+    "title": "OnePlus 11 5G 256GB - Titan Black",
+    "description": "Snapdragon 8 Gen 2 processor with Hasselblad camera and 100W fast charging",
+    "price": 699.99,
+    "originalPrice": 799.99,
+    "category": "electronics",
+    "subcategory": "smartphones",
+    "images": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 2156,
+    "inStock": true,
+    "stockCount": 28,
+    "isPrime": false,
+    "specifications": {
+      "Storage": "256GB",
+      "Color": "Titan Black",
+      "Display": "6.7-inch AMOLED 120Hz",
+      "Processor": "Snapdragon 8 Gen 2",
+      "Camera": "50MP Triple Camera System"
+    },
+    "brand": "OnePlus",
+    "tags": ["smartphone", "fast-charging", "premium", "5g"]
+  },
+  {
+    "Id": 33,
+    "title": "Dell XPS 15 Laptop Intel i7 32GB RAM",
+    "description": "15.6-inch 4K OLED display, NVIDIA RTX 4050, 1TB SSD for creative professionals",
+    "price": 2299.99,
+    "originalPrice": 2599.99,
+    "category": "electronics",
+    "subcategory": "laptops",
+    "images": [
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1432,
+    "inStock": true,
+    "stockCount": 11,
+    "isPrime": true,
+    "specifications": {
+      "Processor": "Intel Core i7-13700H",
+      "Graphics": "NVIDIA RTX 4050",
+      "RAM": "32GB DDR5",
+      "Storage": "1TB SSD",
+      "Display": "15.6-inch 4K OLED"
+    },
+    "brand": "Dell",
+    "tags": ["laptop", "creative", "4k", "professional"]
+  },
+  {
+    "Id": 34,
+    "title": "HP Spectre x360 2-in-1 Laptop 16-inch",
+    "description": "Convertible laptop with Intel Evo platform and premium design",
+    "price": 1799.99,
+    "originalPrice": 1999.99,
+    "category": "electronics",
+    "subcategory": "laptops",
+    "images": [
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 987,
+    "inStock": true,
+    "stockCount": 19,
+    "isPrime": true,
+    "specifications": {
+      "Processor": "Intel Core i7-1355U",
+      "RAM": "16GB LPDDR5",
+      "Storage": "512GB SSD",
+      "Display": "16-inch 3K OLED touchscreen",
+      "Type": "2-in-1 convertible"
+    },
+    "brand": "HP",
+    "tags": ["2-in-1", "convertible", "touchscreen", "premium"]
+  },
+  {
+    "Id": 35,
+    "title": "LG C3 55\" OLED 4K Smart TV",
+    "description": "Self-lit OLED pixels with α9 AI Processor and Dolby Vision IQ",
+    "price": 1399.99,
+    "originalPrice": 1699.99,
+    "category": "electronics",
+    "subcategory": "televisions",
+    "images": [
+      "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 15,
+    "isPrime": true,
+    "specifications": {
+      "Size": "55 inches",
+      "Resolution": "4K UHD",
+      "Technology": "OLED",
+      "Processor": "α9 AI Gen 6",
+      "HDR": "Dolby Vision IQ"
+    },
+    "brand": "LG",
+    "tags": ["oled", "4k", "smart-tv", "gaming"]
+  },
+  {
+    "Id": 36,
+    "title": "Sony Bravia XR A80L 65\" OLED TV",
+    "description": "Cognitive Processor XR with perfect blacks and Google TV",
+    "price": 1999.99,
+    "originalPrice": 2299.99,
+    "category": "electronics",
+    "subcategory": "televisions",
+    "images": [
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 9,
+    "isPrime": true,
+    "specifications": {
+      "Size": "65 inches",
+      "Resolution": "4K HDR",
+      "Technology": "OLED XR",
+      "Smart Platform": "Google TV",
+      "Audio": "Acoustic Surface Audio+"
+    },
+    "brand": "Sony",
+    "tags": ["oled", "4k", "google-tv", "premium"]
+  },
+  {
+    "Id": 37,
+    "title": "Bose QuietComfort Ultra Headphones",
+    "description": "World-class noise cancellation with spatial audio and 24-hour battery",
+    "price": 429.00,
+    "originalPrice": 449.00,
+    "category": "electronics",
+    "subcategory": "audio",
+    "images": [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 56,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Over-ear",
+      "Connectivity": "Bluetooth 5.3",
+      "Battery Life": "24 hours",
+      "Noise Canceling": "World-class",
+      "Audio": "Spatial audio"
+    },
+    "brand": "Bose",
+    "tags": ["headphones", "noise-canceling", "premium", "wireless"]
+  },
+  {
+    "Id": 38,
+    "title": "Sennheiser Momentum 4 Wireless",
+    "description": "Audiophile sound quality with 60-hour battery and adaptive ANC",
+    "price": 379.95,
+    "originalPrice": 399.95,
+    "category": "electronics",
+    "subcategory": "audio",
+    "images": [
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2987,
+    "inStock": true,
+    "stockCount": 38,
+    "isPrime": false,
+    "specifications": {
+      "Type": "Over-ear",
+      "Connectivity": "Bluetooth 5.2",
+      "Battery Life": "60 hours",
+      "Noise Canceling": "Adaptive",
+      "Drivers": "42mm transducers"
+    },
+    "brand": "Sennheiser",
+    "tags": ["headphones", "audiophile", "long-battery", "wireless"]
+  },
+  {
+    "Id": 39,
+    "title": "Nikon Z6 III Mirrorless Camera Body",
+    "description": "24.5MP full-frame with 6K video and advanced subject detection",
+    "price": 2799.00,
+    "originalPrice": 2999.00,
+    "category": "electronics",
+    "subcategory": "cameras",
+    "images": [
+      "https://images.unsplash.com/photo-1606980707001-bf7eda5f72ab?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 654,
+    "inStock": true,
+    "stockCount": 8,
+    "isPrime": true,
+    "specifications": {
+      "Resolution": "24.5MP",
+      "Sensor": "Full-frame CMOS",
+      "Video": "6K30p, 4K120p",
+      "Autofocus": "Hybrid AF",
+      "ISO": "100-64000"
+    },
+    "brand": "Nikon",
+    "tags": ["camera", "mirrorless", "video", "professional"]
+  },
+  {
+    "Id": 40,
+    "title": "Fujifilm X-T5 Mirrorless Camera",
+    "description": "40.2MP APS-C sensor with classic design and film simulations",
+    "price": 1699.00,
+    "originalPrice": 1899.00,
+    "category": "electronics",
+    "subcategory": "cameras",
+    "images": [
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 892,
+    "inStock": true,
+    "stockCount": 12,
+    "isPrime": true,
+    "specifications": {
+      "Resolution": "40.2MP",
+      "Sensor": "APS-C X-Trans CMOS 5 HR",
+      "Video": "6.2K 30p",
+      "IBIS": "7-stop image stabilization",
+      "Film Simulations": "19 modes"
+    },
+    "brand": "Fujifilm",
+    "tags": ["camera", "mirrorless", "photography", "film-simulation"]
+  },
+  {
+    "Id": 41,
+    "title": "iPad Pro 12.9-inch M2 256GB - Space Gray",
+    "description": "Liquid Retina XDR display with M2 chip and Apple Pencil support",
+    "price": 1199.00,
+    "originalPrice": 1299.00,
+    "category": "electronics",
+    "subcategory": "tablets",
+    "images": [
+      "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 41,
+    "isPrime": true,
+    "specifications": {
+      "Display": "12.9-inch Liquid Retina XDR",
+      "Chip": "Apple M2",
+      "Storage": "256GB",
+      "Connectivity": "Wi-Fi 6E",
+      "Camera": "12MP wide + 10MP ultra wide"
+    },
+    "brand": "Apple",
+    "tags": ["tablet", "ipad", "creative", "professional"]
+  },
+  {
+    "Id": 42,
+    "title": "Microsoft Surface Pro 9 13-inch i7",
+    "description": "Versatile 2-in-1 tablet with Windows 11 and Surface Pen support",
+    "price": 1599.99,
+    "originalPrice": 1799.99,
+    "category": "electronics",
+    "subcategory": "tablets",
+    "images": [
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 1987,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Display": "13-inch PixelSense touchscreen",
+      "Processor": "Intel Core i7-1255U",
+      "RAM": "16GB",
+      "Storage": "512GB SSD",
+      "OS": "Windows 11 Pro"
+    },
+    "brand": "Microsoft",
+    "tags": ["tablet", "2-in-1", "windows", "productivity"]
+  },
+  {
+    "Id": 43,
+    "title": "Garmin Fenix 7X Sapphire Solar",
+    "description": "Premium multisport GPS watch with solar charging and mapping",
+    "price": 899.99,
+    "originalPrice": 999.99,
+    "category": "electronics",
+    "subcategory": "wearables",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 3214,
+    "inStock": true,
+    "stockCount": 17,
+    "isPrime": true,
+    "specifications": {
+      "Display": "1.4-inch always-on",
+      "Battery": "Up to 37 days with solar",
+      "Features": "Multi-GNSS, maps, music",
+      "Water Rating": "10 ATM",
+      "Sports": "60+ activity profiles"
+    },
+    "brand": "Garmin",
+    "tags": ["smartwatch", "fitness", "gps", "outdoor"]
+  },
+  {
+    "Id": 44,
+    "title": "Fitbit Charge 6 Fitness Tracker",
+    "description": "Advanced fitness tracker with Google integration and heart rate monitoring",
+    "price": 159.95,
+    "originalPrice": 179.95,
+    "category": "electronics",
+    "subcategory": "wearables",
+    "images": [
+      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Display": "Color AMOLED",
+      "Battery": "Up to 7 days",
+      "Sensors": "Heart rate, SpO2, GPS",
+      "Water Resistance": "50 meters",
+      "Compatibility": "iOS, Android"
+    },
+    "brand": "Fitbit",
+    "tags": ["fitness-tracker", "health", "google", "affordable"]
+  },
+  {
+    "Id": 45,
+    "title": "Razer DeathAdder V3 Pro Wireless Gaming Mouse",
+    "description": "Ultra-lightweight wireless gaming mouse with Focus Pro 30K sensor",
+    "price": 149.99,
+    "originalPrice": 169.99,
+    "category": "electronics",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 4532,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Sensor": "Focus Pro 30K DPI",
+      "Connectivity": "Wireless 2.4GHz + Bluetooth",
+      "Battery": "Up to 90 hours",
+      "Weight": "63g",
+      "Buttons": "8 programmable"
+    },
+    "brand": "Razer",
+    "tags": ["gaming", "mouse", "wireless", "esports"]
+  },
+  {
+    "Id": 46,
+    "title": "Tommy Hilfiger Men's Classic Fit Polo",
+    "description": "Cotton pique polo with signature flag embroidery",
+    "price": 49.50,
+    "originalPrice": 69.50,
+    "category": "fashion",
+    "subcategory": "men-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 156,
+    "isPrime": false,
+    "specifications": {
+      "Material": "100% Cotton pique",
+      "Fit": "Classic",
+      "Features": "Embroidered flag logo",
+      "Care": "Machine wash",
+      "Sizes": "S-XXL"
+    },
+    "brand": "Tommy Hilfiger",
+    "tags": ["polo", "casual", "classic", "mens"]
+  },
+  {
+    "Id": 47,
+    "title": "Calvin Klein Men's 3-Pack Cotton T-Shirts",
+    "description": "Essential crew neck t-shirts in premium cotton blend",
+    "price": 39.99,
+    "originalPrice": 45.00,
+    "category": "fashion",
+    "subcategory": "men-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Material": "95% Cotton, 5% Elastane",
+      "Pack": "3-piece set",
+      "Fit": "Modern",
+      "Neckline": "Crew neck",
+      "Sizes": "S-XXL"
+    },
+    "brand": "Calvin Klein",
+    "tags": ["t-shirt", "basics", "cotton", "pack"]
+  },
+  {
+    "Id": 48,
+    "title": "Zara Women's High-Waisted Wide Leg Jeans",
+    "description": "Trendy wide leg denim with comfortable high-rise fit",
+    "price": 45.90,
+    "originalPrice": 59.90,
+    "category": "fashion",
+    "subcategory": "women-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.3,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 98,
+    "isPrime": false,
+    "specifications": {
+      "Fit": "High-waisted wide leg",
+      "Rise": "High",
+      "Material": "98% Cotton, 2% Elastane",
+      "Wash": "Medium blue",
+      "Sizes": "24-34"
+    },
+    "brand": "Zara",
+    "tags": ["jeans", "wide-leg", "trendy", "women"]
+  },
+  {
+    "Id": 49,
+    "title": "H&M Women's Ribbed Tank Top 3-Pack",
+    "description": "Versatile ribbed tank tops in essential colors",
+    "price": 24.99,
+    "originalPrice": 29.99,
+    "category": "fashion",
+    "subcategory": "women-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 187,
+    "isPrime": true,
+    "specifications": {
+      "Material": "95% Cotton, 5% Elastane",
+      "Pack": "3-piece set",
+      "Fit": "Slim",
+      "Style": "Ribbed",
+      "Sizes": "XS-XL"
+    },
+    "brand": "H&M",
+    "tags": ["tank-top", "basics", "pack", "women"]
+  },
+  {
+    "Id": 50,
+    "title": "New Balance 574 Classic Sneakers",
+    "description": "Iconic retro running shoes with ENCAP midsole cushioning",
+    "price": 84.99,
+    "originalPrice": 89.99,
+    "category": "fashion",
+    "subcategory": "shoes",
+    "images": [
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 143,
+    "isPrime": false,
+    "specifications": {
+      "Type": "Lifestyle sneakers",
+      "Upper": "Suede and mesh",
+      "Midsole": "ENCAP cushioning",
+      "Outsole": "Rubber",
+      "Sizes": "6-15"
+    },
+    "brand": "New Balance",
+    "tags": ["sneakers", "retro", "classic", "comfortable"]
+  },
+  {
+    "Id": 51,
+    "title": "Converse Chuck Taylor All Star High Top",
+    "description": "Timeless canvas sneakers with iconic design",
+    "price": 65.00,
+    "originalPrice": 65.00,
+    "category": "fashion",
+    "subcategory": "shoes",
+    "images": [
+      "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 15678,
+    "inStock": true,
+    "stockCount": 256,
+    "isPrime": true,
+    "specifications": {
+      "Type": "High-top sneakers",
+      "Upper": "Canvas",
+      "Sole": "Rubber",
+      "Closure": "Lace-up",
+      "Sizes": "4-15"
+    },
+    "brand": "Converse",
+    "tags": ["sneakers", "classic", "canvas", "iconic"]
+  },
+  {
+    "Id": 52,
+    "title": "Ray-Ban Aviator Classic Sunglasses",
+    "description": "Iconic teardrop sunglasses with crystal green lenses",
+    "price": 169.00,
+    "originalPrice": 189.00,
+    "category": "fashion",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 9876,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": true,
+    "specifications": {
+      "Frame": "Gold metal",
+      "Lens": "Crystal green G-15",
+      "Protection": "100% UV",
+      "Size": "58mm, 62mm",
+      "Style": "Aviator"
+    },
+    "brand": "Ray-Ban",
+    "tags": ["sunglasses", "aviator", "classic", "uv-protection"]
+  },
+  {
+    "Id": 53,
+    "title": "Fossil Gen 6 Smartwatch 44mm",
+    "description": "Wear OS smartwatch with health tracking and customizable design",
+    "price": 299.00,
+    "originalPrice": 329.00,
+    "category": "fashion",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 3421,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": true,
+    "specifications": {
+      "Display": "1.28-inch AMOLED",
+      "OS": "Wear OS by Google",
+      "Battery": "24+ hours",
+      "Sensors": "Heart rate, SpO2, GPS",
+      "Water Resistance": "3 ATM"
+    },
+    "brand": "Fossil",
+    "tags": ["smartwatch", "wear-os", "fashion", "health"]
+  },
+  {
+    "Id": 54,
+    "title": "Columbia Men's Bugaboo II Fleece Jacket",
+    "description": "Versatile fleece jacket with Omni-Heat thermal reflective lining",
+    "price": 119.99,
+    "originalPrice": 140.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 4567,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": false,
+    "specifications": {
+      "Material": "100% Polyester fleece",
+      "Technology": "Omni-Heat reflective",
+      "Fit": "Regular",
+      "Features": "Full-zip, two pockets",
+      "Sizes": "S-XXL"
+    },
+    "brand": "Columbia",
+    "tags": ["fleece", "outdoor", "thermal", "mens"]
+  },
+  {
+    "Id": 55,
+    "title": "Arc'teryx Beta LT Jacket Women's",
+    "description": "Versatile lightweight Gore-Tex jacket for all-mountain use",
+    "price": 425.00,
+    "originalPrice": 475.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Material": "Gore-Tex",
+      "Waterproof": "Yes",
+      "Breathable": "High",
+      "Fit": "Trim",
+      "Sizes": "XS-XL"
+    },
+    "brand": "Arc'teryx",
+    "tags": ["jacket", "gore-tex", "outdoor", "premium"]
+  },
+  {
+    "Id": 56,
+    "title": "Ninja Foodi 10-in-1 XL Pro Air Fry Oven",
+    "description": "Extra large capacity air fryer oven with 10 cooking functions",
+    "price": 299.99,
+    "originalPrice": 349.99,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "10 quarts",
+      "Functions": "10-in-1",
+      "Wattage": "1800W",
+      "Features": "Air fry, bake, roast, broil, toast",
+      "Accessories": "Sheet pan, wire rack"
+    },
+    "brand": "Ninja",
+    "tags": ["air-fryer", "oven", "multi-function", "kitchen"]
+  },
+  {
+    "Id": 57,
+    "title": "Breville Smart Oven Air Fryer Pro",
+    "description": "Countertop convection oven with Element iQ and air fry function",
+    "price": 399.95,
+    "originalPrice": 449.95,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 6543,
+    "inStock": true,
+    "stockCount": 19,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "1 cubic foot",
+      "Functions": "13 cooking functions",
+      "Wattage": "1800W",
+      "Technology": "Element iQ",
+      "Interior": "Non-stick"
+    },
+    "brand": "Breville",
+    "tags": ["oven", "air-fryer", "convection", "smart"]
+  },
+  {
+    "Id": 58,
+    "title": "Shark AI Ultra Self-Empty Robot Vacuum",
+    "description": "Self-emptying robot vacuum with Matrix Clean and home mapping",
+    "price": 549.99,
+    "originalPrice": 649.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 28,
+    "isPrime": true,
+    "specifications": {
+      "Navigation": "LiDAR mapping",
+      "Self-empty": "60 days capacity",
+      "Runtime": "120 minutes",
+      "Connectivity": "WiFi, app control",
+      "Cleaning": "Matrix Clean pattern"
+    },
+    "brand": "Shark",
+    "tags": ["robot-vacuum", "self-empty", "smart", "mapping"]
+  },
+  {
+    "Id": 59,
+    "title": "Bissell CrossWave Pet Pro Multi-Surface Cleaner",
+    "description": "Vacuum and wash floors at the same time for pet owners",
+    "price": 329.99,
+    "originalPrice": 379.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 7890,
+    "inStock": true,
+    "stockCount": 42,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Wet/Dry vacuum",
+      "Surfaces": "Multi-surface",
+      "Tank": "Dual-tank system",
+      "Features": "Pet hair cleaning",
+      "Cord": "25 feet"
+    },
+    "brand": "Bissell",
+    "tags": ["vacuum", "wet-dry", "pet", "multi-surface"]
+  },
+  {
+    "Id": 60,
+    "title": "All-Clad D3 Stainless Steel 10-Piece Cookware Set",
+    "description": "Professional-quality tri-ply stainless steel cookware set",
+    "price": 699.95,
+    "originalPrice": 899.95,
+    "category": "home",
+    "subcategory": "cookware",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 15,
+    "isPrime": true,
+    "specifications": {
+      "Material": "Tri-ply stainless steel",
+      "Pieces": "10-piece set",
+      "Oven safe": "Up to 600°F",
+      "Induction": "Compatible",
+      "Warranty": "Limited lifetime"
+    },
+    "brand": "All-Clad",
+    "tags": ["cookware", "stainless-steel", "professional", "set"]
+  },
+  {
+    "Id": 61,
+    "title": "Lodge Cast Iron Skillet 12-Inch Pre-Seasoned",
+    "description": "Classic cast iron skillet ready to use with natural seasoning",
+    "price": 34.90,
+    "originalPrice": 39.90,
+    "category": "home",
+    "subcategory": "cookware",
+    "images": [
+      "https://images.unsplash.com/photo-1584990347732-64c2d4ac9440?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 23456,
+    "inStock": true,
+    "stockCount": 167,
+    "isPrime": false,
+    "specifications": {
+      "Size": "12 inches",
+      "Material": "Cast iron",
+      "Seasoning": "Pre-seasoned",
+      "Oven safe": "Any temperature",
+      "Made in": "USA"
+    },
+    "brand": "Lodge",
+    "tags": ["cast-iron", "skillet", "pre-seasoned", "classic"]
+  },
+  {
+    "Id": 62,
+    "title": "West Elm Mid-Century Modern Sofa 82\"",
+    "description": "Sleek retro-inspired sofa with solid wood legs and durable upholstery",
+    "price": 1299.00,
+    "originalPrice": 1499.00,
+    "category": "home",
+    "subcategory": "furniture",
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 8,
+    "isPrime": false,
+    "specifications": {
+      "Length": "82 inches",
+      "Style": "Mid-century modern",
+      "Frame": "Solid wood",
+      "Upholstery": "Performance velvet",
+      "Seating": "3-seater"
+    },
+    "brand": "West Elm",
+    "tags": ["sofa", "mid-century", "furniture", "living-room"]
+  },
+  {
+    "Id": 63,
+    "title": "IKEA HEMNES 8-Drawer Dresser White",
+    "description": "Spacious solid wood dresser with traditional design",
+    "price": 349.00,
+    "originalPrice": 399.00,
+    "category": "home",
+    "subcategory": "furniture",
+    "images": [
+      "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Drawers": "8 drawers",
+      "Material": "Solid pine",
+      "Dimensions": "63x37.75 inches",
+      "Color": "White",
+      "Assembly": "Required"
+    },
+    "brand": "IKEA",
+    "tags": ["dresser", "storage", "bedroom", "solid-wood"]
+  },
+  {
+    "Id": 64,
+    "title": "Brooklinen Luxe Core Sheet Set Queen",
+    "description": "Premium long-staple cotton sheets with sateen weave",
+    "price": 149.00,
+    "originalPrice": 169.00,
+    "category": "home",
+    "subcategory": "bedding",
+    "images": [
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Size": "Queen",
+      "Material": "480 thread count cotton",
+      "Weave": "Sateen",
+      "Set includes": "Fitted, flat, 2 pillowcases",
+      "Care": "Machine washable"
+    },
+    "brand": "Brooklinen",
+    "tags": ["sheets", "bedding", "luxury", "cotton"]
+  },
+  {
+    "Id": 65,
+    "title": "Parachute Down Alternative Comforter",
+    "description": "Hypoallergenic all-season comforter with fill made from recycled bottles",
+    "price": 229.00,
+    "originalPrice": 269.00,
+    "category": "home",
+    "subcategory": "bedding",
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 56,
+    "isPrime": true,
+    "specifications": {
+      "Size": "Full/Queen",
+      "Fill": "Recycled polyester",
+      "Shell": "100% cotton",
+      "Weight": "All-season",
+      "Hypoallergenic": "Yes"
+    },
+    "brand": "Parachute",
+    "tags": ["comforter", "bedding", "eco-friendly", "hypoallergenic"]
+  },
+  {
+    "Id": 66,
+    "title": "Anthropologie Gleaming Primrose Mirror",
+    "description": "Ornate wall mirror with antique brass finish frame",
+    "price": 348.00,
+    "originalPrice": 398.00,
+    "category": "home",
+    "subcategory": "decor",
+    "images": [
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1234,
+    "inStock": true,
+    "stockCount": 12,
+    "isPrime": false,
+    "specifications": {
+      "Dimensions": "36 x 36 inches",
+      "Material": "Metal frame, glass",
+      "Finish": "Antique brass",
+      "Style": "Ornate",
+      "Mounting": "D-ring hanging"
+    },
+    "brand": "Anthropologie",
+    "tags": ["mirror", "wall-decor", "ornate", "brass"]
+  },
+  {
+    "Id": 67,
+    "title": "Project 62 Modern Ceramic Table Lamp",
+    "description": "Minimalist table lamp with white ceramic base and linen shade",
+    "price": 79.99,
+    "originalPrice": 99.99,
+    "category": "home",
+    "subcategory": "decor",
+    "images": [
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 3456,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Height": "22 inches",
+      "Base": "Ceramic",
+      "Shade": "Linen",
+      "Bulb": "E26 (not included)",
+      "Style": "Modern minimalist"
+    },
+    "brand": "Project 62",
+    "tags": ["lamp", "lighting", "modern", "ceramic"]
+  },
+  {
+    "Id": 68,
+    "title": "Atomic Habits by James Clear",
+    "description": "The life-changing guide to building good habits and breaking bad ones",
+    "price": 16.99,
+    "originalPrice": 19.99,
+    "category": "books",
+    "subcategory": "self-help",
+    "images": [
+      "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 87654,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Author": "James Clear",
+      "Pages": "320",
+      "Publisher": "Avery",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Avery",
+    "tags": ["self-help", "habits", "productivity", "bestseller"]
+  },
+  {
+    "Id": 69,
+    "title": "Where the Crawdads Sing by Delia Owens",
+    "description": "A haunting mystery about a young woman who raised herself in the marshes",
+    "price": 15.99,
+    "originalPrice": 18.99,
+    "category": "books",
+    "subcategory": "fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 56789,
+    "inStock": true,
+    "stockCount": 178,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Delia Owens",
+      "Pages": "384",
+      "Publisher": "G.P. Putnam's Sons",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "G.P. Putnam's Sons",
+    "tags": ["fiction", "mystery", "nature", "bestseller"]
+  },
+  {
+    "Id": 70,
+    "title": "The Woman in the Window by A.J. Finn",
+    "description": "A psychological thriller about an agoraphobic woman who witnesses a crime",
+    "price": 14.99,
+    "originalPrice": 17.99,
+    "category": "books",
+    "subcategory": "thriller",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.3,
+    "reviewCount": 34567,
+    "inStock": true,
+    "stockCount": 145,
+    "isPrime": true,
+    "specifications": {
+      "Author": "A.J. Finn",
+      "Pages": "448",
+      "Publisher": "William Morrow",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "William Morrow",
+    "tags": ["thriller", "psychological", "suspense", "mystery"]
+  },
+  {
+    "Id": 71,
+    "title": "Gone Girl by Gillian Flynn",
+    "description": "A twisted marriage mystery that keeps you guessing until the end",
+    "price": 13.99,
+    "originalPrice": 16.99,
+    "category": "books",
+    "subcategory": "thriller",
+    "images": [
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 67890,
+    "inStock": true,
+    "stockCount": 198,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Gillian Flynn",
+      "Pages": "432",
+      "Publisher": "Broadway Books",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Broadway Books",
+    "tags": ["thriller", "mystery", "psychological", "bestseller"]
+  },
+  {
+    "Id": 72,
+    "title": "Educated by Tara Westover",
+    "description": "A memoir about a young woman who leaves her survivalist family for education",
+    "price": 15.99,
+    "originalPrice": 18.99,
+    "category": "books",
+    "subcategory": "non-fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 45678,
+    "inStock": true,
+    "stockCount": 167,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Tara Westover",
+      "Pages": "352",
+      "Publisher": "Random House",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Random House",
+    "tags": ["memoir", "non-fiction", "education", "inspiring"]
+  },
+  {
+    "Id": 73,
+    "title": "Sapiens by Yuval Noah Harari",
+    "description": "A brief history of humankind from the Stone Age to modern times",
+    "price": 17.99,
+    "originalPrice": 21.99,
+    "category": "books",
+    "subcategory": "non-fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 38901,
+    "inStock": true,
+    "stockCount": 123,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Yuval Noah Harari",
+      "Pages": "464",
+      "Publisher": "Harper Perennial",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Harper Perennial",
+    "tags": ["history", "non-fiction", "philosophy", "bestseller"]
+  },
+  {
+    "Id": 74,
+    "title": "Salt, Fat, Acid, Heat by Samin Nosrat",
+    "description": "Mastering the elements of good cooking with simple techniques",
+    "price": 24.99,
+    "originalPrice": 30.00,
+    "category": "books",
+    "subcategory": "cooking",
+    "images": [
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Samin Nosrat",
+      "Pages": "480",
+      "Publisher": "Simon & Schuster",
+      "Language": "English",
+      "Format": "Hardcover"
+    },
+    "brand": "Simon & Schuster",
+    "tags": ["cooking", "recipes", "techniques", "award-winning"]
+  },
+  {
+    "Id": 75,
+    "title": "The Joy of Cooking (2019 Edition)",
+    "description": "America's most trusted cookbook completely revised for modern kitchens",
+    "price": 35.00,
+    "originalPrice": 40.00,
+    "category": "books",
+    "subcategory": "cooking",
+    "images": [
+      "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Authors": "Irma Rombauer, Marion Rombauer Becker",
+      "Pages": "1152",
+      "Publisher": "Scribner",
+      "Language": "English",
+      "Format": "Hardcover"
+    },
+    "brand": "Scribner",
+    "tags": ["cooking", "classic", "recipes", "comprehensive"]
+  },
+  {
+    "Id": 76,
+    "title": "The Lord of the Rings Trilogy 4K Blu-ray",
+    "description": "Extended editions of all three films remastered in 4K Ultra HD",
+    "price": 89.99,
+    "originalPrice": 109.99,
+    "category": "books",
+    "subcategory": "movies",
+    "images": [
+      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 23456,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": true,
+    "specifications": {
+      "Format": "4K UHD Blu-ray",
+      "Films": "3 extended editions",
+      "Runtime": "Over 11 hours",
+      "Audio": "Dolby Atmos",
+      "Bonus": "Extended extras"
+    },
+    "brand": "Warner Bros",
+    "tags": ["movies", "4k", "trilogy", "fantasy"]
+  },
+  {
+    "Id": 77,
+    "title": "The Dark Knight Trilogy 4K Collection",
+    "description": "Christopher Nolan's Batman trilogy in stunning 4K",
+    "price": 69.99,
+    "originalPrice": 89.99,
+    "category": "books",
+    "subcategory": "movies",
+    "images": [
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 18765,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Format": "4K UHD Blu-ray",
+      "Films": "3 films",
+      "Audio": "Dolby TrueHD 5.1",
+      "Director": "Christopher Nolan",
+      "Bonus": "Behind-the-scenes"
+    },
+    "brand": "Warner Bros",
+    "tags": ["movies", "superhero", "4k", "trilogy"]
+  },
+  {
+    "Id": 78,
+    "title": "LEGO Star Wars Millennium Falcon",
+    "description": "Ultimate Collector's Edition with 7541 pieces",
+    "price": 849.99,
+    "originalPrice": 849.99,
+    "category": "toys",
+    "subcategory": "building-sets",
+    "images": [
+      "https://images.unsplash.com/photo-1611604548018-d56bbd85d681?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 4567,
+    "inStock": true,
+    "stockCount": 5,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "7541",
+      "Age": "16+",
+      "Dimensions": "33 x 22 x 8 inches",
+      "Theme": "Star Wars",
+      "Difficulty": "Expert"
+    },
+    "brand": "LEGO",
+    "tags": ["lego", "star-wars", "collector", "millennium-falcon"]
+  },
+  {
+    "Id": 79,
+    "title": "LEGO Architecture Statue of Liberty",
+    "description": "Detailed model of America's iconic monument",
+    "price": 119.99,
+    "originalPrice": 139.99,
+    "category": "toys",
+    "subcategory": "building-sets",
+    "images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "1685",
+      "Age": "16+",
+      "Height": "17 inches",
+      "Theme": "Architecture",
+      "Difficulty": "Intermediate"
+    },
+    "brand": "LEGO",
+    "tags": ["lego", "architecture", "landmark", "collector"]
+  },
+  {
+    "Id": 80,
+    "title": "PlayStation 5 Console - Disc Edition",
+    "description": "Next-gen gaming console with 4K gaming and ultra-fast SSD",
+    "price": 499.99,
+    "originalPrice": 499.99,
+    "category": "toys",
+    "subcategory": "gaming",
+    "images": [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 15678,
+    "inStock": true,
+    "stockCount": 12,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "825GB SSD",
+      "Resolution": "4K, 120Hz",
+      "Controller": "DualSense wireless",
+      "Disc Drive": "4K UHD Blu-ray",
+      "GPU": "AMD RDNA 2"
+    },
+    "brand": "Sony",
+    "tags": ["console", "gaming", "playstation", "4k"]
+  },
+  {
+    "Id": 81,
+    "title": "Xbox Series X Console 1TB",
+    "description": "The fastest, most powerful Xbox with 12 teraflops of processing power",
+    "price": 499.99,
+    "originalPrice": 499.99,
+    "category": "toys",
+    "subcategory": "gaming",
+    "images": [
+      "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 18,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "1TB NVMe SSD",
+      "Resolution": "4K, 120Hz",
+      "GPU": "12 teraflops RDNA 2",
+      "Disc Drive": "4K UHD Blu-ray",
+      "Game Pass": "Compatible"
+    },
+    "brand": "Microsoft",
+    "tags": ["console", "gaming", "xbox", "4k"]
+  },
+  {
+    "Id": 82,
+    "title": "Barbie Dreamhouse with Pool & Slide",
+    "description": "3-story dollhouse with 10 rooms, pool, slide, and 70+ accessories",
+    "price": 199.99,
+    "originalPrice": 229.99,
+    "category": "toys",
+    "subcategory": "dolls",
+    "images": [
+      "https://images.unsplash.com/photo-1599743850450-3b5fd5b4ac9d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Stories": "3 levels",
+      "Rooms": "10 play areas",
+      "Accessories": "70+ pieces",
+      "Features": "Pool, slide, elevator",
+      "Age": "3+"
+    },
+    "brand": "Mattel",
+    "tags": ["barbie", "dollhouse", "playhouse", "kids"]
+  },
+  {
+    "Id": 83,
+    "title": "American Girl Truly Me Doll #115",
+    "description": "18-inch doll with customizable outfit and accessories",
+    "price": 120.00,
+    "originalPrice": 120.00,
+    "category": "toys",
+    "subcategory": "dolls",
+    "images": [
+      "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 4567,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": false,
+    "specifications": {
+      "Height": "18 inches",
+      "Features": "Articulated limbs",
+      "Hair": "Long brown",
+      "Eyes": "Brown",
+      "Outfit": "Included"
+    },
+    "brand": "American Girl",
+    "tags": ["doll", "american-girl", "collector", "kids"]
+  },
+  {
+    "Id": 84,
+    "title": "Osmo Genius Starter Kit for iPad",
+    "description": "Award-winning learning games that interact with physical objects",
+    "price": 99.99,
+    "originalPrice": 119.99,
+    "category": "toys",
+    "subcategory": "educational",
+    "images": [
+      "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Games": "5 learning games",
+      "Age": "6-10 years",
+      "Subjects": "Math, spelling, creativity",
+      "Device": "iPad compatible",
+      "Awards": "Multiple education awards"
+    },
+    "brand": "Osmo",
+    "tags": ["educational", "stem", "ipad", "learning"]
+  },
+  {
+    "Id": 85,
+    "title": "LeapFrog Learning Friends 100 Words Book",
+    "description": "Interactive bilingual book that teaches 100 words in English and Spanish",
+    "price": 19.99,
+    "originalPrice": 24.99,
+    "category": "toys",
+    "subcategory": "educational",
+    "images": [
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 156,
+    "isPrime": true,
+    "specifications": {
+      "Words": "100 vocabulary words",
+      "Languages": "English and Spanish",
+      "Age": "18 months - 4 years",
+      "Features": "Touch-and-learn",
+      "Batteries": "2 AA (included)"
+    },
+    "brand": "LeapFrog",
+    "tags": ["educational", "bilingual", "toddler", "learning"]
+  },
+  {
+    "Id": 86,
+    "title": "Nerf Ultra One Motorized Blaster",
+    "description": "High-performance dart blaster that shoots darts up to 120 feet",
+    "price": 49.99,
+    "originalPrice": 59.99,
+    "category": "toys",
+    "subcategory": "outdoor",
+    "images": [
+      "https://images.unsplash.com/photo-1628000781128-140f0e0c9c1b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Range": "Up to 120 feet",
+      "Capacity": "25 darts",
+      "Type": "Motorized",
+      "Batteries": "6 C (not included)",
+      "Age": "8+"
+    },
+    "brand": "Nerf",
+    "tags": ["nerf", "outdoor", "blaster", "active-play"]
+  },
+  {
+    "Id": 87,
+    "title": "Razor A5 Lux Kick Scooter",
+    "description": "Extra-large wheels and deck for smooth riding",
+    "price": 119.99,
+    "originalPrice": 139.99,
+    "category": "toys",
+    "subcategory": "outdoor",
+    "images": [
+      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 7890,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": false,
+    "specifications": {
+      "Wheels": "200mm urethane",
+      "Deck": "Extra-wide aluminum",
+      "Weight Limit": "220 lbs",
+      "Handlebar": "Adjustable height",
+      "Age": "8+"
+    },
+    "brand": "Razor",
+    "tags": ["scooter", "outdoor", "kids", "exercise"]
+  },
+  {
+    "Id": 88,
+    "title": "Samsung Galaxy S23 Ultra 256GB - Phantom Black",
+    "description": "Premium flagship with 200MP camera and S Pen integration",
+    "price": 1199.99,
+    "originalPrice": 1299.99,
+    "category": "electronics",
+    "subcategory": "smartphones",
+    "images": [
+      "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 6543,
+    "inStock": true,
+    "stockCount": 31,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "256GB",
+      "Color": "Phantom Black",
+      "Display": "6.8-inch Dynamic AMOLED 2X",
+      "Processor": "Snapdragon 8 Gen 2",
+      "Camera": "200MP Main + 12MP Ultra Wide + 10MP Telephoto x2"
+    },
+    "brand": "Samsung",
+    "tags": ["smartphone", "android", "s-pen", "flagship"]
+  },
+  {
+    "Id": 89,
+    "title": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "description": "Business ultrabook with Intel vPro and all-day battery life",
+    "price": 1899.99,
+    "originalPrice": 2199.99,
+    "category": "electronics",
+    "subcategory": "laptops",
+    "images": [
+      "https://images.unsplash.com/photo-1601524909162-ae8725290836?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 14,
+    "isPrime": true,
+    "specifications": {
+      "Processor": "Intel Core i7-1365U vPro",
+      "RAM": "16GB LPDDR5",
+      "Storage": "512GB SSD",
+      "Display": "14-inch 2.8K OLED",
+      "Weight": "2.48 lbs"
+    },
+    "brand": "Lenovo",
+    "tags": ["laptop", "business", "ultrabook", "thinkpad"]
+  },
+  {
+    "Id": 90,
+    "title": "TCL 65\" 6-Series 4K QLED Roku TV",
+    "description": "Mini-LED QLED TV with Dolby Vision and Roku smart platform",
+    "price": 899.99,
+    "originalPrice": 1099.99,
+    "category": "electronics",
+    "subcategory": "televisions",
+    "images": [
+      "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 22,
+    "isPrime": true,
+    "specifications": {
+      "Size": "65 inches",
+      "Resolution": "4K UHD",
+      "Technology": "QLED with Mini-LED",
+      "Smart Platform": "Roku TV",
+      "HDR": "Dolby Vision, HDR10+"
+    },
+    "brand": "TCL",
+    "tags": ["tv", "qled", "roku", "mini-led"]
+  },
+  {
+    "Id": 91,
+    "title": "Jabra Elite 85h Wireless Headphones",
+    "description": "Active noise cancelling headphones with SmartSound technology",
+    "price": 249.99,
+    "originalPrice": 299.99,
+    "category": "electronics",
+    "subcategory": "audio",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 3456,
+    "inStock": true,
+    "stockCount": 54,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Over-ear",
+      "Connectivity": "Bluetooth 5.0",
+      "Battery Life": "36 hours",
+      "Noise Canceling": "SmartSound ANC",
+      "Voice Assistant": "Alexa, Google, Siri"
+    },
+    "brand": "Jabra",
+    "tags": ["headphones", "noise-canceling", "wireless", "smartsound"]
+  },
+  {
+    "Id": 92,
+    "title": "Panasonic Lumix GH6 Mirrorless Camera",
+    "description": "Professional video-focused camera with 5.7K ProRes recording",
+    "price": 2197.99,
+    "originalPrice": 2497.99,
+    "category": "electronics",
+    "subcategory": "cameras",
+    "images": [
+      "https://images.unsplash.com/photo-1606980707001-bf7eda5f72ab?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 543,
+    "inStock": true,
+    "stockCount": 6,
+    "isPrime": true,
+    "specifications": {
+      "Resolution": "25.2MP",
+      "Sensor": "Micro Four Thirds",
+      "Video": "5.7K 60p ProRes",
+      "IBIS": "7.5-stop stabilization",
+      "Features": "Unlimited recording"
+    },
+    "brand": "Panasonic",
+    "tags": ["camera", "video", "mirrorless", "professional"]
+  },
+  {
+    "Id": 93,
+    "title": "Amazon Fire HD 10 Tablet 32GB",
+    "description": "10.1-inch Full HD tablet with Alexa hands-free",
+    "price": 149.99,
+    "originalPrice": 179.99,
+    "category": "electronics",
+    "subcategory": "tablets",
+    "images": [
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 34567,
+    "inStock": true,
+    "stockCount": 178,
+    "isPrime": true,
+    "specifications": {
+      "Display": "10.1-inch 1080p Full HD",
+      "Processor": "Octa-core 2.0 GHz",
+      "RAM": "3GB",
+      "Storage": "32GB expandable",
+      "Battery": "Up to 12 hours"
+    },
+    "brand": "Amazon",
+    "tags": ["tablet", "fire", "alexa", "affordable"]
+  },
+  {
+    "Id": 94,
+    "title": "Polar Vantage V2 Premium Multisport Watch",
+    "description": "Advanced GPS watch with running power and recovery tracking",
+    "price": 499.95,
+    "originalPrice": 549.95,
+    "category": "electronics",
+    "subcategory": "wearables",
+    "images": [
+      "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 1987,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Display": "1.2-inch always-on",
+      "Battery": "Up to 40 hours training",
+      "Features": "Running power, recovery",
+      "Water Rating": "100 meters",
+      "Navigation": "Route guidance"
+    },
+    "brand": "Polar",
+    "tags": ["smartwatch", "fitness", "multisport", "gps"]
+  },
+  {
+    "Id": 95,
+    "title": "SteelSeries Arctis Nova Pro Wireless Gaming Headset",
+    "description": "Premium wireless headset with active noise cancellation and GameDAC",
+    "price": 349.99,
+    "originalPrice": 379.99,
+    "category": "electronics",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1599669454699-248893623440?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2876,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Connectivity": "2.4GHz wireless + Bluetooth",
+      "Battery": "Dual battery system",
+      "Audio": "360° Spatial Audio",
+      "Microphone": "ClearCast Gen 2",
+      "Compatibility": "Multi-platform"
+    },
+    "brand": "SteelSeries",
+    "tags": ["gaming", "headset", "wireless", "premium"]
+  },
+  {
+    "Id": 96,
+    "title": "Carhartt Men's Relaxed Fit Heavyweight Hoodie",
+    "description": "Durable heavyweight hooded sweatshirt built for work",
+    "price": 54.99,
+    "originalPrice": 64.99,
+    "category": "fashion",
+    "subcategory": "men-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 18765,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": false,
+    "specifications": {
+      "Material": "50% Cotton, 50% Polyester",
+      "Weight": "10.5 oz",
+      "Fit": "Relaxed",
+      "Features": "Triple-stitched seams",
+      "Sizes": "S-3XL"
+    },
+    "brand": "Carhartt",
+    "tags": ["hoodie", "workwear", "heavyweight", "durable"]
+  },
+  {
+    "Id": 97,
+    "title": "Uniqlo Women's Heattech Ultra Warm Leggings",
+    "description": "High-performance thermal leggings with moisture-wicking technology",
+    "price": 29.90,
+    "originalPrice": 34.90,
+    "category": "fashion",
+    "subcategory": "women-clothing",
+    "images": [
+      "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 267,
+    "isPrime": true,
+    "specifications": {
+      "Material": "Heattech fiber blend",
+      "Technology": "Ultra Warm",
+      "Fit": "Slim",
+      "Features": "Moisture-wicking, stretch",
+      "Sizes": "XS-XXL"
+    },
+    "brand": "Uniqlo",
+    "tags": ["leggings", "thermal", "heattech", "women"]
+  },
+  {
+    "Id": 98,
+    "title": "Vans Old Skool Classic Skate Shoes",
+    "description": "Iconic low-top skate shoes with signature side stripe",
+    "price": 70.00,
+    "originalPrice": 75.00,
+    "category": "fashion",
+    "subcategory": "shoes",
+    "images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 23456,
+    "inStock": true,
+    "stockCount": 198,
+    "isPrime": false,
+    "specifications": {
+      "Type": "Skate shoes",
+      "Upper": "Canvas and suede",
+      "Sole": "Waffle outsole",
+      "Closure": "Lace-up",
+      "Sizes": "5-14"
+    },
+    "brand": "Vans",
+    "tags": ["sneakers", "skate", "classic", "iconic"]
+  },
+  {
+    "Id": 99,
+    "title": "Kate Spade New York Cameron Street Card Holder",
+    "description": "Slim leather card case with signature spade emblem",
+    "price": 58.00,
+    "originalPrice": 79.00,
+    "category": "fashion",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1583380219097-65a3e32f4332?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Material": "Saffiano leather",
+      "Slots": "3 card slots + bill slot",
+      "Dimensions": "4 x 3 inches",
+      "Hardware": "Gold-tone",
+      "Closure": "Open"
+    },
+    "brand": "Kate Spade",
+    "tags": ["wallet", "card-holder", "leather", "designer"]
+  },
+  {
+    "Id": 100,
+    "title": "Canada Goose Expedition Parka",
+    "description": "Extreme cold weather parka rated to -25°C/-13°F",
+    "price": 1295.00,
+    "originalPrice": 1395.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1548126032-079fe6c75a68?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 3421,
+    "inStock": true,
+    "stockCount": 11,
+    "isPrime": false,
+    "specifications": {
+      "Fill": "625 fill power white duck down",
+      "Shell": "Arctic-Tech",
+      "Rating": "TEI 5 (extreme cold)",
+      "Features": "Fur-trimmed hood, multiple pockets",
+      "Sizes": "XS-3XL"
+    },
+    "brand": "Canada Goose",
+    "tags": ["parka", "extreme-cold", "down", "premium"]
+  },
+  {
+    "Id": 101,
+    "title": "Cuisinart Air Fryer Toaster Oven",
+    "description": "7-in-1 countertop oven with air frying, convection baking and more",
+    "price": 229.95,
+    "originalPrice": 269.95,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 11234,
+    "inStock": true,
+    "stockCount": 56,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "0.6 cubic feet",
+      "Functions": "7-in-1",
+      "Wattage": "1800W",
+      "Features": "Air fry, convection, toast",
+      "Interior": "Non-stick"
+    },
+    "brand": "Cuisinart",
+    "tags": ["air-fryer", "toaster-oven", "convection", "multi-function"]
+  },
+  {
+    "Id": 102,
+    "title": "Eufy RoboVac 11S Robot Vacuum",
+    "description": "Slim robot vacuum with BoostIQ technology and quiet operation",
+    "price": 229.99,
+    "originalPrice": 279.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 45678,
+    "inStock": true,
+    "stockCount": 98,
+    "isPrime": true,
+    "specifications": {
+      "Navigation": "Infrared sensors",
+      "Suction": "BoostIQ 1300Pa",
+      "Runtime": "100 minutes",
+      "Height": "2.85 inches (slim)",
+      "Noise": "55dB (quiet)"
+    },
+    "brand": "Eufy",
+    "tags": ["robot-vacuum", "slim", "quiet", "affordable"]
+  },
+  {
+    "Id": 103,
+    "title": "T-fal Ultimate Hard Anodized 17-Piece Cookware Set",
+    "description": "Complete nonstick cookware set with glass lids and measuring tools",
+    "price": 179.99,
+    "originalPrice": 229.99,
+    "category": "home",
+    "subcategory": "cookware",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": true,
+    "specifications": {
+      "Material": "Hard anodized aluminum",
+      "Coating": "Nonstick interior",
+      "Pieces": "17-piece set",
+      "Oven safe": "Up to 400°F",
+      "Included": "Pots, pans, lids, utensils"
+    },
+    "brand": "T-fal",
+    "tags": ["cookware", "nonstick", "set", "complete"]
+  },
+  {
+    "Id": 104,
+    "title": "IKEA POÄNG Armchair with Cushion",
+    "description": "Classic bentwood armchair with comfortable cushion",
+    "price": 149.00,
+    "originalPrice": 179.00,
+    "category": "home",
+    "subcategory": "furniture",
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": false,
+    "specifications": {
+      "Frame": "Bentwood birch",
+      "Dimensions": "26.75 x 37 inches",
+      "Weight Capacity": "375 lbs",
+      "Cushion": "Removable, washable",
+      "Assembly": "Required"
+    },
+    "brand": "IKEA",
+    "tags": ["armchair", "bentwood", "classic", "comfortable"]
+  },
+  {
+    "Id": 105,
+    "title": "Threshold Performance Sheet Set King",
+    "description": "Soft jersey knit sheets with deep pockets",
+    "price": 54.99,
+    "originalPrice": 69.99,
+    "category": "home",
+    "subcategory": "bedding",
+    "images": [
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 15678,
+    "inStock": true,
+    "stockCount": 156,
+    "isPrime": true,
+    "specifications": {
+      "Size": "King",
+      "Material": "Jersey knit",
+      "Pocket Depth": "15 inches",
+      "Set includes": "Fitted, flat, 2 pillowcases",
+      "Care": "Machine washable"
+    },
+    "brand": "Threshold",
+    "tags": ["sheets", "jersey", "soft", "affordable"]
+  },
+  {
+    "Id": 106,
+    "title": "Pottery Barn Classic Down Alternative Comforter",
+    "description": "All-season fluffy comforter with hypoallergenic fill",
+    "price": 189.00,
+    "originalPrice": 229.00,
+    "category": "home",
+    "subcategory": "bedding",
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 7890,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Size": "Queen",
+      "Fill": "Polyester",
+      "Shell": "100% cotton percale",
+      "Weight": "Medium",
+      "Hypoallergenic": "Yes"
+    },
+    "brand": "Pottery Barn",
+    "tags": ["comforter", "all-season", "hypoallergenic", "fluffy"]
+  },
+  {
+    "Id": 107,
+    "title": "CB2 Round Gold Wall Mirror 24-inch",
+    "description": "Modern round mirror with brushed brass frame",
+    "price": 149.00,
+    "originalPrice": 179.00,
+    "category": "home",
+    "subcategory": "decor",
+    "images": [
+      "https://images.unsplash.com/photo-1616464411648-dca20dcb5949?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 28,
+    "isPrime": false,
+    "specifications": {
+      "Diameter": "24 inches",
+      "Frame": "Brushed brass metal",
+      "Style": "Modern",
+      "Mounting": "Keyhole hanging",
+      "Weight": "8 lbs"
+    },
+    "brand": "CB2",
+    "tags": ["mirror", "round", "brass", "modern"]
+  },
+  {
+    "Id": 108,
+    "title": "Philips Hue White and Color Ambiance Starter Kit",
+    "description": "Smart LED bulbs with bridge, control with voice or app",
+    "price": 199.99,
+    "originalPrice": 229.99,
+    "category": "home",
+    "subcategory": "decor",
+    "images": [
+      "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 9876,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": true,
+    "specifications": {
+      "Bulbs": "4 bulbs + bridge",
+      "Colors": "16 million colors",
+      "Brightness": "800 lumens",
+      "Compatibility": "Alexa, Google, Siri",
+      "Lifespan": "25,000 hours"
+    },
+    "brand": "Philips",
+    "tags": ["smart-lighting", "color", "hue", "voice-control"]
+  },
+  {
+    "Id": 109,
+    "title": "Thinking, Fast and Slow by Daniel Kahneman",
+    "description": "Nobel Prize winner's insights into the two systems that drive how we think",
+    "price": 17.99,
+    "originalPrice": 20.99,
+    "category": "books",
+    "subcategory": "non-fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 28901,
+    "inStock": true,
+    "stockCount": 134,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Daniel Kahneman",
+      "Pages": "499",
+      "Publisher": "Farrar, Straus and Giroux",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Farrar, Straus and Giroux",
+    "tags": ["psychology", "non-fiction", "cognitive-science", "bestseller"]
+  },
+  {
+    "Id": 110,
+    "title": "The Complete Mediterranean Cookbook",
+    "description": "America's Test Kitchen guide to 500 Mediterranean recipes",
+    "price": 29.99,
+    "originalPrice": 35.00,
+    "category": "books",
+    "subcategory": "cooking",
+    "images": [
+      "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 6543,
+    "inStock": true,
+    "stockCount": 92,
+    "isPrime": true,
+    "specifications": {
+      "Publisher": "America's Test Kitchen",
+      "Pages": "480",
+      "Recipes": "500+ recipes",
+      "Language": "English",
+      "Format": "Hardcover"
+    },
+    "brand": "America's Test Kitchen",
+    "tags": ["cooking", "mediterranean", "healthy", "recipes"]
+  },
+  {
+    "Id": 111,
+    "title": "Inception 4K Ultra HD Blu-ray",
+    "description": "Christopher Nolan's mind-bending thriller in stunning 4K",
+    "price": 24.99,
+    "originalPrice": 29.99,
+    "category": "books",
+    "subcategory": "movies",
+    "images": [
+      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 34567,
+    "inStock": true,
+    "stockCount": 123,
+    "isPrime": true,
+    "specifications": {
+      "Format": "4K UHD Blu-ray",
+      "Director": "Christopher Nolan",
+      "Runtime": "148 minutes",
+      "Audio": "DTS-HD Master Audio 5.1",
+      "Bonus": "Behind-the-scenes extras"
+    },
+    "brand": "Warner Bros",
+    "tags": ["movies", "4k", "thriller", "sci-fi"]
+  },
+  {
+    "Id": 112,
+    "title": "LEGO Technic Lamborghini Sián FKP 37",
+    "description": "1:8 scale model with authentic details and moving parts",
+    "price": 449.99,
+    "originalPrice": 449.99,
+    "category": "toys",
+    "subcategory": "building-sets",
+    "images": [
+      "https://images.unsplash.com/photo-1558060370-d644479c6b77?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 9,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "3696",
+      "Scale": "1:8",
+      "Age": "18+",
+      "Features": "Working 8-speed gearbox",
+      "Dimensions": "23 x 9 x 5 inches"
+    },
+    "brand": "LEGO",
+    "tags": ["lego", "technic", "lamborghini", "supercar"]
+  },
+  {
+    "Id": 113,
+    "title": "Meta Quest 3 128GB VR Headset",
+    "description": "Next-gen mixed reality with breakthrough performance",
+    "price": 499.99,
+    "originalPrice": 499.99,
+    "category": "toys",
+    "subcategory": "gaming",
+    "images": [
+      "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 23,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "128GB",
+      "Resolution": "4K+ Infinite Display",
+      "Processor": "Snapdragon XR2 Gen 2",
+      "Controllers": "Touch Plus controllers",
+      "Mixed Reality": "Full-color passthrough"
+    },
+    "brand": "Meta",
+    "tags": ["vr", "mixed-reality", "gaming", "quest"]
+  },
+  {
+    "Id": 114,
+    "title": "LOL Surprise OMG House of Surprises",
+    "description": "4-story wooden dollhouse with 85+ surprises",
+    "price": 299.99,
+    "originalPrice": 349.99,
+    "category": "toys",
+    "subcategory": "dolls",
+    "images": [
+      "https://images.unsplash.com/photo-1599743850450-3b5fd5b4ac9d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 16,
+    "isPrime": true,
+    "specifications": {
+      "Stories": "4 levels",
+      "Rooms": "10 rooms",
+      "Surprises": "85+ accessories",
+      "Material": "Wood",
+      "Age": "4+"
+    },
+    "brand": "MGA Entertainment",
+    "tags": ["lol-surprise", "dollhouse", "kids", "surprises"]
+  },
+  {
+    "Id": 115,
+    "title": "Melissa & Doug Wooden Building Blocks Set",
+    "description": "100-piece set of natural wood blocks in various shapes",
+    "price": 19.99,
+    "originalPrice": 24.99,
+    "category": "toys",
+    "subcategory": "educational",
+    "images": [
+      "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 18765,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "100 blocks",
+      "Material": "Natural wood",
+      "Shapes": "9 different shapes",
+      "Age": "3+",
+      "Skills": "Motor skills, creativity"
+    },
+    "brand": "Melissa & Doug",
+    "tags": ["blocks", "educational", "wooden", "classic"]
+  },
+  {
+    "Id": 116,
+    "title": "Little Tikes Easy Score Basketball Set",
+    "description": "Adjustable height basketball hoop for toddlers",
+    "price": 39.99,
+    "originalPrice": 49.99,
+    "category": "toys",
+    "subcategory": "outdoor",
+    "images": [
+      "https://images.unsplash.com/photo-1628000781128-140f0e0c9c1b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 9876,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": false,
+    "specifications": {
+      "Height": "Adjustable 2.5-4 feet",
+      "Includes": "3 basketballs",
+      "Material": "Durable plastic",
+      "Base": "Fillable for stability",
+      "Age": "18 months - 5 years"
+    },
+    "brand": "Little Tikes",
+    "tags": ["basketball", "outdoor", "toddler", "active-play"]
+  },
+  {
+    "Id": 117,
+    "title": "Motorola Edge 40 Pro 256GB",
+    "description": "Flagship smartphone with 165Hz display and 50MP camera",
+    "price": 899.99,
+    "originalPrice": 999.99,
+    "category": "electronics",
+    "subcategory": "smartphones",
+    "images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 22,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "256GB",
+      "Display": "6.67-inch OLED 165Hz",
+      "Processor": "Snapdragon 8 Gen 2",
+      "Camera": "50MP Main + 50MP Ultra Wide + 12MP Telephoto",
+      "Charging": "125W fast charging"
+    },
+    "brand": "Motorola",
+    "tags": ["smartphone", "android", "fast-charging", "flagship"]
+  },
+  {
+    "Id": 118,
+    "title": "Framework Laptop 13 DIY Edition",
+    "description": "Modular laptop you can upgrade, customize and repair",
+    "price": 1399.00,
+    "originalPrice": 1599.00,
+    "category": "electronics",
+    "subcategory": "laptops",
+    "images": [
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 1234,
+    "inStock": true,
+    "stockCount": 8,
+    "isPrime": false,
+    "specifications": {
+      "Processor": "Intel Core i5-1340P",
+      "RAM": "16GB DDR4",
+      "Storage": "512GB SSD",
+      "Display": "13.5-inch 2256x1504",
+      "Features": "Modular, upgradeable"
+    },
+    "brand": "Framework",
+    "tags": ["laptop", "modular", "upgradeable", "sustainable"]
+  },
+  {
+    "Id": 119,
+    "title": "Hisense U8K 55\" Mini-LED QLED TV",
+    "description": "144Hz gaming TV with Quantum Dot and Dolby Vision",
+    "price": 999.99,
+    "originalPrice": 1199.99,
+    "category": "electronics",
+    "subcategory": "televisions",
+    "images": [
+      "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 3421,
+    "inStock": true,
+    "stockCount": 18,
+    "isPrime": true,
+    "specifications": {
+      "Size": "55 inches",
+      "Technology": "Mini-LED QLED",
+      "Refresh Rate": "144Hz",
+      "HDR": "Dolby Vision IQ",
+      "Gaming": "VRR, ALLM"
+    },
+    "brand": "Hisense",
+    "tags": ["tv", "mini-led", "gaming", "144hz"]
+  },
+  {
+    "Id": 120,
+    "title": "Audio-Technica ATH-M50xBT2 Wireless Headphones",
+    "description": "Professional studio monitor headphones with Bluetooth",
+    "price": 199.00,
+    "originalPrice": 219.00,
+    "category": "electronics",
+    "subcategory": "audio",
+    "images": [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 5432,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Over-ear closed-back",
+      "Connectivity": "Bluetooth 5.0 + wired",
+      "Battery Life": "50 hours",
+      "Drivers": "45mm",
+      "Features": "Multipoint, low-latency"
+    },
+    "brand": "Audio-Technica",
+    "tags": ["headphones", "studio", "wireless", "professional"]
+  },
+  {
+    "Id": 121,
+    "title": "OM System OM-1 Mark II Mirrorless Camera",
+    "description": "Advanced weather-sealed camera with computational photography",
+    "price": 2199.99,
+    "originalPrice": 2399.99,
+    "category": "electronics",
+    "subcategory": "cameras",
+    "images": [
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 432,
+    "inStock": true,
+    "stockCount": 5,
+    "isPrime": true,
+    "specifications": {
+      "Resolution": "20MP Live MOS",
+      "Sensor": "Micro Four Thirds",
+      "Video": "4K60p C4K",
+      "IBIS": "8.5-stop stabilization",
+      "Features": "AI subject detection"
+    },
+    "brand": "OM System",
+    "tags": ["camera", "mirrorless", "weather-sealed", "wildlife"]
+  },
+  {
+    "Id": 122,
+    "title": "Lenovo Tab P11 Pro Gen 2 11.2-inch",
+    "description": "Premium OLED tablet with quad speakers and stylus support",
+    "price": 399.99,
+    "originalPrice": 449.99,
+    "category": "electronics",
+    "subcategory": "tablets",
+    "images": [
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 1987,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Display": "11.2-inch 2.5K OLED",
+      "Processor": "MediaTek Kompanio 1300T",
+      "RAM": "6GB",
+      "Storage": "128GB expandable",
+      "Audio": "JBL quad speakers"
+    },
+    "brand": "Lenovo",
+    "tags": ["tablet", "oled", "android", "entertainment"]
+  },
+  {
+    "Id": 123,
+    "title": "Suunto 9 Peak Pro Titanium GPS Watch",
+    "description": "Ultra-light titanium sports watch with 170-hour battery",
+    "price": 569.00,
+    "originalPrice": 629.00,
+    "category": "electronics",
+    "subcategory": "wearables",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 876,
+    "inStock": true,
+    "stockCount": 12,
+    "isPrime": false,
+    "specifications": {
+      "Case": "Grade 5 titanium",
+      "Battery": "Up to 170 hours training",
+      "Display": "1.2-inch AMOLED",
+      "Navigation": "Dual-frequency GPS",
+      "Water Rating": "100 meters"
+    },
+    "brand": "Suunto",
+    "tags": ["smartwatch", "titanium", "ultra-endurance", "gps"]
+  },
+  {
+    "Id": 124,
+    "title": "Corsair K70 RGB PRO Mechanical Gaming Keyboard",
+    "description": "Tournament-grade mechanical keyboard with Cherry MX switches",
+    "price": 169.99,
+    "originalPrice": 189.99,
+    "category": "electronics",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 6789,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": true,
+    "specifications": {
+      "Switches": "Cherry MX Red",
+      "Lighting": "Per-key RGB",
+      "Build": "Aluminum frame",
+      "Features": "Detachable USB-C cable",
+      "Media": "Dedicated media keys"
+    },
+    "brand": "Corsair",
+    "tags": ["keyboard", "mechanical", "gaming", "rgb"]
+  },
+  {
+    "Id": 125,
+    "title": "Everlane The Modern Snap Backpack",
+    "description": "Minimalist water-resistant backpack with laptop sleeve",
+    "price": 88.00,
+    "originalPrice": 98.00,
+    "category": "fashion",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 56,
+    "isPrime": false,
+    "specifications": {
+      "Material": "Recycled polyester",
+      "Capacity": "20 liters",
+      "Laptop": "Fits up to 15 inches",
+      "Features": "Water-resistant, magnetic snap",
+      "Dimensions": "12 x 17 x 6 inches"
+    },
+    "brand": "Everlane",
+    "tags": ["backpack", "minimalist", "laptop", "sustainable"]
+  },
+  {
+    "Id": 126,
+    "title": "Marmot Minimalist GORE-TEX Rain Jacket",
+    "description": "Lightweight waterproof shell for hiking and everyday use",
+    "price": 199.00,
+    "originalPrice": 225.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 43,
+    "isPrime": true,
+    "specifications": {
+      "Material": "GORE-TEX Paclite",
+      "Weight": "9.9 oz",
+      "Waterproof": "Yes",
+      "Breathable": "High",
+      "Sizes": "XS-XXL"
+    },
+    "brand": "Marmot",
+    "tags": ["rain-jacket", "gore-tex", "lightweight", "hiking"]
+  },
+  {
+    "Id": 127,
+    "title": "KitchenAid Food Processor 9-Cup",
+    "description": "Powerful food processor with ExactSlice system",
+    "price": 199.99,
+    "originalPrice": 249.99,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 29,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "9 cups",
+      "Motor": "240 watts",
+      "Speeds": "High, low, pulse",
+      "Features": "ExactSlice system",
+      "Accessories": "Multiple discs and blades"
+    },
+    "brand": "KitchenAid",
+    "tags": ["food-processor", "kitchen", "chopping", "professional"]
+  },
+  {
+    "Id": 128,
+    "title": "Tineco Floor ONE S5 Wet Dry Vacuum",
+    "description": "Smart cordless vacuum and mop with self-cleaning",
+    "price": 449.99,
+    "originalPrice": 499.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 3456,
+    "inStock": true,
+    "stockCount": 21,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Wet/Dry cordless",
+      "Runtime": "35 minutes",
+      "Features": "Smart iLoop sensor, self-cleaning",
+      "Display": "LED",
+      "Water Tanks": "Dual tank system"
+    },
+    "brand": "Tineco",
+    "tags": ["vacuum", "mop", "cordless", "smart"]
+  },
+  {
+    "Id": 129,
+    "title": "Calphalon Premier Space-Saving 10-Piece Set",
+    "description": "Stainless steel cookware that stacks to save 30% more space",
+    "price": 299.99,
+    "originalPrice": 379.99,
+    "category": "home",
+    "subcategory": "cookware",
+    "images": [
+      "https://images.unsplash.com/photo-1584990347732-64c2d4ac9440?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Material": "Stainless steel",
+      "Pieces": "10-piece set",
+      "Features": "Space-saving, stackable",
+      "Oven safe": "Up to 450°F",
+      "Induction": "Compatible"
+    },
+    "brand": "Calphalon",
+    "tags": ["cookware", "stainless-steel", "space-saving", "set"]
+  },
+  {
+    "Id": 130,
+    "title": "Article Sven Charme Tan Sofa",
+    "description": "Mid-century modern sofa with full-grain leather upholstery",
+    "price": 1999.00,
+    "originalPrice": 2299.00,
+    "category": "home",
+    "subcategory": "furniture",
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 1876,
+    "inStock": true,
+    "stockCount": 4,
+    "isPrime": false,
+    "specifications": {
+      "Length": "72 inches",
+      "Upholstery": "Full-grain aniline leather",
+      "Frame": "Solid wood",
+      "Style": "Mid-century modern",
+      "Seating": "3-seater"
+    },
+    "brand": "Article",
+    "tags": ["sofa", "leather", "mid-century", "premium"]
   }
-]
