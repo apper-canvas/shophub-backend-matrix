@@ -167,7 +167,7 @@ class CartService {
   }
 
   // Get cart summary for checkout
-  async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shippingCost = 5.99) {
+async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shippingCost = 5.99, isPrime = true) {
     await delay(150);
     
     this.loadCartFromStorage();
@@ -178,7 +178,7 @@ class CartService {
     }, 0);
     
     const tax = subtotal * taxRate;
-    const shipping = subtotal >= shippingThreshold ? 0 : shippingCost;
+    const shipping = isPrime ? 0 : (subtotal >= shippingThreshold ? 0 : shippingCost);
     const total = subtotal + tax + shipping;
     
     return {
@@ -188,39 +188,88 @@ class CartService {
       tax: Math.round(tax * 100) / 100,
       shipping: Math.round(shipping * 100) / 100,
       total: Math.round(total * 100) / 100,
-      freeShipping: subtotal >= shippingThreshold,
-      amountForFreeShipping: subtotal < shippingThreshold ? shippingThreshold - subtotal : 0
+      freeShipping: isPrime || subtotal >= shippingThreshold,
+      amountForFreeShipping: !isPrime && subtotal < shippingThreshold ? shippingThreshold - subtotal : 0,
+      isPrime
     };
   }
 
-  // Save cart for later (e.g., when user logs out)
-  async saveForLater() {
+// Save individual item for later
+  async saveItemForLater(itemId) {
+    await delay(150);
+    
+    this.loadCartFromStorage();
+    const itemIndex = this.cartItems.findIndex(item => item.Id === itemId);
+    
+    if (itemIndex === -1) {
+      throw new Error('Item not found in cart');
+    }
+    
+    const item = this.cartItems[itemIndex];
+    
+    // Get saved items
+    const savedKey = `${this.storageKey}_saved`;
+    let savedItems = [];
+    try {
+      const saved = localStorage.getItem(savedKey);
+      if (saved) {
+        savedItems = JSON.parse(saved);
+      }
+    } catch (error) {
+      console.error("Error loading saved items:", error);
+    }
+    
+    // Add to saved items
+    savedItems.push(item);
+    localStorage.setItem(savedKey, JSON.stringify(savedItems));
+    
+    // Remove from cart
+    this.cartItems.splice(itemIndex, 1);
+    this.saveCartToStorage();
+    
+    return true;
+  }
+  
+  // Get all saved items
+  async getSavedItems() {
     await delay(100);
     
     const savedKey = `${this.storageKey}_saved`;
-    localStorage.setItem(savedKey, JSON.stringify(this.cartItems));
-    return true;
+    try {
+      const saved = localStorage.getItem(savedKey);
+      if (saved) {
+        return JSON.parse(saved);
+      }
+    } catch (error) {
+      console.error("Error loading saved items:", error);
+    }
+    return [];
   }
-
-  // Restore saved cart
-  async restoreSaved() {
+  
+  // Restore individual item from saved
+  async restoreFromSaved(itemId) {
     await delay(150);
     
     const savedKey = `${this.storageKey}_saved`;
     try {
       const saved = localStorage.getItem(savedKey);
       if (saved) {
-        const savedItems = JSON.parse(saved);
-        // Merge with current cart
-        for (const savedItem of savedItems) {
-          await this.addItem(savedItem.productId, savedItem.quantity, savedItem.selectedOptions);
+        let savedItems = JSON.parse(saved);
+        const itemIndex = savedItems.findIndex(item => item.Id === itemId);
+        
+        if (itemIndex !== -1) {
+          const item = savedItems[itemIndex];
+          // Add back to cart
+          await this.addItem(item.productId, item.quantity, item.selectedOptions);
+          
+          // Remove from saved
+          savedItems.splice(itemIndex, 1);
+          localStorage.setItem(savedKey, JSON.stringify(savedItems));
+          return true;
         }
-        // Remove saved cart
-        localStorage.removeItem(savedKey);
-        return true;
       }
     } catch (error) {
-      console.error("Error restoring saved cart:", error);
+      console.error("Error restoring saved item:", error);
     }
     return false;
   }

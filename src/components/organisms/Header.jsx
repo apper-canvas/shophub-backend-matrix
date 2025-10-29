@@ -2,13 +2,15 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
 import { searchService } from "@/services/api/searchService";
+import { cartService } from "@/services/api/cartService";
 
 const Header = ({ cartCount = 0, onCartClick }) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchSuggestions, setSearchSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
+const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
   const searchRef = useRef();
   const accountRef = useRef();
 
@@ -26,7 +28,7 @@ const Header = ({ cartCount = 0, onCartClick }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  useEffect(() => {
+useEffect(() => {
     const fetchSuggestions = async () => {
       if (searchQuery.trim().length > 2) {
         try {
@@ -44,6 +46,18 @@ const Header = ({ cartCount = 0, onCartClick }) => {
     const debounceTimer = setTimeout(fetchSuggestions, 300);
     return () => clearTimeout(debounceTimer);
   }, [searchQuery]);
+
+  useEffect(() => {
+    const loadCart = async () => {
+      try {
+        const items = await cartService.getAll();
+        setCartItems(items);
+      } catch (error) {
+        console.error("Error loading cart:", error);
+      }
+    };
+    loadCart();
+  }, [cartCount]);
 
   const handleSearch = (query = searchQuery) => {
     if (query.trim()) {
@@ -137,7 +151,8 @@ const Header = ({ cartCount = 0, onCartClick }) => {
 
           {/* Account */}
           <div className="relative" ref={accountRef}>
-            <button
+<button
+              type="button"
               onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
               className="flex flex-col items-start text-sm hover:bg-amazon-navy px-2 py-1 rounded transition-colors"
             >
@@ -184,7 +199,13 @@ const Header = ({ cartCount = 0, onCartClick }) => {
 
           {/* Cart */}
           <button
-            onClick={onCartClick}
+onClick={() => {
+              if (cartItems.length > 3) {
+                navigate('/cart');
+              } else {
+                onCartClick();
+              }
+            }}
             className="relative flex items-center gap-2 hover:bg-amazon-navy px-2 py-1 rounded transition-colors"
           >
             <div className="relative">
@@ -205,5 +226,4 @@ const Header = ({ cartCount = 0, onCartClick }) => {
     </header>
   );
 };
-
 export default Header;

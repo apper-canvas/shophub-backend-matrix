@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { cartService } from "@/services/api/cartService";
 import CategoryNav from "@/components/organisms/CategoryNav";
 import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
 import CartDrawer from "@/components/organisms/CartDrawer";
-
 const Layout = () => {
   const location = useLocation();
   const [cartItems, setCartItems] = useState([]);
-  const [isCartOpen, setIsCartOpen] = useState(false);
+const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     loadCartItems();
   }, []);
 
-  const loadCartItems = async () => {
+const loadCartItems = async () => {
     try {
       const items = await cartService.getAll();
       setCartItems(items);
@@ -70,14 +70,14 @@ const Layout = () => {
     }
   };
 
-  // Hide category nav on cart and checkout pages
+// Hide category nav on cart and checkout pages
   const hideCategoryNav = ["/cart", "/checkout"].some(path => 
     location.pathname.startsWith(path)
   );
 
 return (
     <div className="min-h-screen bg-background">
-      <Header 
+<Header 
         onCartClick={() => setIsCartOpen(true)}
         cartCount={cartCount}
       />
@@ -91,10 +91,10 @@ return (
           updateCartItem,
           removeFromCart,
           clearCart,
-          cartCount
+          cartCount,
+          loadCartItems
         }} />
       </main>
-
       <Footer />
 
       <CartDrawer

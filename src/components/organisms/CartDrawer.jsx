@@ -86,7 +86,7 @@ const CartDrawer = ({
 
   const handleCheckout = () => {
     onClose();
-    navigate("/checkout");
+navigate("/cart");
   };
 
   const handleContinueShopping = () => {
