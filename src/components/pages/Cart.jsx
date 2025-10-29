@@ -12,8 +12,10 @@ const Cart = () => {
   const navigate = useNavigate();
   const { loadCartItems } = useOutletContext();
   
-  const [cartItems, setCartItems] = useState([]);
+const [cartItems, setCartItems] = useState([]);
   const [products, setProducts] = useState({});
+  const [savedItems, setSavedItems] = useState([]);
+  const [savedProducts, setSavedProducts] = useState({});
   const [summary, setSummary] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -28,10 +30,13 @@ const Cart = () => {
       setLoading(true);
       setError(null);
       
-      // Load cart items
+// Load cart items
       const items = await cartService.getAll();
       setCartItems(items);
       
+      // Load saved items
+      const saved = await cartService.getSavedItems();
+      setSavedItems(saved);
       // Load product details for all items
       const productPromises = items.map(item => 
         productService.getById(item.productId)
@@ -56,6 +61,26 @@ const Cart = () => {
       const summaryData = await cartService.getSummary(pricesMap, 0.08, 35, 5.99, true);
       setSummary(summaryData);
       
+// Load product details for saved items
+      if (saved.length > 0) {
+        const savedProductIds = [...new Set(saved.map(item => item.productId))];
+        const savedProductData = {};
+        
+        await Promise.all(
+          savedProductIds.map(async (productId) => {
+            try {
+              const product = await productService.getById(productId);
+              if (product) {
+                savedProductData[productId] = product;
+              }
+            } catch (err) {
+              console.error(`Error loading saved product ${productId}:`, err);
+            }
+          })
+        );
+        
+        setSavedProducts(savedProductData);
+      }
     } catch (err) {
       console.error('Error loading cart:', err);
       setError('Failed to load cart. Please try again.');
@@ -115,6 +140,62 @@ const Cart = () => {
       toast.error('Failed to save item');
     }
   };
+const handleMoveToCart = async (savedItemId) => {
+    try {
+      setUpdatingItems(prev => new Set(prev).add(savedItemId));
+      
+      await cartService.restoreFromSaved(savedItemId);
+      
+      // Reload cart and saved items
+      const [updatedCart, updatedSaved] = await Promise.all([
+        cartService.getAll(),
+        cartService.getSavedItems()
+      ]);
+      
+      setCartItems(updatedCart);
+      setSavedItems(updatedSaved);
+      
+      // Update summary
+      const productPrices = {};
+      Object.values(products).forEach(product => {
+        productPrices[product.Id] = product.price;
+      });
+      const newSummary = await cartService.getSummary(productPrices);
+      setSummary(newSummary);
+      
+      toast.success('Item moved to cart');
+    } catch (err) {
+      console.error('Error moving item to cart:', err);
+      toast.error('Failed to move item. Please try again.');
+    } finally {
+      setUpdatingItems(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(savedItemId);
+        return newSet;
+      });
+    }
+  };
+
+  const handleRemoveFromSaved = async (savedItemId) => {
+    try {
+      setUpdatingItems(prev => new Set(prev).add(savedItemId));
+      
+      // Remove from saved items in service
+      const updatedSaved = savedItems.filter(item => item.Id !== savedItemId);
+      setSavedItems(updatedSaved);
+      
+      toast.success('Item removed from saved items');
+    } catch (err) {
+      console.error('Error removing saved item:', err);
+      toast.error('Failed to remove item. Please try again.');
+    } finally {
+      setUpdatingItems(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(savedItemId);
+        return newSet;
+      });
+    }
+  };
 
   const handleCheckout = () => {
     navigate('/checkout');
@@ -144,7 +225,7 @@ const Cart = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 className="text-3xl font-bold text-amazon-dark mb-8">Shopping Cart</h1>
       
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Cart Items List */}
         <div className="lg:col-span-2 space-y-4">
           {cartItems.map((item) => {
@@ -365,6 +446,110 @@ const Cart = () => {
           </div>
         </div>
       </div>
+
+      {/* Saved for Later Section */}
+      {savedItems.length > 0 && (
+        <div className="mt-12">
+          <div className="border-t border-gray-300 pt-8">
+            <h2 className="text-2xl font-bold text-amazon-dark mb-6">
+              Saved for Later ({savedItems.length} {savedItems.length === 1 ? 'item' : 'items'})
+            </h2>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {savedItems.map((item) => {
+                const product = savedProducts[item.productId];
+                if (!product) return null;
+                
+                const isUpdating = updatingItems.has(item.Id);
+                
+                return (
+                  <div 
+                    key={item.Id}
+                    className="bg-white rounded-lg shadow-sm p-4 flex flex-col"
+                  >
+                    {/* Product Image */}
+                    <div className="flex-shrink-0 mb-4">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-full h-48 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                        onClick={() => navigate(`/product/${product.Id}`)}
+                        onError={(e) => {
+                          e.target.src = 'https://via.placeholder.com/200?text=No+Image';
+                        }}
+                      />
+                    </div>
+                    
+                    {/* Product Details */}
+                    <div className="flex-1 space-y-2">
+                      <h3 
+                        className="text-base font-semibold text-amazon-dark hover:text-amazon-info cursor-pointer line-clamp-2"
+                        onClick={() => navigate(`/product/${product.Id}`)}
+                      >
+                        {product.title}
+                      </h3>
+                      
+                      {product.inStock ? (
+                        <p className="text-sm text-amazon-success font-medium">In Stock</p>
+                      ) : (
+                        <p className="text-sm text-amazon-error font-medium">Out of Stock</p>
+                      )}
+                      
+                      {product.prime && (
+                        <div className="flex items-center gap-2">
+                          <span className="prime-badge">PRIME</span>
+                          <span className="text-xs text-gray-600">Free shipping</span>
+                        </div>
+                      )}
+                      
+                      {/* Price */}
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-xl font-bold price-current">
+                          ${product.price.toFixed(2)}
+                        </span>
+                        {product.originalPrice && product.originalPrice > product.price && (
+                          <>
+                            <span className="text-xs price-original">
+                              ${product.originalPrice.toFixed(2)}
+                            </span>
+                            <span className="text-xs price-discount">
+                              ({Math.round((1 - product.price / product.originalPrice) * 100)}% off)
+                            </span>
+                          </>
+                        )}
+                      </div>
+                      
+                      {item.quantity > 1 && (
+                        <p className="text-sm text-gray-600">Quantity: {item.quantity}</p>
+                      )}
+                    </div>
+                    
+                    {/* Actions */}
+                    <div className="mt-4 space-y-2">
+                      <button
+                        type="button"
+                        onClick={() => handleMoveToCart(item.Id)}
+                        disabled={isUpdating}
+                        className="w-full bg-amazon-warning hover:bg-amazon-warning/90 text-amazon-dark font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        Move to Cart
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => handleRemoveFromSaved(item.Id)}
+                        disabled={isUpdating}
+                        className="w-full text-sm text-amazon-info hover:text-amazon-orange font-medium transition-colors disabled:opacity-50"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
