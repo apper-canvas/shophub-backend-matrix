@@ -1,4 +1,6 @@
 import mockProducts from "../mockData/products.json";
+import React from "react";
+import Error from "@/components/ui/Error";
 
 // Helper function for simulated API delays
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -8,7 +10,7 @@ class ProductService {
     // Normalize all IDs to integers for consistent comparisons
     this.products = mockProducts.map(p => ({ ...p, Id: parseInt(p.Id) }));
   }
-  async getAll(filters = {}) {
+async getAll(filters = {}) {
     await delay(300);
     
     let filteredProducts = [...this.products];
@@ -20,10 +22,17 @@ class ProductService {
       );
     }
 
+    // Filter by subcategory
+    if (filters.subcategory) {
+      filteredProducts = filteredProducts.filter(
+        product => product.subcategory && product.subcategory.toLowerCase() === filters.subcategory.toLowerCase()
+      );
+    }
+
     // Apply subcategory filter
     if (filters.subcategory) {
       filteredProducts = filteredProducts.filter(
-        product => product.subcategory.toLowerCase() === filters.subcategory.toLowerCase()
+        product => product.subcategory && product.subcategory.toLowerCase() === filters.subcategory.toLowerCase()
       );
     }
 
@@ -135,6 +144,7 @@ class ProductService {
     };
   }
 
+
 async getById(id) {
     await delay(200);
     
@@ -235,7 +245,7 @@ async getById(id) {
     return results.map(product => ({ ...product }));
 }
 
-  async getDealsByCategory(categorySlug, subcategorySlug = null, limit = 10) {
+async getDealsByCategory(categorySlug, subcategorySlug = null, limit = 10) {
     await delay(250);
     
     let deals = this.products.filter(
@@ -247,7 +257,7 @@ async getById(id) {
     
     if (subcategorySlug) {
       deals = deals.filter(
-        product => product.subcategory.toLowerCase() === subcategorySlug.toLowerCase()
+        product => product.subcategory && product.subcategory.toLowerCase() === subcategorySlug.toLowerCase()
       );
     }
     
