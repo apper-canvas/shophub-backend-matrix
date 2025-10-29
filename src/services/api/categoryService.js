@@ -69,8 +69,26 @@ class CategoryService {
     }
     
     return { ...subcategory };
-  }
+}
 
+  async getBySlugWithSubcategory(categorySlug, subcategorySlug) {
+    await delay(150);
+    
+    const category = this.categories.find(c => c.slug === categorySlug);
+    if (!category || !category.subcategories) {
+      throw new Error(`Category or subcategories not found`);
+    }
+    
+    const subcategory = category.subcategories.find(sub => sub.slug === subcategorySlug);
+    if (!subcategory) {
+      throw new Error(`Subcategory with slug ${subcategorySlug} not found`);
+    }
+    
+    return {
+      category: { ...category },
+      subcategory: { ...subcategory }
+    };
+  }
   async create(categoryData) {
     await delay(300);
     

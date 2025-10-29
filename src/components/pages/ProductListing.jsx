@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { useSearchParams, useOutletContext, useNavigate } from "react-router-dom";
-import ApperIcon from "@/components/ApperIcon";
-import ProductCard from "@/components/molecules/ProductCard";
-import FilterSidebar from "@/components/organisms/FilterSidebar";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useOutletContext, useSearchParams } from "react-router-dom";
 import { productService } from "@/services/api/productService";
 import { categoryService } from "@/services/api/categoryService";
 import { toast } from "react-toastify";
+import ApperIcon from "@/components/ApperIcon";
+import Home from "@/components/pages/Home";
+import FilterSidebar from "@/components/organisms/FilterSidebar";
+import Loading from "@/components/ui/Loading";
+import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
+import ProductCard from "@/components/molecules/ProductCard";
 
 const ProductListing = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { addToCart } = useOutletContext();
-
   // State
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -35,8 +35,10 @@ const ProductListing = () => {
   // Get current filters from URL
   const getCurrentFilters = () => {
     return {
-      category: searchParams.get("category") || "",
+category: searchParams.get("category") || "",
       subcategory: searchParams.get("subcategory") || "",
+      categoryName: "",
+      subcategoryName: "",
       search: searchParams.get("search") || "",
       minPrice: searchParams.get("minPrice") || "",
       maxPrice: searchParams.get("maxPrice") || "",
@@ -52,7 +54,7 @@ const ProductListing = () => {
     };
   };
 
-  useEffect(() => {
+useEffect(() => {
     loadProducts();
     loadFilterOptions();
     loadCategoryInfo();
@@ -90,12 +92,21 @@ const ProductListing = () => {
     }
   };
 
-  const loadCategoryInfo = async () => {
+const loadCategoryInfo = async () => {
     try {
       const categorySlug = searchParams.get("category");
+      const subcategorySlug = searchParams.get("subcategory");
+      
       if (categorySlug) {
         const category = await categoryService.getBySlug(categorySlug);
         setCategoryInfo(category);
+        
+        if (subcategorySlug) {
+          const subcategory = await categoryService.getSubcategoryBySlug(
+            categorySlug,
+            subcategorySlug
+          );
+        }
       } else {
         setCategoryInfo(null);
       }
@@ -150,11 +161,13 @@ const ProductListing = () => {
     }
   };
 
-  const getCurrentQuery = () => {
+const getCurrentQuery = () => {
     const search = searchParams.get("search");
     const category = searchParams.get("category");
+    const subcategory = searchParams.get("subcategory");
     
     if (search) return `"${search}"`;
+    if (subcategory) return categoryInfo?.subcategory?.name || subcategory;
     if (category) return categoryInfo?.name || category;
     return "All Products";
   };
@@ -212,23 +225,43 @@ const ProductListing = () => {
     <div className="min-h-screen bg-background">
       <div className="max-w-screen-2xl mx-auto px-4 py-6">
         {/* Breadcrumb */}
-        <nav className="mb-6">
+<nav className="mb-6">
           <ol className="flex items-center gap-2 text-sm text-gray-600">
             <li>
               <button
                 onClick={() => navigate("/")}
-                className="hover:text-amazon-orange"
+                className="hover:text-amazon-orange transition-colors"
               >
                 Home
               </button>
             </li>
-            {categoryInfo && (
+            {categoryInfo?.name && (
               <>
                 <span className="breadcrumb-separator">›</span>
-                <li className="text-amazon-dark font-medium">{categoryInfo.name}</li>
+                <li>
+                  <button
+                    onClick={() => navigate(`/category/${searchParams.get("category")}`)}
+                    className="hover:text-amazon-orange transition-colors"
+                  >
+                    {categoryInfo.name}
+                  </button>
+                </li>
+              </>
+)}
+            {categoryInfo?.subcategory?.name && (
+              <>
+                <span className="breadcrumb-separator">›</span>
+                <li>
+                  <button
+                    onClick={() => navigate(`/category/${searchParams.get("category")}/${searchParams.get("subcategory")}`)}
+                    className="hover:text-amazon-orange transition-colors"
+                  >
+                    {categoryInfo.subcategory.name}
+                  </button>
+                </li>
               </>
             )}
-            {searchParams.get("search") && (
+{searchParams.get("search") && (
               <>
                 <span className="breadcrumb-separator">›</span>
                 <li className="text-amazon-dark font-medium">
@@ -401,9 +434,9 @@ const ProductListing = () => {
                 actionText="Clear Filters"
                 onAction={clearFilters}
               />
-            ) : (
+) : (
               <>
-<div className={`${
+                <div className={`${
                   viewMode === "grid"
                     ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
                     : "space-y-4"

@@ -231,8 +231,34 @@ async getById(id) {
       .slice(0, limit);
     
     return results.map(product => ({ ...product }));
-  }
+}
 
+  async getDealsByCategory(categorySlug, subcategorySlug = null, limit = 10) {
+    await delay(250);
+    
+    let deals = this.products.filter(
+      product => 
+        product.originalPrice && 
+        product.originalPrice > product.price &&
+        product.category.toLowerCase() === categorySlug.toLowerCase()
+    );
+    
+    if (subcategorySlug) {
+      deals = deals.filter(
+        product => product.subcategory.toLowerCase() === subcategorySlug.toLowerCase()
+      );
+    }
+    
+    const sortedDeals = deals
+      .sort((a, b) => {
+        const aDiscount = ((a.originalPrice - a.price) / a.originalPrice) * 100;
+        const bDiscount = ((b.originalPrice - b.price) / b.originalPrice) * 100;
+        return bDiscount - aDiscount;
+      })
+      .slice(0, limit);
+    
+    return sortedDeals.map(product => ({ ...product }));
+  }
   async create(productData) {
     await delay(300);
     

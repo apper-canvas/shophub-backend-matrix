@@ -9,6 +9,7 @@ const ProductDetail = lazy(() => import("@/components/pages/ProductDetail"));
 const Cart = lazy(() => import("@/components/pages/Cart"));
 const NotFound = lazy(() => import("@/components/pages/NotFound"));
 const Wishlist = lazy(() => import("@/components/pages/Wishlist"));
+const CategoryLanding = lazy(() => import("@/components/pages/CategoryLanding"));
 // Wrap lazy components with Suspense
 const withSuspense = (Component) => (
   <Suspense fallback={<div>Loading.....</div>}>
@@ -24,7 +25,15 @@ const mainRoutes = [
   },
   {
     path: "products",
-    element: withSuspense(ProductListing)
+element: withSuspense(ProductListing)
+  },
+  {
+    path: "category/:categorySlug",
+    element: withSuspense(CategoryLanding)
+  },
+  {
+    path: "category/:categorySlug/:subcategorySlug",
+    element: withSuspense(CategoryLanding)
   },
   {
     path: "product/:id",

@@ -40,11 +40,11 @@ const data = await categoryService.getAll();
   };
 
 const handleCategoryClick = (categorySlug) => {
-    navigate(`/products?category=${categorySlug}`);
+    navigate(`/category/${categorySlug}`);
     setShowMegaMenu(false);
   };
-
-  const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
+const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
+    navigate(`/category/${categorySlug}/${subcategorySlug}`);
     navigate(`/products?category=${categorySlug}&subcategory=${subcategorySlug}`);
     setShowMegaMenu(false);
   };
@@ -106,7 +106,7 @@ const handleCategoryClick = (categorySlug) => {
           {/* Featured Categories */}
           <div className="hidden lg:flex items-center gap-1 ml-auto">
             {featuredCategories.map((category) => (
-              <button
+<button
                 key={category.id}
                 onClick={() => handleCategoryClick(category.slug)}
                 onMouseEnter={() => {
@@ -139,7 +139,7 @@ const handleCategoryClick = (categorySlug) => {
                   </h3>
                   <div className="space-y-1">
                     {categories.map((category) => (
-                      <button
+<button
                         key={category.Id}
                         onClick={() => handleCategoryClick(category.slug)}
                         onMouseEnter={() => setHoveredCategory(category.Id)}
@@ -175,7 +175,7 @@ const handleCategoryClick = (categorySlug) => {
                     {hoveredCategoryData.name}
                   </h3>
                   <div className="space-y-1">
-                    <button
+<button
                       onClick={() => handleCategoryClick(hoveredCategoryData.slug)}
                       className="w-full text-left px-3 py-2 rounded-lg hover:bg-blue-50 transition-colors text-sm font-medium text-amazon-info hover:text-amazon-dark"
                     >
@@ -184,7 +184,7 @@ const handleCategoryClick = (categorySlug) => {
                     <div className="border-t border-gray-100 my-2" />
                     {hoveredCategoryData.subcategories && hoveredCategoryData.subcategories.map((subcategory) => (
                       <button
-                        key={subcategory.id}
+key={subcategory.id}
                         onClick={() => handleSubcategoryClick(hoveredCategoryData.slug, subcategory.slug)}
                         className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-700 hover:text-amazon-dark flex items-center justify-between group"
                       >

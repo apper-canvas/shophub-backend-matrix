@@ -312,10 +312,10 @@ onClick={() => {
               {categories.map((category) => (
                 <div key={category.Id} className="mb-2">
                   {/* Main Category */}
-                  <div className="flex items-center justify-between">
+<div className="flex items-center justify-between">
                     <button
                       onClick={() => {
-                        navigate(`/products?category=${category.slug}`);
+                        navigate(`/category/${category.slug}`);
                         setIsMobileCategoryOpen(false);
                       }}
                       className="flex-1 flex items-center gap-3 p-3 text-left hover:bg-gray-50 rounded-lg transition-colors text-amazon-dark"
@@ -352,10 +352,10 @@ onClick={() => {
                   {expandedCategories[category.Id] && category.subcategories && (
                     <div className="ml-8 mt-2 space-y-1 animate-slide-down">
                       {category.subcategories.map((subcategory) => (
-                        <button
+<button
                           key={subcategory.id}
                           onClick={() => {
-                            navigate(`/products?category=${category.slug}&subcategory=${subcategory.slug}`);
+                            navigate(`/category/${category.slug}/${subcategory.slug}`);
                             setIsMobileCategoryOpen(false);
                           }}
                           className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded transition-colors text-sm text-gray-700"
