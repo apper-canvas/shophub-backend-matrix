@@ -41,15 +41,15 @@ const [priceRange, setPriceRange] = useState({
     });
   };
 
-  const getActiveFiltersCount = () => {
+const getActiveFiltersCount = () => {
     let count = 0;
-    if (currentFilters.minPrice) count++;
-    if (currentFilters.maxPrice) count++;
-    if (currentFilters.minRating) count++;
-    if (currentFilters.brand) count++;
-    if (currentFilters.prime) count++;
-    if (currentFilters.inStock) count++;
-    if (currentFilters.deals) count++;
+    if (currentFilters?.minPrice) count++;
+    if (currentFilters?.maxPrice) count++;
+    if (currentFilters?.minRating) count++;
+    if (currentFilters?.brand) count++;
+    if (currentFilters?.prime) count++;
+    if (currentFilters?.inStock) count++;
+    if (currentFilters?.deals) count++;
     return count;
   };
 
