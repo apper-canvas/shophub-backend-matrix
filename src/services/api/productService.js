@@ -134,7 +134,7 @@ class ProductService {
     };
   }
 
-  async getById(id) {
+async getById(id) {
     await delay(200);
     
     const product = this.products.find(p => p.Id === parseInt(id));
@@ -142,6 +142,7 @@ class ProductService {
       throw new Error(`Product with ID ${id} not found`);
     }
     
+    // Return mutable copy for rating updates
     return { ...product };
   }
 
@@ -247,7 +248,7 @@ class ProductService {
     return { ...newProduct };
   }
 
-  async update(id, productData) {
+async update(id, productData) {
     await delay(300);
     
     const index = this.products.findIndex(p => p.Id === parseInt(id));
@@ -269,6 +270,20 @@ class ProductService {
     
     this.products.splice(index, 1);
     return true;
+  }
+
+  async updateRating(id, newRating, newReviewCount) {
+    await delay(200);
+    
+    const index = this.products.findIndex(p => p.Id === parseInt(id));
+    if (index === -1) {
+      throw new Error(`Product with ID ${id} not found`);
+    }
+
+    this.products[index].rating = newRating;
+    this.products[index].reviewCount = newReviewCount;
+    
+    return { ...this.products[index] };
   }
 
   // Get filter options for UI
@@ -293,7 +308,7 @@ class ProductService {
         label: brand,
         count: this.products.filter(p => p.brand === brand).length
       })),
-priceRange
+      priceRange
     };
   }
 

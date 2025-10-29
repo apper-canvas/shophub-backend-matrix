@@ -1,0 +1,194 @@
+[
+  {
+    "Id": 1,
+    "productId": 1,
+    "reviewerName": "Sarah Johnson",
+    "rating": 5,
+    "title": "Best iPhone I've ever owned!",
+    "text": "The titanium design feels incredibly premium and lightweight. Camera quality is outstanding, especially in low light conditions. The A17 Pro chip makes everything buttery smooth. Battery life easily lasts me a full day with heavy use. Totally worth the upgrade from my iPhone 13 Pro.",
+    "date": "2024-01-15T10:30:00Z",
+    "verifiedPurchase": true,
+    "helpful": 47,
+    "photos": [
+      "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop"
+    ]
+  },
+  {
+    "Id": 2,
+    "productId": 1,
+    "reviewerName": "Michael Chen",
+    "rating": 4,
+    "title": "Great phone but pricey",
+    "text": "Excellent build quality and performance. The titanium frame looks amazing and the phone feels solid. Camera improvements are noticeable coming from iPhone 14 Pro. Only downside is the high price point, but if you can afford it, it's a fantastic device.",
+    "date": "2024-01-20T14:45:00Z",
+    "verifiedPurchase": true,
+    "helpful": 32,
+    "photos": []
+  },
+  {
+    "Id": 3,
+    "productId": 1,
+    "reviewerName": "Emily Rodriguez",
+    "rating": 5,
+    "title": "Camera is absolutely incredible",
+    "text": "As a photography enthusiast, this phone has completely replaced my point-and-shoot camera. The 5x optical zoom is a game changer, and the night mode produces stunning results. ProRAW files give me so much flexibility in post-processing. Worth every penny for content creators.",
+    "date": "2024-01-18T09:15:00Z",
+    "verifiedPurchase": true,
+    "helpful": 89,
+    "photos": [
+      "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&h=300&fit=crop"
+    ]
+  },
+  {
+    "Id": 4,
+    "productId": 1,
+    "reviewerName": "David Kim",
+    "rating": 3,
+    "title": "Good but not a huge upgrade",
+    "text": "Upgraded from iPhone 14 Pro and honestly don't feel a massive difference in daily use. The titanium is nice but the weight reduction is minimal. Camera is slightly better but not revolutionary. If you have a 14 Pro, might want to skip this generation unless you really want the latest tech.",
+    "date": "2024-01-22T16:20:00Z",
+    "verifiedPurchase": true,
+    "helpful": 23,
+    "photos": []
+  },
+  {
+    "Id": 5,
+    "productId": 2,
+    "reviewerName": "Jennifer Lee",
+    "rating": 5,
+    "title": "Perfect everyday laptop",
+    "text": "This MacBook Air is exactly what I needed for work and casual use. The M3 chip handles everything I throw at it - multiple browser tabs, video calls, light photo editing. The battery lasts all day easily. Display is gorgeous and the keyboard feels great to type on. Highly recommend for students and professionals.",
+    "date": "2024-01-10T11:00:00Z",
+    "verifiedPurchase": true,
+    "helpful": 65,
+    "photos": []
+  },
+  {
+    "Id": 6,
+    "productId": 2,
+    "reviewerName": "Robert Martinez",
+    "rating": 4,
+    "title": "Great performance, limited ports",
+    "text": "The M3 chip is incredibly fast and the fanless design means it's completely silent. Battery life is amazing - easily 12+ hours of web browsing. My only complaint is the limited ports. Would have loved one more USB-C port. Otherwise, this is a fantastic laptop.",
+    "date": "2024-01-12T13:30:00Z",
+    "verifiedPurchase": true,
+    "helpful": 41,
+    "photos": [
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&h=300&fit=crop"
+    ]
+  },
+  {
+    "Id": 7,
+    "productId": 3,
+    "reviewerName": "Amanda White",
+    "rating": 5,
+    "title": "Best headphones for noise cancellation",
+    "text": "Switched from Bose and Sony, these are hands down the best noise cancelling headphones I've tried. The spatial audio is mind-blowing for movies. Comfort is excellent even after 4+ hours of wear. Battery life is incredible. Integration with my iPhone is seamless. Worth every dollar.",
+    "date": "2024-01-08T15:45:00Z",
+    "verifiedPurchase": true,
+    "helpful": 103,
+    "photos": []
+  },
+  {
+    "Id": 8,
+    "productId": 3,
+    "reviewerName": "Christopher Brown",
+    "rating": 4,
+    "title": "Premium price but premium quality",
+    "text": "Sound quality is exceptional, build quality feels very premium. Noise cancellation works great on flights and trains. My only gripes are the high price and the case is quite bulky. But overall, these are fantastic headphones if you can justify the cost.",
+    "date": "2024-01-14T10:00:00Z",
+    "verifiedPurchase": true,
+    "helpful": 28,
+    "photos": []
+  },
+  {
+    "Id": 9,
+    "productId": 4,
+    "reviewerName": "Lisa Anderson",
+    "rating": 5,
+    "title": "Revolutionized my morning coffee",
+    "text": "This espresso machine has completely changed my morning routine. The espresso shots are café quality, and the milk frother creates perfect microfoam. Easy to clean and maintain. Pre-heating is quick. The build quality feels solid and premium. Best kitchen investment I've made this year.",
+    "date": "2024-01-05T08:30:00Z",
+    "verifiedPurchase": true,
+    "helpful": 76,
+    "photos": [
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=300&fit=crop"
+    ]
+  },
+  {
+    "Id": 10,
+    "productId": 4,
+    "reviewerName": "James Wilson",
+    "rating": 4,
+    "title": "Great machine with a learning curve",
+    "text": "Makes excellent espresso once you dial in your settings. The steam wand is powerful and froths milk beautifully. Build quality is solid. Takes some practice to get consistent results, but worth the effort. Would give 5 stars if it came with better instructions for beginners.",
+    "date": "2024-01-11T12:15:00Z",
+    "verifiedPurchase": true,
+    "helpful": 34,
+    "photos": []
+  },
+  {
+    "Id": 11,
+    "productId": 1,
+    "reviewerName": "Jessica Taylor",
+    "rating": 5,
+    "title": "Battery life is phenomenal",
+    "text": "Coming from Android, the battery optimization on this iPhone is incredible. Even with 5G always on, I get through a full day with 30-40% left. The charging is fast too. Action button is more useful than I expected. FaceID works flawlessly even in low light.",
+    "date": "2024-01-25T17:00:00Z",
+    "verifiedPurchase": true,
+    "helpful": 19,
+    "photos": []
+  },
+  {
+    "Id": 12,
+    "productId": 2,
+    "reviewerName": "Thomas Garcia",
+    "rating": 5,
+    "title": "Silent powerhouse",
+    "text": "The fact that this laptop has no fan yet handles video editing is impressive. The screen is vibrant and color-accurate. The speakers are surprisingly good. MagSafe charging is convenient. The only thing missing is Face ID, but Touch ID works great. Best laptop purchase I've made.",
+    "date": "2024-01-16T14:20:00Z",
+    "verifiedPurchase": true,
+    "helpful": 52,
+    "photos": []
+  },
+  {
+    "Id": 13,
+    "productId": 3,
+    "reviewerName": "Michelle Davis",
+    "rating": 5,
+    "title": "Travel essential",
+    "text": "These headphones have become essential for my business trips. Noise cancellation blocks out plane engine noise completely. Transparency mode is natural-sounding. The auto-pause when you take them off is convenient. Battery lasts multiple long flights. Carrying case is well-designed.",
+    "date": "2024-01-19T11:40:00Z",
+    "verifiedPurchase": true,
+    "helpful": 45,
+    "photos": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop"
+    ]
+  },
+  {
+    "Id": 14,
+    "productId": 4,
+    "reviewerName": "Daniel Moore",
+    "rating": 5,
+    "title": "Barista quality at home",
+    "text": "After using this for 3 months, I've saved so much money not going to coffee shops. The temperature control is precise, the pressure gauge helps dial in shots perfectly. Cleaning is straightforward. The stainless steel body looks gorgeous on my counter. Highly recommend for coffee enthusiasts.",
+    "date": "2024-01-07T09:50:00Z",
+    "verifiedPurchase": true,
+    "helpful": 61,
+    "photos": []
+  },
+  {
+    "Id": 15,
+    "productId": 2,
+    "reviewerName": "Rebecca Thompson",
+    "rating": 4,
+    "title": "Excellent for students",
+    "text": "Perfect for college work - handles all my assignments, research, and note-taking effortlessly. The lightweight design makes it easy to carry around campus. Battery easily lasts through a full day of classes. Screen is great for reading textbooks. Only wish it had more storage options.",
+    "date": "2024-01-21T16:35:00Z",
+    "verifiedPurchase": true,
+    "helpful": 27,
+    "photos": []
+  }
+]

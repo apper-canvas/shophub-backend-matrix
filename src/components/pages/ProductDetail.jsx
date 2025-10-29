@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useOutletContext, useParams } from "react-router-dom";
 import { productService } from "@/services/api/productService";
+import { reviewService } from "@/services/api/reviewService";
 import { toast } from "react-toastify";
+import WriteReviewModal from "@/components/molecules/WriteReviewModal";
 import ApperIcon from "@/components/ApperIcon";
 import Home from "@/components/pages/Home";
+import Cart from "@/components/pages/Cart";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
 import ImageGallery from "@/components/molecules/ImageGallery";
@@ -14,17 +17,22 @@ const ProductDetail = () => {
   const navigate = useNavigate();
   const { addToCart } = useOutletContext();
   
-  const [product, setProduct] = useState(null);
+const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('description');
-const [isAddingToCart, setIsAddingToCart] = useState(false);
-  const [isAddingToWishlist, setIsAddingToWishlist] = useState(false);
+  const [isAddingToCart, setIsAddingToCart] = useState(false);
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
-useEffect(() => {
+  const [reviews, setReviews] = useState([]);
+  const [isWriteReviewOpen, setIsWriteReviewOpen] = useState(false);
+  const [sortBy, setSortBy] = useState('helpful');
+  const [filterStar, setFilterStar] = useState(null);
+  const [expandedPhoto, setExpandedPhoto] = useState(null);
+
+  useEffect(() => {
     if (id && !isNaN(Number(id))) {
       loadProduct();
     } else if (id) {
@@ -56,6 +64,10 @@ const loadProduct = async () => {
       
       // Track view history
       productService.addToHistory(data.Id);
+      
+      // Load reviews for this product
+      const productReviews = await reviewService.getByProductId(productId);
+      setReviews(productReviews);
       
       // Load related products from same category
       const allProducts = await productService.getAll();
@@ -103,21 +115,71 @@ const handleAddToCart = async () => {
     }
   };
 
-  const handleAddToWishlist = async () => {
-    if (isAddingToWishlist) return;
-    
-    setIsAddingToWishlist(true);
+  const handleWriteReview = () => {
+    setIsWriteReviewOpen(true);
+  };
+
+  const handleReviewSubmit = async (reviewData) => {
     try {
-      // In real app, this would call wishlist service
-      await new Promise(resolve => setTimeout(resolve, 500));
-      toast.success("Added to wishlist!");
+      const newReview = await reviewService.create({
+        ...reviewData,
+        productId: product.Id
+      });
+      
+      const updatedReviews = await reviewService.getByProductId(product.Id);
+      setReviews(updatedReviews);
+      
+      // Update product rating
+      const stats = await reviewService.getReviewStats(product.Id);
+      const updatedProduct = { ...product, rating: stats.averageRating, reviewCount: stats.totalReviews };
+      setProduct(updatedProduct);
+      
+      setIsWriteReviewOpen(false);
+      toast.success("Review submitted successfully!");
     } catch (err) {
-      toast.error("Failed to add to wishlist");
-    } finally {
-      setIsAddingToWishlist(false);
+      toast.error("Failed to submit review");
     }
   };
 
+  const handleSortChange = (sort) => {
+    setSortBy(sort);
+  };
+
+  const handleFilterStar = (star) => {
+    setFilterStar(filterStar === star ? null : star);
+  };
+
+  const handleHelpful = async (reviewId) => {
+    try {
+      await reviewService.addHelpful(reviewId);
+      const updatedReviews = await reviewService.getByProductId(product.Id);
+      setReviews(updatedReviews);
+      toast.success("Thanks for your feedback!");
+    } catch (err) {
+      toast.error("Failed to register vote");
+    }
+  };
+
+  const renderInteractiveStars = (rating, size = 40, onRatingChange) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      stars.push(
+        <button
+          key={i}
+          type="button"
+          onClick={() => onRatingChange && onRatingChange(i)}
+          className="focus:outline-none transition-transform hover:scale-110"
+        >
+          <ApperIcon 
+            name="Star" 
+            size={size} 
+            className={i <= rating ? "star-filled fill-current" : "star-empty"}
+          />
+        </button>
+      );
+    }
+    return stars;
+  };
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -211,11 +273,14 @@ const handleAddToCart = async () => {
             </div>
 
             {/* Rating */}
-            <div className="flex items-center gap-3 flex-wrap">
+<div className="flex items-center gap-3 flex-wrap">
               <div className="star-rating">
                 {renderStars(product.rating)}
               </div>
-              <button className="text-sm text-amazon-info hover:text-amazon-error transition-colors">
+              <button 
+                onClick={() => setActiveTab('reviews')}
+                className="text-sm text-amazon-info hover:text-amazon-error transition-colors"
+              >
                 {product.rating.toFixed(1)} out of 5
               </button>
               <span className="text-gray-400">|</span>
@@ -223,7 +288,7 @@ const handleAddToCart = async () => {
                 onClick={() => setActiveTab('reviews')}
                 className="text-sm text-amazon-info hover:text-amazon-error transition-colors"
               >
-                {product.reviewCount.toLocaleString()} ratings
+                {reviews.length.toLocaleString()} ratings
               </button>
             </div>
 
@@ -326,16 +391,7 @@ const handleAddToCart = async () => {
                 </button>
               </div>
 
-              {/* Wishlist */}
-              <button 
-                onClick={handleAddToWishlist}
-                disabled={isAddingToWishlist}
-                className="w-full text-sm text-amazon-info hover:text-amazon-error transition-colors flex items-center justify-center gap-2 py-2 disabled:opacity-50"
-              >
-                <ApperIcon name="Heart" size={16} />
-                {isAddingToWishlist ? "Adding..." : "Add to Wishlist"}
-              </button>
-            </div>
+</div>
 
             {/* Additional Info */}
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3 text-sm">
@@ -371,7 +427,7 @@ const handleAddToCart = async () => {
           {/* Tab Navigation */}
           <div className="border-b border-gray-200 mb-6">
             <div className="flex gap-8">
-              <button
+<button
                 onClick={() => setActiveTab('description')}
                 className={`pb-4 px-2 font-semibold transition-colors relative ${
                   activeTab === 'description'
@@ -399,7 +455,7 @@ const handleAddToCart = async () => {
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
-                Customer Reviews ({product.reviewCount.toLocaleString()})
+                Customer Reviews ({reviews.length.toLocaleString()})
               </button>
             </div>
           </div>
@@ -473,7 +529,7 @@ const handleAddToCart = async () => {
             )}
 
             {/* Reviews Tab */}
-            {activeTab === 'reviews' && (
+{activeTab === 'reviews' && (
               <div>
                 <div className="mb-8">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Customer Reviews</h3>
@@ -488,18 +544,24 @@ const handleAddToCart = async () => {
                         <div className="star-rating mb-2 justify-center md:justify-start">
                           {renderStars(product.rating)}
                         </div>
-                        <p className="text-sm text-gray-600">{product.reviewCount.toLocaleString()} global ratings</p>
+                        <p className="text-sm text-gray-600">{reviews.length.toLocaleString()} global ratings</p>
                       </div>
                       
                       <div className="flex-1">
                         {[5, 4, 3, 2, 1].map((star) => {
-                          const percentage = Math.floor(Math.random() * 40) + (star === 5 ? 40 : 20);
+                          const starReviews = reviews.filter(r => Math.floor(r.rating) === star);
+                          const percentage = reviews.length > 0 ? Math.round((starReviews.length / reviews.length) * 100) : 0;
                           return (
                             <div key={star} className="flex items-center gap-3 mb-2">
-                              <button className="text-sm text-amazon-info hover:text-amazon-error transition-colors">
+                              <button 
+                                onClick={() => handleFilterStar(star)}
+                                className={`text-sm transition-colors min-w-[50px] text-left ${
+                                  filterStar === star ? 'text-amazon-error font-semibold' : 'text-amazon-info hover:text-amazon-error'
+                                }`}
+                              >
                                 {star} star
                               </button>
-                              <div className="flex-1 progress-bar h-5">
+                              <div className="flex-1 progress-bar h-5 cursor-pointer" onClick={() => handleFilterStar(star)}>
                                 <div 
                                   className="progress-fill h-full" 
                                   style={{ width: `${percentage}%` }}
@@ -513,57 +575,145 @@ const handleAddToCart = async () => {
                     </div>
                   </div>
 
-                  {/* Write Review Button */}
-                  <button className="bg-amazon-warning hover:bg-yellow-500 text-amazon-dark font-semibold px-6 py-3 rounded-lg transition-colors shadow-md hover:shadow-lg mb-6">
-                    Write a product review
-                  </button>
+                  {/* Controls Row */}
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                    {/* Write Review Button */}
+                    <button 
+                      onClick={handleWriteReview}
+                      className="bg-amazon-warning hover:bg-yellow-500 text-amazon-dark font-semibold px-6 py-3 rounded-lg transition-colors shadow-md hover:shadow-lg"
+                    >
+                      Write a product review
+                    </button>
 
-                  {/* Sample Reviews */}
+                    {/* Sort Dropdown */}
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-gray-600">Sort by:</span>
+                      <select
+                        value={sortBy}
+                        onChange={(e) => handleSortChange(e.target.value)}
+                        className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amazon-orange"
+                      >
+                        <option value="helpful">Top Reviews</option>
+                        <option value="recent">Most Recent</option>
+                        <option value="highest">Highest Rating</option>
+                        <option value="lowest">Lowest Rating</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Active Filter Badge */}
+                  {filterStar && (
+                    <div className="mb-4 flex items-center gap-2">
+                      <span className="text-sm text-gray-600">Filtered by:</span>
+                      <button
+                        onClick={() => setFilterStar(null)}
+                        className="filter-chip flex items-center gap-2"
+                      >
+                        {filterStar} Star
+                        <ApperIcon name="X" size={14} />
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Reviews List */}
                   <div className="space-y-6">
-                    {[1, 2, 3].map((reviewIndex) => (
-                      <div key={reviewIndex} className="border-b border-gray-200 pb-6 last:border-0">
-                        <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center font-semibold text-gray-600">
-                            {String.fromCharCode(65 + reviewIndex)}
+                    {(() => {
+                      let filteredReviews = filterStar 
+                        ? reviews.filter(r => Math.floor(r.rating) === filterStar)
+                        : reviews;
+
+                      // Apply sorting
+                      filteredReviews = [...filteredReviews].sort((a, b) => {
+                        switch (sortBy) {
+                          case 'helpful':
+                            return b.helpful - a.helpful;
+                          case 'recent':
+                            return new Date(b.date) - new Date(a.date);
+                          case 'highest':
+                            return b.rating - a.rating;
+                          case 'lowest':
+                            return a.rating - b.rating;
+                          default:
+                            return 0;
+                        }
+                      });
+
+                      if (filteredReviews.length === 0) {
+                        return (
+                          <div className="text-center py-12">
+                            <ApperIcon name="MessageSquare" size={48} className="text-gray-300 mx-auto mb-4" />
+                            <p className="text-gray-600 text-lg">
+                              {filterStar ? `No ${filterStar}-star reviews yet` : 'No reviews yet'}
+                            </p>
+                            <p className="text-gray-500 text-sm mt-2">Be the first to review this product!</p>
                           </div>
-                          <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-2">
-                              <span className="font-semibold text-gray-900">Anonymous Customer</span>
-                              <span className="text-sm text-gray-500">•</span>
-                              <span className="text-sm text-gray-500">Verified Purchase</span>
+                        );
+                      }
+
+                      return filteredReviews.map((review) => (
+                        <div key={review.Id} className="border-b border-gray-200 pb-6 last:border-0">
+                          <div className="flex items-start gap-4">
+                            <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center font-semibold text-white text-lg">
+                              {review.reviewerName.charAt(0).toUpperCase()}
                             </div>
-                            <div className="flex items-center gap-3 mb-2">
-                              <div className="star-rating">
-                                {renderStars(Math.random() * 2 + 3)}
+                            <div className="flex-1">
+                              <div className="flex items-center gap-2 mb-2">
+                                <span className="font-semibold text-gray-900">{review.reviewerName}</span>
+                                {review.verifiedPurchase && (
+                                  <>
+                                    <span className="text-sm text-gray-400">•</span>
+                                    <span className="text-xs bg-amazon-success text-white px-2 py-1 rounded font-medium">
+                                      Verified Purchase
+                                    </span>
+                                  </>
+                                )}
                               </div>
-                              <span className="text-sm font-semibold text-gray-900">Great product!</span>
-                            </div>
-                            <p className="text-sm text-gray-600 mb-2">
-                              Reviewed in the United States on {new Date(Date.now() - Math.random() * 30 * 24 * 60 * 60 * 1000).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                            </p>
-                            <p className="text-gray-700 leading-relaxed mb-3">
-                              This product exceeded my expectations. The quality is outstanding and it works exactly as described. Highly recommend to anyone looking for a reliable {product.category} product.
-                            </p>
-                            <div className="flex items-center gap-4 text-sm">
-                              <button className="text-gray-600 hover:text-amazon-info transition-colors flex items-center gap-1">
-                                <ApperIcon name="ThumbsUp" size={16} />
-                                Helpful ({Math.floor(Math.random() * 100)})
-                              </button>
-                              <button className="text-gray-600 hover:text-amazon-info transition-colors">
-                                Report
-                              </button>
+                              <div className="flex items-center gap-3 mb-2">
+                                <div className="star-rating">
+                                  {renderStars(review.rating)}
+                                </div>
+                                <span className="text-sm font-semibold text-gray-900">{review.title}</span>
+                              </div>
+                              <p className="text-sm text-gray-600 mb-2">
+                                Reviewed in the United States on {new Date(review.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                              </p>
+                              <p className="text-gray-700 leading-relaxed mb-3">
+                                {review.text}
+                              </p>
+                              
+                              {/* Review Photos */}
+                              {review.photos && review.photos.length > 0 && (
+                                <div className="flex gap-2 mb-3">
+                                  {review.photos.map((photo, index) => (
+                                    <button
+                                      key={index}
+                                      onClick={() => setExpandedPhoto(photo)}
+                                      className="w-20 h-20 rounded-lg overflow-hidden border border-gray-200 hover:border-amazon-orange transition-colors"
+                                    >
+                                      <img
+                                        src={photo}
+                                        alt={`Review photo ${index + 1}`}
+                                        className="w-full h-full object-cover"
+                                      />
+                                    </button>
+                                  ))}
+                                </div>
+                              )}
+
+                              <div className="flex items-center gap-4 text-sm">
+                                <button 
+                                  onClick={() => handleHelpful(review.Id)}
+                                  className="text-gray-600 hover:text-amazon-info transition-colors flex items-center gap-1"
+                                >
+                                  <ApperIcon name="ThumbsUp" size={16} />
+                                  Helpful ({review.helpful})
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Load More Reviews */}
-                  <div className="text-center mt-8">
-                    <button className="text-amazon-info hover:text-amazon-error font-semibold transition-colors">
-                      See all reviews
-                    </button>
+                      ));
+                    })()}
                   </div>
                 </div>
               </div>
@@ -589,9 +739,40 @@ const handleAddToCart = async () => {
                 />
 ))}
             </div>
+</div>
+        </div>
+      )}
+
+      {/* Write Review Modal */}
+      <WriteReviewModal
+        isOpen={isWriteReviewOpen}
+        onClose={() => setIsWriteReviewOpen(false)}
+        onSubmit={handleReviewSubmit}
+        productTitle={product?.title}
+      />
+
+      {/* Photo Expansion Modal */}
+      {expandedPhoto && (
+        <div 
+          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          onClick={() => setExpandedPhoto(null)}
+        >
+          <div className="relative max-w-4xl max-h-screen">
+            <button
+              onClick={() => setExpandedPhoto(null)}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <ApperIcon name="X" size={32} />
+            </button>
+            <img
+              src={expandedPhoto}
+              alt="Expanded review photo"
+              className="max-w-full max-h-screen object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
           </div>
         </div>
-)}
+      )}
     </div>
   );
 };
