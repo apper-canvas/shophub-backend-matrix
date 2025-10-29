@@ -72,23 +72,28 @@ try {
     }
   };
 
-  const clearCart = async () => {
+const clearCart = async () => {
     try {
       await cartService.clear();
       await loadCartItems();
     } catch (error) {
       console.error("Error clearing cart:", error);
     }
-}
   };
-const contextValue = {
+
+  const contextValue = {
     addToCart,
     removeFromCart,
     updateCartItem,
+    clearCart,
+    cartCount,
+    loadCartItems,
+    cartItems,
     loadWishlist
+  };
 
-// Hide category nav on cart and checkout pages
-  const hideCategoryNav = ["/cart", "/checkout"].some(path => 
+  // Hide category nav on cart and checkout pages
+  const hideCategoryNav = ["/cart", "/checkout"].some(path =>
     location.pathname.startsWith(path)
   );
 
