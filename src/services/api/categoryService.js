@@ -23,8 +23,13 @@ class CategoryService {
     return { ...category };
   }
 
-  async getBySlug(slug) {
+async getBySlug(slug) {
     await delay(150);
+    
+    // Validate slug parameter exists and is not empty
+    if (!slug || slug.trim().length === 0) {
+      throw new Error('Category slug is required and cannot be empty');
+    }
     
     const category = this.categories.find(c => c.slug === slug);
     if (!category) {
@@ -55,8 +60,16 @@ class CategoryService {
     return category.subcategories ? [...category.subcategories] : [];
   }
 
-  async getSubcategoryBySlug(categorySlug, subcategorySlug) {
+async getSubcategoryBySlug(categorySlug, subcategorySlug) {
     await delay(150);
+    
+    // Validate both slug parameters exist and are not empty
+    if (!categorySlug || categorySlug.trim().length === 0) {
+      throw new Error('Category slug is required and cannot be empty');
+    }
+    if (!subcategorySlug || subcategorySlug.trim().length === 0) {
+      throw new Error('Subcategory slug is required and cannot be empty');
+    }
     
     const category = this.categories.find(c => c.slug === categorySlug);
     if (!category || !category.subcategories) {

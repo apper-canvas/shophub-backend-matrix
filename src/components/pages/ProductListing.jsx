@@ -97,11 +97,13 @@ const loadCategoryInfo = async () => {
       const categorySlug = searchParams.get("category");
       const subcategorySlug = searchParams.get("subcategory");
       
-      if (categorySlug) {
+      // Validate categorySlug exists and is not empty before calling service
+      if (categorySlug && categorySlug.trim().length > 0) {
         const category = await categoryService.getBySlug(categorySlug);
         setCategoryInfo(category);
         
-        if (subcategorySlug) {
+        // Validate subcategorySlug exists before calling service
+        if (subcategorySlug && subcategorySlug.trim().length > 0) {
           const subcategory = await categoryService.getSubcategoryBySlug(
             categorySlug,
             subcategorySlug
