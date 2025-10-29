@@ -1,8 +1,9 @@
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 class CartService {
-  constructor() {
+constructor() {
     this.storageKey = "shophub_cart";
+    this.savedItemsKey = `${this.storageKey}_saved`;
     this.loadCartFromStorage();
   }
 
@@ -58,7 +59,7 @@ class CartService {
     return [...this.cartItems];
   }
 
-  async updateQuantity(productId, quantity) {
+async updateQuantity(productId, quantity) {
     await delay(150);
     
     this.loadCartFromStorage();
@@ -195,7 +196,7 @@ async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shi
   }
 
 // Save individual item for later
-  async saveItemForLater(itemId) {
+async saveItemForLater(itemId) {
     await delay(150);
     
     this.loadCartFromStorage();
@@ -208,10 +209,9 @@ async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shi
     const item = this.cartItems[itemIndex];
     
     // Get saved items
-    const savedKey = `${this.storageKey}_saved`;
     let savedItems = [];
     try {
-      const saved = localStorage.getItem(savedKey);
+      const saved = localStorage.getItem(this.savedItemsKey);
       if (saved) {
         savedItems = JSON.parse(saved);
       }
@@ -221,22 +221,20 @@ async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shi
     
     // Add to saved items
     savedItems.push(item);
-    localStorage.setItem(savedKey, JSON.stringify(savedItems));
+    localStorage.setItem(this.savedItemsKey, JSON.stringify(savedItems));
     
     // Remove from cart
     this.cartItems.splice(itemIndex, 1);
     this.saveCartToStorage();
-    
     return true;
   }
   
   // Get all saved items
-  async getSavedItems() {
+async getSavedItems() {
     await delay(100);
     
-    const savedKey = `${this.storageKey}_saved`;
     try {
-      const saved = localStorage.getItem(savedKey);
+      const saved = localStorage.getItem(this.savedItemsKey);
       if (saved) {
         return JSON.parse(saved);
       }
@@ -247,12 +245,11 @@ async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shi
   }
   
   // Restore individual item from saved
-  async restoreFromSaved(itemId) {
+async restoreFromSaved(itemId) {
     await delay(150);
     
-    const savedKey = `${this.storageKey}_saved`;
     try {
-      const saved = localStorage.getItem(savedKey);
+      const saved = localStorage.getItem(this.savedItemsKey);
       if (saved) {
         let savedItems = JSON.parse(saved);
         const itemIndex = savedItems.findIndex(item => item.Id === itemId);
@@ -264,7 +261,7 @@ async getSummary(productPrices = {}, taxRate = 0.08, shippingThreshold = 35, shi
           
           // Remove from saved
           savedItems.splice(itemIndex, 1);
-          localStorage.setItem(savedKey, JSON.stringify(savedItems));
+          localStorage.setItem(this.savedItemsKey, JSON.stringify(savedItems));
           return true;
         }
       }

@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useOutletContext } from 'react-router-dom';
-import { toast } from 'react-toastify';
-import ApperIcon from '@/components/ApperIcon';
-import { cartService } from '@/services/api/cartService';
-import { productService } from '@/services/api/productService';
-import Loading from '@/components/ui/Loading';
-import Empty from '@/components/ui/Empty';
-import Error from '@/components/ui/Error';
+import React, { useEffect, useState } from "react";
+import { useNavigate, useOutletContext } from "react-router-dom";
+import { toast } from "react-toastify";
+import { cartService } from "@/services/api/cartService";
+import { productService } from "@/services/api/productService";
+import ApperIcon from "@/components/ApperIcon";
+import Loading from "@/components/ui/Loading";
+import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
 
 const Cart = () => {
   const navigate = useNavigate();
   const { loadCartItems } = useOutletContext();
   
-const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
   const [products, setProducts] = useState({});
   const [savedItems, setSavedItems] = useState([]);
   const [savedProducts, setSavedProducts] = useState({});
@@ -21,7 +21,7 @@ const [cartItems, setCartItems] = useState([]);
   const [error, setError] = useState(null);
   const [updatingItems, setUpdatingItems] = useState(new Set());
 
-  useEffect(() => {
+useEffect(() => {
     loadCart();
   }, []);
 
@@ -89,24 +89,38 @@ const [cartItems, setCartItems] = useState([]);
     }
   };
 
-  const handleQuantityChange = async (itemId, newQuantity) => {
-    if (newQuantity < 1) return;
+const handleQuantityChange = async (itemId, newQuantity) => {
+    if (newQuantity < 1) {
+      await handleRemove(itemId);
+      return;
+    }
     
-    setUpdatingItems(prev => new Set(prev).add(itemId));
+    setUpdatingItems(prev => new Set([...prev, itemId]));
     
     try {
       await cartService.updateQuantity(itemId, newQuantity);
-      await loadCart();
-      await loadCartItems();
-      toast.success('Quantity updated');
-    } catch (err) {
-      console.error('Error updating quantity:', err);
+      
+      // Recalculate summary immediately with existing product data
+      const productPrices = {};
+      Object.values(products).forEach(product => {
+        productPrices[product.Id] = product.price;
+      });
+      const newSummary = await cartService.getSummary(productPrices, 0.08, 35, 5.99, true);
+      setSummary(newSummary);
+      
+      // Reload cart items to get updated quantities
+      const updatedCart = await cartService.getAll();
+      setCartItems(updatedCart);
+await loadCartItems();
+      toast.success('Cart updated');
+    } catch (error) {
+      console.error('Error updating quantity:', error);
       toast.error('Failed to update quantity');
     } finally {
       setUpdatingItems(prev => {
-        const newSet = new Set(prev);
-        newSet.delete(itemId);
-        return newSet;
+        const next = new Set(prev);
+        next.delete(itemId);
+        return next;
       });
     }
   };
@@ -209,15 +223,19 @@ const handleMoveToCart = async (savedItemId) => {
     return <Error message={error} onRetry={loadCart} />;
   }
 
-  if (!cartItems || cartItems.length === 0) {
+if (!cartItems || cartItems.length === 0) {
     return (
-      <Empty 
-        icon="ShoppingCart"
-        title="Your cart is empty"
-        message="Add items to your cart to get started"
-        actionText="Start Shopping"
-        onAction={() => navigate('/')}
-      />
+      <div className="min-h-screen bg-background py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Empty 
+            icon="ShoppingCart"
+            title="Your cart is empty"
+            message="Discover amazing products and start shopping today"
+            actionText="Continue Shopping"
+            onAction={() => navigate('/')}
+          />
+        </div>
+      </div>
     );
   }
 

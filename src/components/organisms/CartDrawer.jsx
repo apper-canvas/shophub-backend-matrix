@@ -61,7 +61,7 @@ const CartDrawer = ({
     return subtotal > 35 ? 0 : 5.99; // Free shipping over $35
   };
 
-  const handleQuantityChange = async (productId, newQuantity) => {
+const handleQuantityChange = async (productId, newQuantity) => {
     if (newQuantity < 1) {
       await handleRemoveItem(productId);
       return;
