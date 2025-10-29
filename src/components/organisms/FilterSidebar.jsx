@@ -14,10 +14,9 @@ const FilterSidebar = ({
     rating: true,
     features: true
   });
-
-  const [priceRange, setPriceRange] = useState({
-    min: currentFilters.minPrice || "",
-    max: currentFilters.maxPrice || ""
+const [priceRange, setPriceRange] = useState({
+    min: currentFilters?.minPrice || "",
+    max: currentFilters?.maxPrice || ""
   });
 
   const toggleSection = (section) => {
