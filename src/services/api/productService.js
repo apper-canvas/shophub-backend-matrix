@@ -1,12 +1,13 @@
-import productsData from "@/services/mockData/products.json";
+import mockProducts from "../mockData/products.json";
 
+// Helper function for simulated API delays
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 class ProductService {
   constructor() {
-    this.products = [...productsData];
+    // Normalize all IDs to integers for consistent comparisons
+    this.products = mockProducts.map(p => ({ ...p, Id: parseInt(p.Id) }));
   }
-
   async getAll(filters = {}) {
     await delay(300);
     
@@ -137,7 +138,8 @@ class ProductService {
 async getById(id) {
     await delay(200);
     
-    const product = this.products.find(p => p.Id === parseInt(id));
+    const productId = parseInt(id);
+    const product = this.products.find(p => p.Id === productId);
     if (!product) {
       throw new Error(`Product with ID ${id} not found`);
     }

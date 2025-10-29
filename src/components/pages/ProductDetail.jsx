@@ -62,8 +62,9 @@ const loadProduct = async () => {
       
       const productId = parseInt(id);
       
-      if (isNaN(productId)) {
+      if (isNaN(productId) || productId <= 0) {
         setError('Invalid product ID');
+        setLoading(false);
         return;
       }
       
