@@ -5,9 +5,10 @@ import { categoryService } from "@/services/api/categoryService";
 
 const CategoryNav = () => {
   const navigate = useNavigate();
-  const [categories, setCategories] = useState([]);
+const [categories, setCategories] = useState([]);
   const [hoveredCategory, setHoveredCategory] = useState(null);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
+  const megaMenuRef = useRef(null);
   const navRef = useRef();
 
   useEffect(() => {
@@ -28,25 +29,30 @@ const CategoryNav = () => {
 
   const loadCategories = async () => {
     try {
-      const data = await categoryService.getAll();
+const data = await categoryService.getAll();
       setCategories(data);
+      if (data.length > 0) {
+        setHoveredCategory(data[0].Id);
+      }
     } catch (error) {
       console.error("Error loading categories:", error);
     }
   };
 
-  const handleCategoryClick = (categorySlug) => {
+const handleCategoryClick = (categorySlug) => {
     navigate(`/products?category=${categorySlug}`);
     setShowMegaMenu(false);
-    setHoveredCategory(null);
   };
 
   const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
     navigate(`/products?category=${categorySlug}&subcategory=${subcategorySlug}`);
     setShowMegaMenu(false);
-    setHoveredCategory(null);
   };
 
+  const handleFeatureClick = (query) => {
+    navigate(`/products${query}`);
+    setShowMegaMenu(false);
+  };
   const featuredCategories = categories.filter(cat => cat.featured).slice(0, 6);
   const hoveredCategoryData = categories.find(cat => cat.id === hoveredCategory);
 
@@ -55,15 +61,17 @@ const CategoryNav = () => {
       <div className="max-w-screen-2xl mx-auto px-4">
         <div className="flex items-center h-10">
           {/* All Categories Button */}
-          <button
+<button
             onMouseEnter={() => {
               setShowMegaMenu(true);
-              setHoveredCategory(categories[0]?.id);
+              if (categories.length > 0 && !hoveredCategory) {
+                setHoveredCategory(categories[0].Id);
+              }
             }}
-            className="flex items-center gap-2 hover:bg-amazon-dark px-3 py-2 rounded transition-colors font-medium text-sm"
+            className="hidden lg:flex items-center gap-2 hover:bg-amazon-dark px-3 py-2 rounded transition-colors font-medium text-sm"
           >
             <ApperIcon name="Menu" size={16} />
-            <span className="hidden sm:inline">All Categories</span>
+            <span>All</span>
           </button>
 
           {/* Quick Links */}
@@ -113,126 +121,180 @@ const CategoryNav = () => {
           </div>
         </div>
 
-        {/* Mega Menu */}
+{/* Mega Menu - Desktop Only */}
         {showMegaMenu && hoveredCategoryData && (
           <div
-            className="absolute top-full left-0 right-0 mega-menu z-50 animate-fade-in"
+            ref={megaMenuRef}
+            className="hidden lg:block absolute top-full left-0 right-0 mega-menu z-50 animate-fade-in"
             onMouseLeave={() => {
               setShowMegaMenu(false);
-              setHoveredCategory(null);
             }}
           >
-            <div className="max-w-screen-2xl mx-auto p-6">
-              <div className="grid grid-cols-4 gap-8">
-                {/* Categories List */}
+            <div className="max-w-screen-2xl mx-auto p-8">
+              <div className="grid grid-cols-4 gap-6">
+                {/* Column 1: Department Categories */}
                 <div className="mega-menu-column">
-                  <h3 className="font-semibold text-amazon-dark mb-4 text-lg">
-                    Shop by Category
+                  <h3 className="font-bold text-amazon-dark mb-4 text-base border-b border-gray-200 pb-2">
+                    Shop by Department
                   </h3>
                   <div className="space-y-1">
-                    {categories.slice(0, 8).map((category) => (
+                    {categories.map((category) => (
                       <button
-                        key={category.id}
+                        key={category.Id}
                         onClick={() => handleCategoryClick(category.slug)}
-                        onMouseEnter={() => setHoveredCategory(category.id)}
-                        className={`w-full text-left px-3 py-2 rounded transition-colors text-sm ${
-                          hoveredCategory === category.id
-                            ? "bg-orange-50 text-amazon-orange border-l-2 border-amazon-orange"
+                        onMouseEnter={() => setHoveredCategory(category.Id)}
+                        className={`w-full text-left px-3 py-2.5 rounded-lg transition-all text-sm group ${
+                          hoveredCategory === category.Id
+                            ? "bg-orange-50 text-amazon-orange font-medium shadow-sm"
                             : "text-gray-700 hover:bg-gray-50"
                         }`}
                       >
-                        <div className="flex items-center gap-2">
-                          <ApperIcon name={category.icon} size={16} />
-                          {category.name}
+                        <div className="flex items-center gap-3">
+                          <div className={`${hoveredCategory === category.Id ? 'text-amazon-orange' : 'text-gray-400 group-hover:text-amazon-orange'} transition-colors`}>
+                            <ApperIcon name={category.icon} size={18} />
+                          </div>
+                          <div className="flex-1">
+                            <div>{category.name}</div>
+                            <div className="text-xs text-gray-400 mt-0.5">
+                              {category.productCount.toLocaleString()} items
+                            </div>
+                          </div>
+                          {hoveredCategory === category.Id && (
+                            <ApperIcon name="ChevronRight" size={14} />
+                          )}
                         </div>
                       </button>
                     ))}
                   </div>
                 </div>
 
-                {/* Subcategories */}
-                {hoveredCategoryData.subcategories && (
-                  <div className="mega-menu-column">
-                    <h3 className="font-semibold text-amazon-dark mb-4 text-lg">
-                      {hoveredCategoryData.name}
-                    </h3>
-                    <div className="space-y-1">
-                      {hoveredCategoryData.subcategories.slice(0, 8).map((subcategory) => (
-                        <button
-                          key={subcategory.id}
-                          onClick={() => handleSubcategoryClick(hoveredCategoryData.slug, subcategory.slug)}
-                          className="w-full text-left px-3 py-2 rounded hover:bg-gray-50 transition-colors text-sm text-gray-700"
-                        >
-                          {subcategory.name}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Featured Products */}
+                {/* Column 2: Subcategories */}
                 <div className="mega-menu-column">
-                  <h3 className="font-semibold text-amazon-dark mb-4 text-lg">
-                    Featured
+                  <h3 className="font-bold text-amazon-dark mb-4 text-base border-b border-gray-200 pb-2 flex items-center gap-2">
+                    <ApperIcon name={hoveredCategoryData.icon} size={18} className="text-amazon-orange" />
+                    {hoveredCategoryData.name}
+                  </h3>
+                  <div className="space-y-1">
+                    <button
+                      onClick={() => handleCategoryClick(hoveredCategoryData.slug)}
+                      className="w-full text-left px-3 py-2 rounded-lg hover:bg-blue-50 transition-colors text-sm font-medium text-amazon-info hover:text-amazon-dark"
+                    >
+                      View All {hoveredCategoryData.name}
+                    </button>
+                    <div className="border-t border-gray-100 my-2" />
+                    {hoveredCategoryData.subcategories && hoveredCategoryData.subcategories.map((subcategory) => (
+                      <button
+                        key={subcategory.id}
+                        onClick={() => handleSubcategoryClick(hoveredCategoryData.slug, subcategory.slug)}
+                        className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-700 hover:text-amazon-dark flex items-center justify-between group"
+                      >
+                        <span>{subcategory.name}</span>
+                        <span className="text-xs text-gray-400 group-hover:text-amazon-orange transition-colors">
+                          {subcategory.productCount}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Column 3: Featured Collections */}
+                <div className="mega-menu-column">
+                  <h3 className="font-bold text-amazon-dark mb-4 text-base border-b border-gray-200 pb-2">
+                    Featured Collections
                   </h3>
                   <div className="space-y-3">
                     <button
-                      onClick={() => navigate("/products?deals=flash")}
-                      className="w-full text-left p-3 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg border border-orange-200 hover:shadow-sm transition-shadow"
+                      onClick={() => handleFeatureClick("?deals=flash")}
+                      className="w-full text-left p-4 bg-gradient-to-br from-orange-50 to-red-50 rounded-lg border border-orange-200 hover:shadow-md transition-all group"
                     >
-                      <div className="flex items-center gap-2 mb-1">
-                        <ApperIcon name="Zap" size={16} className="text-amazon-orange" />
-                        <span className="font-medium text-amazon-dark">Flash Deals</span>
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-orange group-hover:text-white transition-colors">
+                          <ApperIcon name="Zap" size={20} />
+                        </div>
+                        <div className="flex-1">
+                          <div className="font-semibold text-amazon-dark">Flash Deals</div>
+                          <div className="text-xs text-gray-600">Up to 70% off</div>
+                        </div>
                       </div>
-                      <p className="text-xs text-gray-600">Limited time offers</p>
+                      <div className="text-xs text-gray-500">Limited time offers</div>
                     </button>
                     
                     <button
-                      onClick={() => navigate("/products?sort=trending")}
-                      className="w-full text-left p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200 hover:shadow-sm transition-shadow"
+                      onClick={() => handleFeatureClick("?sort=trending")}
+                      className="w-full text-left p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200 hover:shadow-md transition-all group"
                     >
-                      <div className="flex items-center gap-2 mb-1">
-                        <ApperIcon name="TrendingUp" size={16} className="text-amazon-info" />
-                        <span className="font-medium text-amazon-dark">Trending Now</span>
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-info group-hover:text-white transition-colors">
+                          <ApperIcon name="TrendingUp" size={20} />
+                        </div>
+                        <div className="flex-1">
+                          <div className="font-semibold text-amazon-dark">Trending Now</div>
+                          <div className="text-xs text-gray-600">Popular picks</div>
+                        </div>
                       </div>
-                      <p className="text-xs text-gray-600">Popular this week</p>
+                      <div className="text-xs text-gray-500">Most wanted this week</div>
                     </button>
 
                     <button
-                      onClick={() => navigate("/products?rating=4")}
-                      className="w-full text-left p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:shadow-sm transition-shadow"
+                      onClick={() => handleFeatureClick("?rating=4")}
+                      className="w-full text-left p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-green-200 hover:shadow-md transition-all group"
                     >
-                      <div className="flex items-center gap-2 mb-1">
-                        <ApperIcon name="Star" size={16} className="text-amazon-success" />
-                        <span className="font-medium text-amazon-dark">Top Rated</span>
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-success group-hover:text-white transition-colors">
+                          <ApperIcon name="Star" size={20} />
+                        </div>
+                        <div className="flex-1">
+                          <div className="font-semibold text-amazon-dark">Top Rated</div>
+                          <div className="text-xs text-gray-600">4+ stars</div>
+                        </div>
                       </div>
-                      <p className="text-xs text-gray-600">4+ star products</p>
+                      <div className="text-xs text-gray-500">Customer favorites</div>
                     </button>
                   </div>
                 </div>
 
-                {/* Customer Service */}
+                {/* Column 4: Help & Services */}
                 <div className="mega-menu-column">
-                  <h3 className="font-semibold text-amazon-dark mb-4 text-lg">
+                  <h3 className="font-bold text-amazon-dark mb-4 text-base border-b border-gray-200 pb-2">
                     Help & Services
                   </h3>
                   <div className="space-y-1">
-                    <button className="w-full text-left px-3 py-2 rounded hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-2">
-                      <ApperIcon name="MessageCircle" size={14} />
-                      Customer Service
+                    <button className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-3 group">
+                      <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-info group-hover:text-white transition-colors">
+                        <ApperIcon name="MessageCircle" size={16} />
+                      </div>
+                      <span className="group-hover:text-amazon-dark transition-colors">Customer Service</span>
                     </button>
-                    <button className="w-full text-left px-3 py-2 rounded hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-2">
-                      <ApperIcon name="RotateCcw" size={14} />
-                      Returns & Refunds
+                    <button className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-3 group">
+                      <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-info group-hover:text-white transition-colors">
+                        <ApperIcon name="RotateCcw" size={16} />
+                      </div>
+                      <span className="group-hover:text-amazon-dark transition-colors">Returns & Refunds</span>
                     </button>
-                    <button className="w-full text-left px-3 py-2 rounded hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-2">
-                      <ApperIcon name="Truck" size={14} />
-                      Track Your Order
+                    <button className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-3 group">
+                      <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-info group-hover:text-white transition-colors">
+                        <ApperIcon name="Truck" size={16} />
+                      </div>
+                      <span className="group-hover:text-amazon-dark transition-colors">Track Your Order</span>
                     </button>
-                    <button className="w-full text-left px-3 py-2 rounded hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-2">
-                      <ApperIcon name="HelpCircle" size={14} />
-                      FAQ
+                    <button className="w-full text-left px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors text-sm text-gray-700 flex items-center gap-3 group">
+                      <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-amazon-info group-hover:text-white transition-colors">
+                        <ApperIcon name="HelpCircle" size={16} />
+                      </div>
+                      <span className="group-hover:text-amazon-dark transition-colors">FAQ</span>
                     </button>
+                    
+                    <div className="mt-4 pt-4 border-t border-gray-200">
+                      <div className="px-3 py-2 bg-blue-50 rounded-lg">
+                        <div className="flex items-center gap-2 text-amazon-info mb-1">
+                          <ApperIcon name="Phone" size={14} />
+                          <span className="text-xs font-semibold">24/7 Support</span>
+                        </div>
+                        <div className="text-xs text-gray-600">
+                          1-800-123-4567
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
 import { searchService } from "@/services/api/searchService";
 import { cartService } from "@/services/api/cartService";
+import { categoryService } from "@/services/api/categoryService";
 const Header = ({ cartCount = 0, wishlistCount = 0, onCartClick }) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
@@ -10,6 +11,9 @@ const Header = ({ cartCount = 0, wishlistCount = 0, onCartClick }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
 const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
+  const [isMobileCategoryOpen, setIsMobileCategoryOpen] = useState(false);
+  const [categories, setCategories] = useState([]);
+  const [expandedCategories, setExpandedCategories] = useState({});
   const searchRef = useRef();
   const accountRef = useRef();
 
@@ -18,8 +22,17 @@ const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
       if (searchRef.current && !searchRef.current.contains(event.target)) {
         setShowSuggestions(false);
       }
-      if (accountRef.current && !accountRef.current.contains(event.target)) {
+if (accountRef.current && !accountRef.current.contains(event.target)) {
         setIsAccountMenuOpen(false);
+      }
+      
+      // Close mobile category panel when clicking outside
+      const categoryPanel = document.getElementById('mobile-category-panel');
+      if (isMobileCategoryOpen && categoryPanel && !categoryPanel.contains(event.target)) {
+        const hamburgerBtn = document.getElementById('hamburger-menu-btn');
+        if (!hamburgerBtn || !hamburgerBtn.contains(event.target)) {
+          setIsMobileCategoryOpen(false);
+        }
       }
     };
 
@@ -72,9 +85,29 @@ useEffect(() => {
   };
 
   return (
-    <header className="bg-amazon-dark text-white sticky top-0 z-50 shadow-lg">
+<header className="bg-amazon-dark text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-screen-2xl mx-auto px-4">
         <div className="flex items-center gap-4 h-16">
+          {/* Hamburger Menu - Mobile */}
+          <button
+            id="hamburger-menu-btn"
+            onClick={async () => {
+              if (!isMobileCategoryOpen && categories.length === 0) {
+                try {
+                  const data = await categoryService.getAll();
+                  setCategories(data);
+                } catch (error) {
+                  console.error("Error loading categories:", error);
+                }
+              }
+              setIsMobileCategoryOpen(!isMobileCategoryOpen);
+            }}
+            className="lg:hidden text-white hover:text-amazon-orange transition-colors p-2"
+            aria-label="Menu"
+          >
+            <ApperIcon name="Menu" size={24} />
+          </button>
+
           {/* Logo */}
           <Link 
             to="/" 
@@ -246,7 +279,114 @@ onClick={() => {
             </div>
           </button>
         </div>
-      </div>
+</div>
+
+      {/* Mobile Category Panel */}
+      {isMobileCategoryOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 animate-backdrop-fade"
+            onClick={() => setIsMobileCategoryOpen(false)}
+          />
+
+          {/* Slide-out Panel */}
+          <div
+            id="mobile-category-panel"
+            className="fixed top-0 left-0 bottom-0 w-80 bg-white z-50 overflow-y-auto animate-slide-left shadow-2xl"
+          >
+            {/* Panel Header */}
+            <div className="sticky top-0 bg-amazon-dark text-white p-4 flex items-center justify-between">
+              <h2 className="text-lg font-semibold">Shop by Category</h2>
+              <button
+                onClick={() => setIsMobileCategoryOpen(false)}
+                className="text-white hover:text-amazon-orange transition-colors"
+                aria-label="Close menu"
+              >
+                <ApperIcon name="X" size={24} />
+              </button>
+            </div>
+
+            {/* Categories List */}
+            <div className="p-4">
+              {categories.map((category) => (
+                <div key={category.Id} className="mb-2">
+                  {/* Main Category */}
+                  <div className="flex items-center justify-between">
+                    <button
+                      onClick={() => {
+                        navigate(`/products?category=${category.slug}`);
+                        setIsMobileCategoryOpen(false);
+                      }}
+                      className="flex-1 flex items-center gap-3 p-3 text-left hover:bg-gray-50 rounded-lg transition-colors text-amazon-dark"
+                    >
+                      <ApperIcon name={category.icon} size={20} className="text-amazon-orange" />
+                      <div className="flex-1">
+                        <div className="font-medium">{category.name}</div>
+                        <div className="text-xs text-gray-500">
+                          {category.productCount} products
+                        </div>
+                      </div>
+                    </button>
+                    
+                    {category.subcategories && category.subcategories.length > 0 && (
+                      <button
+                        onClick={() => {
+                          setExpandedCategories(prev => ({
+                            ...prev,
+                            [category.Id]: !prev[category.Id]
+                          }));
+                        }}
+                        className="p-3 hover:bg-gray-50 rounded-lg transition-colors text-gray-600"
+                        aria-label={expandedCategories[category.Id] ? "Collapse" : "Expand"}
+                      >
+                        <ApperIcon
+                          name={expandedCategories[category.Id] ? "ChevronUp" : "ChevronDown"}
+                          size={20}
+                        />
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Subcategories */}
+                  {expandedCategories[category.Id] && category.subcategories && (
+                    <div className="ml-8 mt-2 space-y-1 animate-slide-down">
+                      {category.subcategories.map((subcategory) => (
+                        <button
+                          key={subcategory.id}
+                          onClick={() => {
+                            navigate(`/products?category=${category.slug}&subcategory=${subcategory.slug}`);
+                            setIsMobileCategoryOpen(false);
+                          }}
+                          className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded transition-colors text-sm text-gray-700"
+                        >
+                          <span>{subcategory.name}</span>
+                          <span className="text-xs text-gray-400">
+                            {subcategory.productCount}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Panel Footer */}
+            <div className="sticky bottom-0 bg-gray-50 p-4 border-t">
+              <button
+                onClick={() => {
+                  navigate('/');
+                  setIsMobileCategoryOpen(false);
+                }}
+                className="w-full py-3 bg-amazon-orange text-amazon-dark font-medium rounded-lg hover:bg-opacity-90 transition-colors"
+              >
+                Back to Home
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </header>
   );
 };
