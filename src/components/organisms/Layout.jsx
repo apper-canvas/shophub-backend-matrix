@@ -107,7 +107,7 @@ return (
       
       {!hideCategoryNav && <CategoryNav />}
       
-      <main className="min-h-screen">
+<main className="min-h-screen">
         <Outlet context={{ 
           addToCart,
           cartItems,
@@ -115,7 +115,8 @@ return (
           removeFromCart,
           clearCart,
           cartCount,
-          loadCartItems
+          loadCartItems,
+          loadWishlist
         }} />
       </main>
       <Footer />
