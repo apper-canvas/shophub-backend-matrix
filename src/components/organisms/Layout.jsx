@@ -7,23 +7,34 @@ import Header from "@/components/organisms/Header";
 import CartDrawer from "@/components/organisms/CartDrawer";
 const Layout = () => {
   const location = useLocation();
-  const [cartItems, setCartItems] = useState([]);
+const [cartItems, setCartItems] = useState([]);
 const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
+  const [wishlistCount, setWishlistCount] = useState(0);
   const navigate = useNavigate();
 
-  useEffect(() => {
+useEffect(() => {
     loadCartItems();
+    loadWishlist();
   }, []);
-
 const loadCartItems = async () => {
-    try {
+try {
       const items = await cartService.getAll();
       setCartItems(items);
       const totalCount = items.reduce((sum, item) => sum + item.quantity, 0);
       setCartCount(totalCount);
     } catch (error) {
       console.error("Error loading cart items:", error);
+    }
+  };
+
+  const loadWishlist = async () => {
+    try {
+      const { wishlistService } = await import("@/services/api/wishlistService");
+      const wishlistIds = await wishlistService.getAll();
+      setWishlistCount(wishlistIds.length);
+    } catch (error) {
+      console.error("Error loading wishlist:", error);
     }
   };
 
@@ -68,7 +79,13 @@ const loadCartItems = async () => {
     } catch (error) {
       console.error("Error clearing cart:", error);
     }
+}
   };
+const contextValue = {
+    addToCart,
+    removeFromCart,
+    updateCartItem,
+    loadWishlist
 
 // Hide category nav on cart and checkout pages
   const hideCategoryNav = ["/cart", "/checkout"].some(path => 
@@ -80,6 +97,7 @@ return (
 <Header 
         onCartClick={() => setIsCartOpen(true)}
         cartCount={cartCount}
+        wishlistCount={wishlistCount}
       />
       
       {!hideCategoryNav && <CategoryNav />}

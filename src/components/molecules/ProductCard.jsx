@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
+import { wishlistService } from "@/services/api/wishlistService";
+import { toast } from "react-toastify";
 
 const ProductCard = ({ 
   product,
@@ -11,10 +13,24 @@ const ProductCard = ({
   showNew = false
 }) => {
   const navigate = useNavigate();
+const { loadWishlist } = useOutletContext();
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
   const [isAddingToCart, setIsAddingToCart] = useState(false);
+  const [isInWishlist, setIsInWishlist] = useState(wishlistService.isInWishlist(product.Id));
 
+  const handleWishlistToggle = async (e) => {
+    e.stopPropagation();
+    try {
+      const result = await wishlistService.toggle(product.Id);
+      setIsInWishlist(result.added);
+      await loadWishlist();
+      toast.success(result.added ? "Added to wishlist!" : "Removed from wishlist");
+    } catch (err) {
+      console.error("Error toggling wishlist:", err);
+      toast.error("Failed to update wishlist");
+    }
+  };
   const handleAddToCart = async (e) => {
     e.stopPropagation();
     if (isAddingToCart || !onAddToCart) return;
@@ -79,11 +95,15 @@ className={`bg-white rounded-lg shadow-sm border hover:shadow-xl hover:-translat
 
         {/* Wishlist Button */}
 <button
-          onClick={(e) => e.stopPropagation()}
+          onClick={handleWishlistToggle}
           className="absolute top-2 right-2 z-10 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-red-50 hover:scale-110"
           style={{ marginTop: product.isPrime ? "24px" : "0" }}
         >
-          <ApperIcon name="Heart" size={16} className="text-gray-400 hover:text-red-500 transition-colors" />
+          <ApperIcon 
+            name="Heart" 
+            size={16} 
+            className={`transition-colors ${isInWishlist ? 'text-red-500 fill-current' : 'text-gray-400 hover:text-red-500'}`}
+          />
         </button>
 
         {/* Product Image */}

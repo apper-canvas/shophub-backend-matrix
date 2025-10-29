@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useOutletContext, useParams } from "react-router-dom";
 import { productService } from "@/services/api/productService";
 import { reviewService } from "@/services/api/reviewService";
+import { wishlistService } from "@/services/api/wishlistService";
 import { toast } from "react-toastify";
 import WriteReviewModal from "@/components/molecules/WriteReviewModal";
 import ApperIcon from "@/components/ApperIcon";
@@ -15,8 +16,8 @@ import ProductCard from "@/components/molecules/ProductCard";
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { addToCart } = useOutletContext();
-  
+const { addToCart, loadWishlist } = useOutletContext();
+  const [isInWishlist, setIsInWishlist] = useState(false);
 const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -32,14 +33,27 @@ const [product, setProduct] = useState(null);
   const [filterStar, setFilterStar] = useState(null);
   const [expandedPhoto, setExpandedPhoto] = useState(null);
 
-  useEffect(() => {
+useEffect(() => {
     if (id && !isNaN(Number(id))) {
       loadProduct();
+      setIsInWishlist(wishlistService.isInWishlist(parseInt(id)));
     } else if (id) {
       setError('Invalid product ID');
       setLoading(false);
     }
   }, [id]);
+
+  const handleWishlistToggle = async () => {
+    try {
+      const result = await wishlistService.toggle(product.Id);
+      setIsInWishlist(result.added);
+      await loadWishlist();
+      toast.success(result.added ? "Added to wishlist!" : "Removed from wishlist");
+    } catch (err) {
+      console.error("Error toggling wishlist:", err);
+      toast.error("Failed to update wishlist");
+    }
+  };
 
 const loadProduct = async () => {
     try {
@@ -256,8 +270,20 @@ const handleAddToCart = async () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column - Images */}
-          <div className="space-y-4">
+<div className="space-y-4">
             <ImageGallery images={images} title={product.title} />
+            
+            <button
+              onClick={handleWishlistToggle}
+              className="w-full border-2 border-gray-300 hover:border-red-500 text-gray-700 hover:text-red-500 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2"
+            >
+              <ApperIcon 
+                name="Heart" 
+                size={20} 
+                className={`transition-colors ${isInWishlist ? 'text-red-500 fill-current' : ''}`}
+              />
+              {isInWishlist ? "Remove from Wishlist" : "Add to Wishlist"}
+            </button>
           </div>
 
           {/* Right Column - Product Info */}

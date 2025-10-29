@@ -3,8 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
 import { searchService } from "@/services/api/searchService";
 import { cartService } from "@/services/api/cartService";
-
-const Header = ({ cartCount = 0, onCartClick }) => {
+const Header = ({ cartCount = 0, wishlistCount = 0, onCartClick }) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchSuggestions, setSearchSuggestions] = useState([]);
@@ -178,7 +177,13 @@ useEffect(() => {
                     <ApperIcon name="Package" size={16} />
                     Your Orders
                   </button>
-                  <button className="w-full text-left px-4 py-2 hover:bg-gray-50 flex items-center gap-3">
+<button 
+                    onClick={() => {
+                      navigate('/wishlist');
+                      setIsAccountMenuOpen(false);
+                    }}
+                    className="w-full text-left px-4 py-2 hover:bg-gray-50 flex items-center gap-3"
+                  >
                     <ApperIcon name="Heart" size={16} />
                     Your Wishlist
                   </button>
@@ -195,6 +200,25 @@ useEffect(() => {
           <button className="flex flex-col items-start text-sm hover:bg-amazon-navy px-2 py-1 rounded transition-colors hidden sm:flex">
             <span className="text-xs text-gray-300">Returns</span>
             <span className="font-medium">& Orders</span>
+          </button>
+
+{/* Wishlist */}
+          <button
+            onClick={() => navigate('/wishlist')}
+            className="relative flex items-center gap-2 hover:bg-amazon-navy px-2 py-1 rounded transition-colors"
+          >
+            <div className="relative">
+              <ApperIcon name="Heart" size={24} />
+              {wishlistCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                  {wishlistCount > 99 ? "99+" : wishlistCount}
+                </span>
+              )}
+            </div>
+            <div className="flex flex-col items-start text-sm hidden sm:flex">
+              <span className="text-xs text-gray-300">Wishlist</span>
+              <span className="font-medium">{wishlistCount}</span>
+            </div>
           </button>
 
           {/* Cart */}
