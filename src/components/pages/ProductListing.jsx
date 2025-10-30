@@ -168,10 +168,10 @@ const getCurrentQuery = () => {
     const category = searchParams.get("category");
     const subcategory = searchParams.get("subcategory");
     
-    if (search) return `"${search}"`;
+if (search) return `"${search}"`;
     if (subcategory) return categoryInfo?.subcategory?.name || subcategory;
     if (category) return categoryInfo?.name || category;
-    return "All Products";
+    return null; // Return null for All Products to handle differently
   };
 
   const getActiveFiltersCount = () => {
@@ -429,12 +429,12 @@ const getCurrentQuery = () => {
 
             {/* Product Grid/List */}
             {products.length === 0 ? (
-              <Empty
-                variant="search"
-                title={`No products found for "${getCurrentQuery()}"`}
-                description="Try adjusting your filters or search terms to find what you're looking for."
-                actionText="Clear Filters"
-                onAction={clearFilters}
+<Empty
+                variant={getCurrentQuery() ? "search" : "products"}
+                title={getCurrentQuery() ? `No products found for "${getCurrentQuery()}"` : "No products available"}
+                description={getCurrentQuery() ? "Try adjusting your filters or search terms to find what you're looking for." : "Check back soon for new products."}
+                actionText={getCurrentQuery() ? "Clear Filters" : undefined}
+                onAction={getCurrentQuery() ? clearFilters : undefined}
               />
 ) : (
               <>

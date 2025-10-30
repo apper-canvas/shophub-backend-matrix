@@ -23,14 +23,7 @@ async getAll(filters = {}) {
     }
 
     // Filter by subcategory
-    if (filters.subcategory) {
-      filteredProducts = filteredProducts.filter(
-        product => product.subcategory && product.subcategory.toLowerCase() === filters.subcategory.toLowerCase()
-      );
-    }
-
-    // Apply subcategory filter
-    if (filters.subcategory) {
+if (filters.subcategory) {
       filteredProducts = filteredProducts.filter(
         product => product.subcategory && product.subcategory.toLowerCase() === filters.subcategory.toLowerCase()
       );
