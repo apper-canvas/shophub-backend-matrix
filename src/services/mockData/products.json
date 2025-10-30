@@ -3374,9 +3374,528 @@
       "Upholstery": "Full-grain aniline leather",
       "Frame": "Solid wood",
       "Style": "Mid-century modern",
-      "Seating": "3-seater"
-    },
+      "Seating": "3-seater",
 "brand": "Article",
     "tags": ["sofa", "leather", "mid-century", "premium"]
+  }},
+  {
+    "Id": 131,
+    "title": "Amazon Fire Max 11 Tablet 128GB",
+    "description": "11-inch 2K display tablet with octa-core processor and long battery life",
+    "price": 229.99,
+    "originalPrice": 259.99,
+    "category": "electronics",
+    "subcategory": "tablets",
+    "images": [
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 8765,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Display": "11-inch 2000x1200",
+      "Processor": "Octa-core 2.2 GHz",
+      "RAM": "4GB",
+      "Storage": "128GB expandable",
+      "Battery": "Up to 14 hours"
+    },
+    "brand": "Amazon",
+    "tags": ["tablet", "fire", "large-screen", "entertainment"]
+  },
+  {
+    "Id": 132,
+    "title": "Amazfit GTR 4 Smartwatch",
+    "description": "Dual-band GPS smartwatch with 150+ sports modes and 14-day battery",
+    "price": 199.99,
+    "originalPrice": 229.99,
+    "category": "electronics",
+    "subcategory": "wearables",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 3456,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": true,
+    "specifications": {
+      "Display": "1.43-inch AMOLED",
+      "Battery": "Up to 14 days",
+      "GPS": "Dual-band",
+      "Sports Modes": "150+",
+      "Water Rating": "5 ATM"
+    },
+    "brand": "Amazfit",
+    "tags": ["smartwatch", "fitness", "gps", "long-battery"]
+  },
+  {
+    "Id": 133,
+    "title": "Anker PowerCore 20000mAh Power Bank",
+    "description": "High-capacity portable charger with dual USB ports and fast charging",
+    "price": 49.99,
+    "originalPrice": 59.99,
+    "category": "electronics",
+    "subcategory": "accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 23456,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Capacity": "20000mAh",
+      "Ports": "Dual USB-A",
+      "Input": "USB-C",
+      "Fast Charging": "PowerIQ 2.0",
+      "Weight": "12.5 oz"
+    },
+    "brand": "Anker",
+    "tags": ["power-bank", "portable-charger", "fast-charging", "travel"]
+  },
+  {
+    "Id": 134,
+    "title": "Spyder Men's Leader Insulated Ski Jacket",
+    "description": "Technical ski jacket with 3M Thinsulate insulation and waterproof shell",
+    "price": 299.00,
+    "originalPrice": 349.00,
+    "category": "fashion",
+    "subcategory": "outerwear",
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2341,
+    "inStock": true,
+    "stockCount": 28,
+    "isPrime": false,
+    "specifications": {
+      "Insulation": "3M Thinsulate",
+      "Waterproof": "20K/20K rating",
+      "Features": "Recco rescue system, powder skirt",
+      "Fit": "Athletic",
+      "Sizes": "S-XXL"
+    },
+    "brand": "Spyder",
+    "tags": ["ski-jacket", "insulated", "waterproof", "technical"]
+  },
+  {
+    "Id": 135,
+    "title": "Hoka One One Clifton 9 Running Shoes",
+    "description": "Lightweight cushioned running shoes with smooth ride",
+    "price": 145.00,
+    "originalPrice": 145.00,
+    "category": "fashion",
+    "subcategory": "shoes",
+    "images": [
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 9876,
+    "inStock": true,
+    "stockCount": 156,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Neutral running",
+      "Cushioning": "Maximum",
+      "Weight": "7.7 oz (women's size 7)",
+      "Drop": "5mm",
+      "Sizes": "5-15"
+    },
+    "brand": "Hoka One One",
+    "tags": ["running-shoes", "cushioned", "lightweight", "performance"]
+  },
+  {
+    "Id": 136,
+    "title": "Keurig K-Elite Single Serve Coffee Maker",
+    "description": "Programmable coffee maker with iced coffee setting and large reservoir",
+    "price": 169.99,
+    "originalPrice": 189.99,
+    "category": "home",
+    "subcategory": "kitchen-appliances",
+    "images": [
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 15678,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Brew Sizes": "4, 6, 8, 10, 12 oz",
+      "Reservoir": "75 oz",
+      "Features": "Iced coffee, strong brew",
+      "Programmable": "Yes",
+      "Compatible": "K-Cup pods"
+    },
+    "brand": "Keurig",
+    "tags": ["coffee-maker", "single-serve", "programmable", "iced-coffee"]
+  },
+  {
+    "Id": 137,
+    "title": "Black+Decker Dustbuster Handheld Vacuum",
+    "description": "Cordless handheld vacuum with cyclonic action and crevice tool",
+    "price": 49.99,
+    "originalPrice": 59.99,
+    "category": "home",
+    "subcategory": "cleaning",
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.4,
+    "reviewCount": 34567,
+    "inStock": true,
+    "stockCount": 198,
+    "isPrime": true,
+    "specifications": {
+      "Type": "Cordless handheld",
+      "Battery": "Lithium 20V",
+      "Runtime": "15 minutes",
+      "Dustbin": "Clear bagless",
+      "Attachments": "Crevice tool, brush"
+    },
+    "brand": "Black+Decker",
+    "tags": ["handheld-vacuum", "cordless", "portable", "quick-clean"]
+  },
+  {
+    "Id": 138,
+    "title": "Tramontina Professional Nonstick 12-Inch Fry Pan",
+    "description": "Restaurant-grade aluminum fry pan with reinforced nonstick coating",
+    "price": 39.99,
+    "originalPrice": 49.99,
+    "category": "home",
+    "subcategory": "cookware",
+    "images": [
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 123,
+    "isPrime": true,
+    "specifications": {
+      "Size": "12 inches",
+      "Material": "Heavy-gauge aluminum",
+      "Coating": "Reinforced nonstick",
+      "Oven safe": "Up to 400°F",
+      "Handle": "Silicone grip"
+    },
+    "brand": "Tramontina",
+    "tags": ["fry-pan", "nonstick", "professional", "durable"]
+  },
+  {
+    "Id": 139,
+    "title": "Walker Edison Modern Farmhouse TV Stand 70\"",
+    "description": "Rustic wood TV stand with adjustable shelving and cable management",
+    "price": 329.00,
+    "originalPrice": 399.00,
+    "category": "home",
+    "subcategory": "furniture",
+    "images": [
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 4321,
+    "inStock": true,
+    "stockCount": 19,
+    "isPrime": false,
+    "specifications": {
+      "Length": "70 inches",
+      "Material": "Wood and laminate",
+      "TV Size": "Fits up to 75 inches",
+      "Storage": "Adjustable shelves, cabinets",
+      "Style": "Modern farmhouse"
+    },
+    "brand": "Walker Edison",
+    "tags": ["tv-stand", "farmhouse", "storage", "entertainment-center"]
+  },
+  {
+    "Id": 140,
+    "title": "Utopia Bedding Quilted Fitted Mattress Pad Queen",
+    "description": "Hypoallergenic mattress pad with deep pockets and elastic all around",
+    "price": 34.99,
+    "originalPrice": 44.99,
+    "category": "home",
+    "subcategory": "bedding",
+    "images": [
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 45678,
+    "inStock": true,
+    "stockCount": 267,
+    "isPrime": true,
+    "specifications": {
+      "Size": "Queen",
+      "Fill": "Polyester fiber",
+      "Pocket Depth": "Fits up to 16 inches",
+      "Features": "Quilted, hypoallergenic",
+      "Care": "Machine washable"
+    },
+    "brand": "Utopia Bedding",
+    "tags": ["mattress-pad", "quilted", "hypoallergenic", "deep-pocket"]
+  },
+  {
+    "Id": 141,
+    "title": "Umbra Prisma Geometric Photo Display",
+    "description": "Modern geometric wire photo frame in matte brass finish",
+    "price": 29.99,
+    "originalPrice": 35.00,
+    "category": "home",
+    "subcategory": "decor",
+    "images": [
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 134,
+    "isPrime": true,
+    "specifications": {
+      "Size": "4x6 inches",
+      "Material": "Metal wire",
+      "Finish": "Matte brass",
+      "Orientation": "Horizontal or vertical",
+      "Style": "Modern geometric"
+    },
+    "brand": "Umbra",
+    "tags": ["photo-frame", "geometric", "modern", "wire"]
+  },
+  {
+    "Id": 142,
+    "title": "The Midnight Library by Matt Haig",
+    "description": "A dazzling novel about choices and possibilities between life and death",
+    "price": 16.99,
+    "originalPrice": 19.99,
+    "category": "books",
+    "subcategory": "fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 34567,
+    "inStock": true,
+    "stockCount": 198,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Matt Haig",
+      "Pages": "304",
+      "Publisher": "Viking",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Viking",
+    "tags": ["fiction", "contemporary", "philosophical", "bestseller"]
+  },
+  {
+    "Id": 143,
+    "title": "Becoming by Michelle Obama",
+    "description": "Intimate memoir from the former First Lady of the United States",
+    "price": 18.99,
+    "originalPrice": 22.99,
+    "category": "books",
+    "subcategory": "non-fiction",
+    "images": [
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 87654,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Michelle Obama",
+      "Pages": "448",
+      "Publisher": "Crown",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Crown",
+    "tags": ["memoir", "biography", "politics", "inspiring"]
+  },
+  {
+    "Id": 144,
+    "title": "The Thursday Murder Club by Richard Osman",
+    "description": "Four friends meet weekly to investigate cold cases in their retirement village",
+    "price": 15.99,
+    "originalPrice": 18.99,
+    "category": "books",
+    "subcategory": "thriller",
+    "images": [
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 23456,
+    "inStock": true,
+    "stockCount": 167,
+    "isPrime": true,
+    "specifications": {
+      "Author": "Richard Osman",
+      "Pages": "368",
+      "Publisher": "Pamela Dorman Books",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "brand": "Pamela Dorman Books",
+    "tags": ["mystery", "cozy", "humor", "bestseller"]
+  },
+  {
+    "Id": 145,
+    "title": "The Food Lab by J. Kenji López-Alt",
+    "description": "Science-based home cooking bible with 1000+ recipes and techniques",
+    "price": 39.99,
+    "originalPrice": 50.00,
+    "category": "books",
+    "subcategory": "cooking",
+    "images": [
+      "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.9,
+    "reviewCount": 15678,
+    "inStock": true,
+    "stockCount": 78,
+    "isPrime": true,
+    "specifications": {
+      "Author": "J. Kenji López-Alt",
+      "Pages": "958",
+      "Publisher": "W. W. Norton & Company",
+      "Language": "English",
+      "Format": "Hardcover"
+    },
+    "brand": "W. W. Norton & Company",
+    "tags": ["cooking", "science", "techniques", "comprehensive"]
+  },
+  {
+    "Id": 146,
+    "title": "LEGO City Police Station 60316",
+    "description": "3-level police station with jail, helicopter, and 6 minifigures",
+    "price": 99.99,
+    "originalPrice": 119.99,
+    "category": "toys",
+    "subcategory": "building-sets",
+    "images": [
+      "https://images.unsplash.com/photo-1558060370-d644479c6b77?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 4567,
+    "inStock": true,
+    "stockCount": 45,
+    "isPrime": true,
+    "specifications": {
+      "Pieces": "668",
+      "Age": "6+",
+      "Minifigures": "6 included",
+      "Features": "Jail, helicopter, vehicles",
+      "Theme": "City Police"
+    },
+    "brand": "LEGO",
+    "tags": ["lego", "city", "police", "action"]
+  },
+  {
+    "Id": 147,
+    "title": "Xbox Series S 512GB Console",
+    "description": "Compact next-gen gaming console with digital games library",
+    "price": 299.99,
+    "originalPrice": 299.99,
+    "category": "toys",
+    "subcategory": "gaming",
+    "images": [
+      "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.6,
+    "reviewCount": 18765,
+    "inStock": true,
+    "stockCount": 34,
+    "isPrime": true,
+    "specifications": {
+      "Storage": "512GB NVMe SSD",
+      "Resolution": "1440p up to 120fps",
+      "GPU": "4 teraflops RDNA 2",
+      "Digital": "All-digital",
+      "Game Pass": "Compatible"
+    },
+    "brand": "Microsoft",
+    "tags": ["console", "gaming", "xbox", "compact"]
+  },
+  {
+    "Id": 148,
+    "title": "Barbie Fashionistas Doll #208",
+    "description": "Diverse fashion doll with trendy outfit and accessories",
+    "price": 12.99,
+    "originalPrice": 14.99,
+    "category": "toys",
+    "subcategory": "dolls",
+    "images": [
+      "https://images.unsplash.com/photo-1599743850450-3b5fd5b4ac9d?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.7,
+    "reviewCount": 8901,
+    "inStock": true,
+    "stockCount": 234,
+    "isPrime": true,
+    "specifications": {
+      "Height": "11.5 inches",
+      "Features": "Articulated",
+      "Outfit": "Trendy fashion",
+      "Accessories": "Shoes, purse",
+      "Age": "3+"
+    },
+    "brand": "Mattel",
+    "tags": ["barbie", "fashion", "diverse", "affordable"]
+  },
+  {
+    "Id": 149,
+    "title": "VTech KidiZoom Creator Cam",
+    "description": "HD video camera for kids with green screen and animation effects",
+    "price": 69.99,
+    "originalPrice": 79.99,
+    "category": "toys",
+    "subcategory": "educational",
+    "images": [
+      "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.5,
+    "reviewCount": 5678,
+    "inStock": true,
+    "stockCount": 89,
+    "isPrime": true,
+    "specifications": {
+      "Video": "HD 1080p",
+      "Features": "Green screen, stop motion, effects",
+      "Screen": "2.4-inch color",
+      "Storage": "256MB internal + SD card",
+      "Age": "5-12 years"
+    },
+    "brand": "VTech",
+    "tags": ["video-camera", "kids", "educational", "creative"]
+  },
+  {
+    "Id": 150,
+    "title": "Step2 Rain Showers Splash Pond Water Table",
+    "description": "Double-tier water play table with rain shower and accessories",
+    "price": 59.99,
+    "originalPrice": 69.99,
+    "category": "toys",
+    "subcategory": "outdoor",
+    "images": [
+      "https://images.unsplash.com/photo-1628000781128-140f0e0c9c1b?w=400&h=400&fit=crop"
+    ],
+    "rating": 4.8,
+    "reviewCount": 12345,
+    "inStock": true,
+    "stockCount": 67,
+    "isPrime": false,
+    "specifications": {
+      "Capacity": "7 gallons",
+      "Levels": "Two-tier design",
+      "Accessories": "13 pieces included",
+      "Dimensions": "37 x 25 x 33 inches",
+      "Age": "18 months+"
+    },
+    "brand": "Step2",
+    "tags": ["water-table", "outdoor", "toddler", "sensory-play"]
   }
 ]
