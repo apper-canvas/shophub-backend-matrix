@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate, useOutletContext } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useOutletContext, useParams } from "react-router-dom";
 import { categoryService } from "@/services/api/categoryService";
 import { productService } from "@/services/api/productService";
 import ApperIcon from "@/components/ApperIcon";
-import ProductCard from "@/components/molecules/ProductCard";
+import Home from "@/components/pages/Home";
+import Cart from "@/components/pages/Cart";
 import FilterSidebar from "@/components/organisms/FilterSidebar";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
+import ProductCard from "@/components/molecules/ProductCard";
 
 const CategoryLanding = () => {
   const { categorySlug, subcategorySlug } = useParams();
@@ -251,12 +253,12 @@ const CategoryLanding = () => {
 
           <div className="flex gap-6">
             {/* Filter Sidebar - Desktop */}
-            <div className="hidden lg:block w-64 flex-shrink-0">
+<div className="hidden lg:block w-64 flex-shrink-0">
               <div className="sticky top-4">
                 <FilterSidebar
-onFilterChange={() => {}}
+                  onFilterChange={() => {}}
                   initialFilters={{
-                    category: category?.name || "",
+                    category: categorySlug || "",
                     subcategory: subcategorySlug || "",
                   }}
                 />
@@ -273,11 +275,11 @@ onFilterChange={() => {}}
                       <ApperIcon name="X" size={24} />
                     </button>
                   </div>
-                  <div className="p-4">
-<FilterSidebar
+<div className="p-4">
+                    <FilterSidebar
                       onFilterChange={() => {}}
                       initialFilters={{
-                        category: category?.name || "",
+                        category: categorySlug || "",
                         subcategory: subcategorySlug || "",
                       }}
                     />

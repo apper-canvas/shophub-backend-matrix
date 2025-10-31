@@ -237,11 +237,11 @@ if (search) return `"${search}"`;
                 Home
               </button>
             </li>
-            {category && (
+            {searchParams.get("category") && (
               <>
                 <span className="breadcrumb-separator">›</span>
                 <li className="text-amazon-dark font-medium">
-                  {category}
+                  {categoryInfo?.name || searchParams.get("category")}
                 </li>
               </>
             )}
@@ -258,11 +258,11 @@ if (search) return `"${search}"`;
                 </li>
               </>
             )}
-{search && (
+            {searchParams.get("search") && (
               <>
                 <span className="breadcrumb-separator">›</span>
                 <li className="text-amazon-dark font-medium">
-                  Search results for "{search}"
+                  Search results for "{searchParams.get("search")}"
                 </li>
               </>
             )}
@@ -422,16 +422,16 @@ if (search) return `"${search}"`;
               )}
             </div>
 
-            {/* Product Grid/List */}
+{/* Product Grid/List */}
             {products.length === 0 ? (
-<Empty
-variant="products"
-                title={category ? `No products found in ${category}` : search ? `No products found for "${search}"` : "No products available"}
-                description={category || search ? "Try adjusting your filters or search terms to find what you're looking for." : "Check back soon for new products."}
-                actionText={category || search ? "Clear Filters" : undefined}
-                onAction={category || search ? clearFilters : undefined}
+              <Empty
+                variant="products"
+                title={searchParams.get("category") ? `No products found in ${categoryInfo?.name || searchParams.get("category")}` : searchParams.get("search") ? `No products found for "${searchParams.get("search")}"` : "No products available"}
+                description={searchParams.get("category") || searchParams.get("search") ? "Try adjusting your filters or search terms to find what you're looking for." : "Check back soon for new products."}
+                actionText={searchParams.get("category") || searchParams.get("search") ? "Clear Filters" : undefined}
+                onAction={searchParams.get("category") || searchParams.get("search") ? clearFilters : undefined}
               />
-) : (
+            ) : (
               <>
                 <div className={`${
                   viewMode === "grid"
