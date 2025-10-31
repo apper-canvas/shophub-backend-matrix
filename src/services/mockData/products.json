@@ -5,7 +5,7 @@
     "description": "The most advanced iPhone with titanium design, A17 Pro chip, and pro camera system",
     "price": 1199.99,
     "originalPrice": 1299.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "smartphones",
     "images": [
       "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400&h=400&fit=crop",
@@ -32,7 +32,7 @@
     "description": "Neo QLED 4K TV with Quantum HDR 32X and Object Tracking Sound",
     "price": 1799.99,
     "originalPrice": 2199.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "televisions",
     "images": [
       "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop"
@@ -58,7 +58,7 @@
     "description": "Industry-leading noise canceling with premium sound quality and 30-hour battery life",
     "price": 349.99,
     "originalPrice": 399.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "audio",
     "images": [
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
@@ -84,7 +84,7 @@
     "description": "The original blue jean since 1873. Classic straight leg fit with authentic details",
     "price": 89.50,
     "originalPrice": 98.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "women-clothing",
     "images": [
       "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop"
@@ -110,7 +110,7 @@
     "description": "Lifestyle running shoes with large Max Air unit in the heel for all-day comfort",
     "price": 150.00,
     "originalPrice": 180.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "shoes",
     "images": [
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop"
@@ -136,7 +136,7 @@
     "description": "Professional-grade stand mixer with 10 speeds and tilt-head design",
     "price": 449.99,
     "originalPrice": 499.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
@@ -162,7 +162,7 @@
     "description": "Advanced cordless vacuum with laser dust detection and powerful suction",
     "price": 749.99,
     "originalPrice": 849.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
@@ -188,7 +188,7 @@
     "description": "A captivating novel about a reclusive Hollywood icon who finally decides to tell her story",
     "price": 16.99,
     "originalPrice": 19.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "fiction",
     "images": [
       "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
@@ -214,7 +214,7 @@
     "description": "Authentic replica of the famous Taj Mahal with 5923 pieces for advanced builders",
     "price": 369.99,
     "originalPrice": 399.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "building-sets",
     "images": [
       "https://images.unsplash.com/photo-1558060370-d644479c6b77?w=400&h=400&fit=crop"
@@ -240,7 +240,7 @@
     "description": "Supercharged by M2 chip with 8-core CPU and up to 20 hours of battery life",
     "price": 1099.99,
     "originalPrice": 1199.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "laptops",
     "images": [
       "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop"
@@ -266,7 +266,7 @@
     "description": "Premium running shoes with responsive Boost midsole and Primeknit upper",
     "price": 180.00,
     "originalPrice": 190.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "shoes",
     "images": [
       "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
@@ -292,7 +292,7 @@
     "description": "Multi-functional cooker: pressure cook, slow cook, rice cooker, steamer, saute, yogurt maker and warmer",
     "price": 99.95,
     "originalPrice": 119.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1574781330855-d0db47ed4451?w=400&h=400&fit=crop"
@@ -319,6 +319,7 @@
     "price": 2499.00,
     "originalPrice": 2699.00,
     "category": "electronics",
+"category": "Electronics",
     "subcategory": "cameras",
     "images": [
       "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop"
@@ -344,7 +345,7 @@
     "description": "Classic cotton hoodie featuring the iconic Polo Bear graphic",
     "price": 148.00,
     "originalPrice": 165.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "men-clothing",
     "images": [
       "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=400&fit=crop"
@@ -370,7 +371,7 @@
     "description": "Smart robot vacuum that learns your home and avoids obstacles, with automatic dirt disposal",
     "price": 799.99,
     "originalPrice": 899.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
@@ -396,7 +397,7 @@
     "description": "Complete collection of all 8 Harry Potter films in stunning 4K Ultra HD with bonus content",
     "price": 149.99,
     "originalPrice": 199.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "movies",
     "images": [
       "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400&h=400&fit=crop"
@@ -422,7 +423,7 @@
     "description": "Enhanced Nintendo Switch with 7-inch OLED screen, 64GB storage, and improved audio",
     "price": 349.99,
     "originalPrice": 349.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "gaming",
     "images": [
       "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=400&fit=crop"
@@ -448,7 +449,7 @@
     "description": "Active Noise Cancellation, Transparency mode, Personalized Spatial Audio with MagSafe charging case",
     "price": 249.00,
     "originalPrice": 279.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "audio",
     "images": [
       "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=400&fit=crop"
@@ -474,7 +475,7 @@
     "description": "Classic fleece jacket made from recycled polyester with a timeless silhouette",
     "price": 99.00,
     "originalPrice": 119.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop"
@@ -500,7 +501,7 @@
     "description": "Enameled cast iron Dutch oven perfect for braising, roasting, and baking",
     "price": 349.95,
     "originalPrice": 379.95,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cookware",
     "images": [
       "https://images.unsplash.com/photo-1584990347732-64c2d4ac9440?w=400&h=400&fit=crop"
@@ -525,7 +526,7 @@
     "description": "14-inch QHD gaming laptop with AMD Ryzen 9, RTX 4060, and 16GB RAM",
     "price": 1599.99,
     "originalPrice": 1899.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "laptops",
     "images": [
       "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=400&fit=crop"
@@ -551,7 +552,7 @@
     "description": "Premium wireless illuminated keyboard with perfect stroke keys and smart backlighting",
     "price": 119.99,
     "originalPrice": 139.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop"
@@ -577,7 +578,7 @@
     "description": "Saffiano leather large tote bag with multiple pockets and gold-tone hardware",
     "price": 298.00,
     "originalPrice": 358.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&h=400&fit=crop"
@@ -603,7 +604,7 @@
     "description": "Single serve coffee and espresso machine with aeroccino milk frother",
     "price": 189.95,
     "originalPrice": 229.95,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&h=400&fit=crop"
@@ -629,7 +630,7 @@
     "description": "Advanced health and fitness tracking with always-on Retina display and crash detection",
     "price": 429.00,
     "originalPrice": 459.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "wearables",
     "images": [
       "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=400&fit=crop"
@@ -655,7 +656,7 @@
     "description": "A shocking psychological thriller about a woman's act of violence against her husband",
     "price": 14.99,
     "originalPrice": 17.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "thriller",
     "images": [
       "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
@@ -681,7 +682,7 @@
     "description": "Large building blocks for toddlers with 120 pieces in bright colors",
     "price": 59.99,
     "originalPrice": 69.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "building-sets",
     "images": [
       "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
@@ -707,7 +708,7 @@
     "description": "Premium Android tablet with Dynamic AMOLED display and S Pen included",
     "price": 799.99,
     "originalPrice": 899.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "tablets",
     "images": [
       "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
@@ -733,7 +734,7 @@
     "description": "Lightweight insulated jacket with recycled materials and water-resistant finish",
     "price": 199.00,
     "originalPrice": 229.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400&h=400&fit=crop"
@@ -759,7 +760,7 @@
     "description": "Professional-grade blender with 5 pre-programmed settings and 64oz container",
     "price": 549.95,
     "originalPrice": 599.95,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1585515320310-259814833f62?w=400&h=400&fit=crop"
@@ -785,7 +786,7 @@
     "description": "Powered by Google Tensor G3 with advanced AI features and stunning camera",
     "price": 999.00,
     "originalPrice": 1099.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "smartphones",
     "images": [
       "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
@@ -811,7 +812,7 @@
     "description": "Snapdragon 8 Gen 2 processor with Hasselblad camera and 100W fast charging",
     "price": 699.99,
     "originalPrice": 799.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "smartphones",
     "images": [
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
@@ -837,7 +838,7 @@
     "description": "15.6-inch 4K OLED display, NVIDIA RTX 4050, 1TB SSD for creative professionals",
     "price": 2299.99,
     "originalPrice": 2599.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "laptops",
     "images": [
       "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=400&fit=crop"
@@ -863,7 +864,7 @@
     "description": "Convertible laptop with Intel Evo platform and premium design",
     "price": 1799.99,
     "originalPrice": 1999.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "laptops",
     "images": [
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
@@ -889,7 +890,7 @@
     "description": "Self-lit OLED pixels with α9 AI Processor and Dolby Vision IQ",
     "price": 1399.99,
     "originalPrice": 1699.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "televisions",
     "images": [
       "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop"
@@ -915,7 +916,7 @@
     "description": "Cognitive Processor XR with perfect blacks and Google TV",
     "price": 1999.99,
     "originalPrice": 2299.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "televisions",
     "images": [
       "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=400&fit=crop"
@@ -941,7 +942,7 @@
     "description": "World-class noise cancellation with spatial audio and 24-hour battery",
     "price": 429.00,
     "originalPrice": 449.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "audio",
     "images": [
       "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=400&fit=crop"
@@ -967,7 +968,7 @@
     "description": "Audiophile sound quality with 60-hour battery and adaptive ANC",
     "price": 379.95,
     "originalPrice": 399.95,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "audio",
     "images": [
       "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=400&fit=crop"
@@ -993,7 +994,7 @@
     "description": "24.5MP full-frame with 6K video and advanced subject detection",
     "price": 2799.00,
     "originalPrice": 2999.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "cameras",
     "images": [
       "https://images.unsplash.com/photo-1606980707001-bf7eda5f72ab?w=400&h=400&fit=crop"
@@ -1019,7 +1020,7 @@
     "description": "40.2MP APS-C sensor with classic design and film simulations",
     "price": 1699.00,
     "originalPrice": 1899.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "cameras",
     "images": [
       "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=400&fit=crop"
@@ -1045,7 +1046,7 @@
     "description": "Liquid Retina XDR display with M2 chip and Apple Pencil support",
     "price": 1199.00,
     "originalPrice": 1299.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "tablets",
     "images": [
       "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400&h=400&fit=crop"
@@ -1071,7 +1072,7 @@
     "description": "Versatile 2-in-1 tablet with Windows 11 and Surface Pen support",
     "price": 1599.99,
     "originalPrice": 1799.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "tablets",
     "images": [
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop"
@@ -1097,7 +1098,7 @@
     "description": "Premium multisport GPS watch with solar charging and mapping",
     "price": 899.99,
     "originalPrice": 999.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "wearables",
     "images": [
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
@@ -1123,7 +1124,7 @@
     "description": "Advanced fitness tracker with Google integration and heart rate monitoring",
     "price": 159.95,
     "originalPrice": 179.95,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "wearables",
     "images": [
       "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&h=400&fit=crop"
@@ -1149,7 +1150,7 @@
     "description": "Ultra-lightweight wireless gaming mouse with Focus Pro 30K sensor",
     "price": 149.99,
     "originalPrice": 169.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop"
@@ -1175,7 +1176,7 @@
     "description": "Cotton pique polo with signature flag embroidery",
     "price": 49.50,
     "originalPrice": 69.50,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "men-clothing",
     "images": [
       "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400&h=400&fit=crop"
@@ -1201,7 +1202,7 @@
     "description": "Essential crew neck t-shirts in premium cotton blend",
     "price": 39.99,
     "originalPrice": 45.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "men-clothing",
     "images": [
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop"
@@ -1227,7 +1228,7 @@
     "description": "Trendy wide leg denim with comfortable high-rise fit",
     "price": 45.90,
     "originalPrice": 59.90,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "women-clothing",
     "images": [
       "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400&h=400&fit=crop"
@@ -1253,7 +1254,7 @@
     "description": "Versatile ribbed tank tops in essential colors",
     "price": 24.99,
     "originalPrice": 29.99,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "women-clothing",
     "images": [
       "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop"
@@ -1279,7 +1280,7 @@
     "description": "Iconic retro running shoes with ENCAP midsole cushioning",
     "price": 84.99,
     "originalPrice": 89.99,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "shoes",
     "images": [
       "https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&h=400&fit=crop"
@@ -1305,7 +1306,7 @@
     "description": "Timeless canvas sneakers with iconic design",
     "price": 65.00,
     "originalPrice": 65.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "shoes",
     "images": [
       "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&h=400&fit=crop"
@@ -1331,7 +1332,7 @@
     "description": "Iconic teardrop sunglasses with crystal green lenses",
     "price": 169.00,
     "originalPrice": 189.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop"
@@ -1357,7 +1358,7 @@
     "description": "Wear OS smartwatch with health tracking and customizable design",
     "price": 299.00,
     "originalPrice": 329.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400&h=400&fit=crop"
@@ -1383,7 +1384,7 @@
     "description": "Versatile fleece jacket with Omni-Heat thermal reflective lining",
     "price": 119.99,
     "originalPrice": 140.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=400&fit=crop"
@@ -1409,7 +1410,7 @@
     "description": "Versatile lightweight Gore-Tex jacket for all-mountain use",
     "price": 425.00,
     "originalPrice": 475.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=400&h=400&fit=crop"
@@ -1435,7 +1436,7 @@
     "description": "Extra large capacity air fryer oven with 10 cooking functions",
     "price": 299.99,
     "originalPrice": 349.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=400&fit=crop"
@@ -1461,7 +1462,7 @@
     "description": "Countertop convection oven with Element iQ and air fry function",
     "price": 399.95,
     "originalPrice": 449.95,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?w=400&h=400&fit=crop"
@@ -1487,7 +1488,7 @@
     "description": "Self-emptying robot vacuum with Matrix Clean and home mapping",
     "price": 549.99,
     "originalPrice": 649.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400&h=400&fit=crop"
@@ -1513,7 +1514,7 @@
     "description": "Vacuum and wash floors at the same time for pet owners",
     "price": 329.99,
     "originalPrice": 379.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&h=400&fit=crop"
@@ -1539,7 +1540,7 @@
     "description": "Professional-quality tri-ply stainless steel cookware set",
     "price": 699.95,
     "originalPrice": 899.95,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cookware",
     "images": [
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
@@ -1565,7 +1566,7 @@
     "description": "Classic cast iron skillet ready to use with natural seasoning",
     "price": 34.90,
     "originalPrice": 39.90,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cookware",
     "images": [
       "https://images.unsplash.com/photo-1584990347732-64c2d4ac9440?w=400&h=400&fit=crop"
@@ -1591,7 +1592,7 @@
     "description": "Sleek retro-inspired sofa with solid wood legs and durable upholstery",
     "price": 1299.00,
     "originalPrice": 1499.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "furniture",
     "images": [
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=400&fit=crop"
@@ -1617,7 +1618,7 @@
     "description": "Spacious solid wood dresser with traditional design",
     "price": 349.00,
     "originalPrice": 399.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "furniture",
     "images": [
       "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400&h=400&fit=crop"
@@ -1643,7 +1644,7 @@
     "description": "Premium long-staple cotton sheets with sateen weave",
     "price": 149.00,
     "originalPrice": 169.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "bedding",
     "images": [
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop"
@@ -1669,7 +1670,7 @@
     "description": "Hypoallergenic all-season comforter with fill made from recycled bottles",
     "price": 229.00,
     "originalPrice": 269.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "bedding",
     "images": [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop"
@@ -1695,7 +1696,7 @@
     "description": "Ornate wall mirror with antique brass finish frame",
     "price": 348.00,
     "originalPrice": 398.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "decor",
     "images": [
       "https://images.unsplash.com/photo-1618220179428-22790b461013?w=400&h=400&fit=crop"
@@ -1721,7 +1722,7 @@
     "description": "Minimalist table lamp with white ceramic base and linen shade",
     "price": 79.99,
     "originalPrice": 99.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "decor",
     "images": [
       "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=400&fit=crop"
@@ -1747,7 +1748,7 @@
     "description": "The life-changing guide to building good habits and breaking bad ones",
     "price": 16.99,
     "originalPrice": 19.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "self-help",
     "images": [
       "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&h=400&fit=crop"
@@ -1773,7 +1774,7 @@
     "description": "A haunting mystery about a young woman who raised herself in the marshes",
     "price": 15.99,
     "originalPrice": 18.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "fiction",
     "images": [
       "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
@@ -1799,7 +1800,7 @@
     "description": "A psychological thriller about an agoraphobic woman who witnesses a crime",
     "price": 14.99,
     "originalPrice": 17.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "thriller",
     "images": [
       "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
@@ -1825,7 +1826,7 @@
     "description": "A twisted marriage mystery that keeps you guessing until the end",
     "price": 13.99,
     "originalPrice": 16.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "thriller",
     "images": [
       "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=400&fit=crop"
@@ -1851,7 +1852,7 @@
     "description": "A memoir about a young woman who leaves her survivalist family for education",
     "price": 15.99,
     "originalPrice": 18.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "non-fiction",
     "images": [
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=400&fit=crop"
@@ -1877,7 +1878,7 @@
     "description": "A brief history of humankind from the Stone Age to modern times",
     "price": 17.99,
     "originalPrice": 21.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "non-fiction",
     "images": [
       "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=400&h=400&fit=crop"
@@ -1903,7 +1904,7 @@
     "description": "Mastering the elements of good cooking with simple techniques",
     "price": 24.99,
     "originalPrice": 30.00,
-    "category": "books",
+"category": "Books",
     "subcategory": "cooking",
     "images": [
       "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=400&fit=crop"
@@ -1929,7 +1930,7 @@
     "description": "America's most trusted cookbook completely revised for modern kitchens",
     "price": 35.00,
     "originalPrice": 40.00,
-    "category": "books",
+"category": "Books",
     "subcategory": "cooking",
     "images": [
       "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop"
@@ -1955,7 +1956,7 @@
     "description": "Extended editions of all three films remastered in 4K Ultra HD",
     "price": 89.99,
     "originalPrice": 109.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "movies",
     "images": [
       "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=400&fit=crop"
@@ -1981,7 +1982,7 @@
     "description": "Christopher Nolan's Batman trilogy in stunning 4K",
     "price": 69.99,
     "originalPrice": 89.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "movies",
     "images": [
       "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=400&fit=crop"
@@ -2007,7 +2008,7 @@
     "description": "Ultimate Collector's Edition with 7541 pieces",
     "price": 849.99,
     "originalPrice": 849.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "building-sets",
     "images": [
       "https://images.unsplash.com/photo-1611604548018-d56bbd85d681?w=400&h=400&fit=crop"
@@ -2033,7 +2034,7 @@
     "description": "Detailed model of America's iconic monument",
     "price": 119.99,
     "originalPrice": 139.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "building-sets",
     "images": [
       "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop"
@@ -2059,7 +2060,7 @@
     "description": "Next-gen gaming console with 4K gaming and ultra-fast SSD",
     "price": 499.99,
     "originalPrice": 499.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "gaming",
     "images": [
       "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=400&h=400&fit=crop"
@@ -2085,7 +2086,7 @@
     "description": "The fastest, most powerful Xbox with 12 teraflops of processing power",
     "price": 499.99,
     "originalPrice": 499.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "gaming",
     "images": [
       "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=400&fit=crop"
@@ -2111,7 +2112,7 @@
     "description": "3-story dollhouse with 10 rooms, pool, slide, and 70+ accessories",
     "price": 199.99,
     "originalPrice": 229.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "dolls",
     "images": [
       "https://images.unsplash.com/photo-1599743850450-3b5fd5b4ac9d?w=400&h=400&fit=crop"
@@ -2137,7 +2138,7 @@
     "description": "18-inch doll with customizable outfit and accessories",
     "price": 120.00,
     "originalPrice": 120.00,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "dolls",
     "images": [
       "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=400&h=400&fit=crop"
@@ -2163,7 +2164,7 @@
     "description": "Award-winning learning games that interact with physical objects",
     "price": 99.99,
     "originalPrice": 119.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "educational",
     "images": [
       "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
@@ -2189,7 +2190,7 @@
     "description": "Interactive bilingual book that teaches 100 words in English and Spanish",
     "price": 19.99,
     "originalPrice": 24.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "educational",
     "images": [
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=400&fit=crop"
@@ -2215,7 +2216,7 @@
     "description": "High-performance dart blaster that shoots darts up to 120 feet",
     "price": 49.99,
     "originalPrice": 59.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "outdoor",
     "images": [
       "https://images.unsplash.com/photo-1628000781128-140f0e0c9c1b?w=400&h=400&fit=crop"
@@ -2241,7 +2242,7 @@
     "description": "Extra-large wheels and deck for smooth riding",
     "price": 119.99,
     "originalPrice": 139.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "outdoor",
     "images": [
       "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=400&fit=crop"
@@ -2267,7 +2268,7 @@
     "description": "Premium flagship with 200MP camera and S Pen integration",
     "price": 1199.99,
     "originalPrice": 1299.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "smartphones",
     "images": [
       "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop"
@@ -2293,7 +2294,7 @@
     "description": "Business ultrabook with Intel vPro and all-day battery life",
     "price": 1899.99,
     "originalPrice": 2199.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "laptops",
     "images": [
       "https://images.unsplash.com/photo-1601524909162-ae8725290836?w=400&h=400&fit=crop"
@@ -2319,7 +2320,7 @@
     "description": "Mini-LED QLED TV with Dolby Vision and Roku smart platform",
     "price": 899.99,
     "originalPrice": 1099.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "televisions",
     "images": [
       "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=400&h=400&fit=crop"
@@ -2345,7 +2346,7 @@
     "description": "Active noise cancelling headphones with SmartSound technology",
     "price": 249.99,
     "originalPrice": 299.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "audio",
     "images": [
       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop"
@@ -2371,7 +2372,7 @@
     "description": "Professional video-focused camera with 5.7K ProRes recording",
     "price": 2197.99,
     "originalPrice": 2497.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "cameras",
     "images": [
       "https://images.unsplash.com/photo-1606980707001-bf7eda5f72ab?w=400&h=400&fit=crop"
@@ -2397,7 +2398,7 @@
     "description": "10.1-inch Full HD tablet with Alexa hands-free",
     "price": 149.99,
     "originalPrice": 179.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "tablets",
     "images": [
       "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
@@ -2423,7 +2424,7 @@
     "description": "Advanced GPS watch with running power and recovery tracking",
     "price": 499.95,
     "originalPrice": 549.95,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "wearables",
     "images": [
       "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400&h=400&fit=crop"
@@ -2449,7 +2450,7 @@
     "description": "Premium wireless headset with active noise cancellation and GameDAC",
     "price": 349.99,
     "originalPrice": 379.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1599669454699-248893623440?w=400&h=400&fit=crop"
@@ -2475,7 +2476,7 @@
     "description": "Durable heavyweight hooded sweatshirt built for work",
     "price": 54.99,
     "originalPrice": 64.99,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "men-clothing",
     "images": [
       "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&h=400&fit=crop"
@@ -2501,7 +2502,7 @@
     "description": "High-performance thermal leggings with moisture-wicking technology",
     "price": 29.90,
     "originalPrice": 34.90,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "women-clothing",
     "images": [
       "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=400&fit=crop"
@@ -2527,7 +2528,7 @@
     "description": "Iconic low-top skate shoes with signature side stripe",
     "price": 70.00,
     "originalPrice": 75.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "shoes",
     "images": [
       "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop"
@@ -2553,7 +2554,7 @@
     "description": "Slim leather card case with signature spade emblem",
     "price": 58.00,
     "originalPrice": 79.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1583380219097-65a3e32f4332?w=400&h=400&fit=crop"
@@ -2579,7 +2580,7 @@
     "description": "Extreme cold weather parka rated to -25°C/-13°F",
     "price": 1295.00,
     "originalPrice": 1395.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1548126032-079fe6c75a68?w=400&h=400&fit=crop"
@@ -2605,7 +2606,7 @@
     "description": "7-in-1 countertop oven with air frying, convection baking and more",
     "price": 229.95,
     "originalPrice": 269.95,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?w=400&h=400&fit=crop"
@@ -2631,7 +2632,7 @@
     "description": "Slim robot vacuum with BoostIQ technology and quiet operation",
     "price": 229.99,
     "originalPrice": 279.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
@@ -2657,7 +2658,7 @@
     "description": "Complete nonstick cookware set with glass lids and measuring tools",
     "price": 179.99,
     "originalPrice": 229.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cookware",
     "images": [
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
@@ -2683,7 +2684,7 @@
     "description": "Classic bentwood armchair with comfortable cushion",
     "price": 149.00,
     "originalPrice": 179.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "furniture",
     "images": [
       "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop"
@@ -2709,7 +2710,7 @@
     "description": "Soft jersey knit sheets with deep pockets",
     "price": 54.99,
     "originalPrice": 69.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "bedding",
     "images": [
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop"
@@ -2735,7 +2736,7 @@
     "description": "All-season fluffy comforter with hypoallergenic fill",
     "price": 189.00,
     "originalPrice": 229.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "bedding",
     "images": [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop"
@@ -2761,7 +2762,7 @@
     "description": "Modern round mirror with brushed brass frame",
     "price": 149.00,
     "originalPrice": 179.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "decor",
     "images": [
       "https://images.unsplash.com/photo-1616464411648-dca20dcb5949?w=400&h=400&fit=crop"
@@ -2787,7 +2788,7 @@
     "description": "Smart LED bulbs with bridge, control with voice or app",
     "price": 199.99,
     "originalPrice": 229.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "decor",
     "images": [
       "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=400&h=400&fit=crop"
@@ -2813,7 +2814,7 @@
     "description": "Nobel Prize winner's insights into the two systems that drive how we think",
     "price": 17.99,
     "originalPrice": 20.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "non-fiction",
     "images": [
       "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
@@ -2839,7 +2840,7 @@
     "description": "America's Test Kitchen guide to 500 Mediterranean recipes",
     "price": 29.99,
     "originalPrice": 35.00,
-    "category": "books",
+"category": "Books",
     "subcategory": "cooking",
     "images": [
       "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop"
@@ -2865,7 +2866,7 @@
     "description": "Christopher Nolan's mind-bending thriller in stunning 4K",
     "price": 24.99,
     "originalPrice": 29.99,
-    "category": "books",
+"category": "Books",
     "subcategory": "movies",
     "images": [
       "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=400&fit=crop"
@@ -2891,7 +2892,7 @@
     "description": "1:8 scale model with authentic details and moving parts",
     "price": 449.99,
     "originalPrice": 449.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "building-sets",
     "images": [
       "https://images.unsplash.com/photo-1558060370-d644479c6b77?w=400&h=400&fit=crop"
@@ -2917,7 +2918,7 @@
     "description": "Next-gen mixed reality with breakthrough performance",
     "price": 499.99,
     "originalPrice": 499.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "gaming",
     "images": [
       "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400&h=400&fit=crop"
@@ -2943,7 +2944,7 @@
     "description": "4-story wooden dollhouse with 85+ surprises",
     "price": 299.99,
     "originalPrice": 349.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "dolls",
     "images": [
       "https://images.unsplash.com/photo-1599743850450-3b5fd5b4ac9d?w=400&h=400&fit=crop"
@@ -2969,7 +2970,7 @@
     "description": "100-piece set of natural wood blocks in various shapes",
     "price": 19.99,
     "originalPrice": 24.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "educational",
     "images": [
       "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
@@ -2995,7 +2996,7 @@
     "description": "Adjustable height basketball hoop for toddlers",
     "price": 39.99,
     "originalPrice": 49.99,
-    "category": "toys",
+"category": "Toys & Games",
     "subcategory": "outdoor",
     "images": [
       "https://images.unsplash.com/photo-1628000781128-140f0e0c9c1b?w=400&h=400&fit=crop"
@@ -3021,7 +3022,7 @@
     "description": "Flagship smartphone with 165Hz display and 50MP camera",
     "price": 899.99,
     "originalPrice": 999.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "smartphones",
     "images": [
       "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
@@ -3047,7 +3048,7 @@
     "description": "Modular laptop you can upgrade, customize and repair",
     "price": 1399.00,
     "originalPrice": 1599.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "laptops",
     "images": [
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
@@ -3073,7 +3074,7 @@
     "description": "144Hz gaming TV with Quantum Dot and Dolby Vision",
     "price": 999.99,
     "originalPrice": 1199.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "televisions",
     "images": [
       "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&h=400&fit=crop"
@@ -3099,7 +3100,7 @@
     "description": "Professional studio monitor headphones with Bluetooth",
     "price": 199.00,
     "originalPrice": 219.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "audio",
     "images": [
       "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=400&fit=crop"
@@ -3125,7 +3126,7 @@
     "description": "Advanced weather-sealed camera with computational photography",
     "price": 2199.99,
     "originalPrice": 2399.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "cameras",
     "images": [
       "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop"
@@ -3151,7 +3152,7 @@
     "description": "Premium OLED tablet with quad speakers and stylus support",
     "price": 399.99,
     "originalPrice": 449.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "tablets",
     "images": [
       "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
@@ -3177,7 +3178,7 @@
     "description": "Ultra-light titanium sports watch with 170-hour battery",
     "price": 569.00,
     "originalPrice": 629.00,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "wearables",
     "images": [
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
@@ -3203,7 +3204,7 @@
     "description": "Tournament-grade mechanical keyboard with Cherry MX switches",
     "price": 169.99,
     "originalPrice": 189.99,
-    "category": "electronics",
+"category": "Electronics",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop"
@@ -3229,7 +3230,7 @@
     "description": "Minimalist water-resistant backpack with laptop sleeve",
     "price": 88.00,
     "originalPrice": 98.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop"
@@ -3255,7 +3256,7 @@
     "description": "Lightweight waterproof shell for hiking and everyday use",
     "price": 199.00,
     "originalPrice": 225.00,
-    "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
@@ -3281,7 +3282,7 @@
     "description": "Powerful food processor with ExactSlice system",
     "price": 199.99,
     "originalPrice": 249.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
@@ -3307,7 +3308,7 @@
     "description": "Smart cordless vacuum and mop with self-cleaning",
     "price": 449.99,
     "originalPrice": 499.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&h=400&fit=crop"
@@ -3333,7 +3334,7 @@
     "description": "Stainless steel cookware that stacks to save 30% more space",
     "price": 299.99,
     "originalPrice": 379.99,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cookware",
     "images": [
       "https://images.unsplash.com/photo-1584990347732-64c2d4ac9440?w=400&h=400&fit=crop"
@@ -3359,7 +3360,7 @@
     "description": "Mid-century modern sofa with full-grain leather upholstery",
     "price": 1999.00,
     "originalPrice": 2299.00,
-    "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "furniture",
     "images": [
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=400&fit=crop"
@@ -3385,6 +3386,7 @@
     "price": 229.99,
     "originalPrice": 259.99,
     "category": "electronics",
+"category": "Electronics",
     "subcategory": "tablets",
     "images": [
       "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
@@ -3411,6 +3413,7 @@
     "price": 199.99,
     "originalPrice": 229.99,
     "category": "electronics",
+"category": "Electronics",
     "subcategory": "wearables",
     "images": [
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
@@ -3437,6 +3440,7 @@
     "price": 49.99,
     "originalPrice": 59.99,
     "category": "electronics",
+"category": "Fashion",
     "subcategory": "accessories",
     "images": [
       "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=400&fit=crop"
@@ -3463,6 +3467,7 @@
     "price": 299.00,
     "originalPrice": 349.00,
     "category": "fashion",
+"category": "Fashion",
     "subcategory": "outerwear",
     "images": [
       "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop"
@@ -3489,6 +3494,7 @@
     "price": 145.00,
     "originalPrice": 145.00,
     "category": "fashion",
+"category": "Fashion",
     "subcategory": "shoes",
     "images": [
       "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop"
@@ -3515,6 +3521,7 @@
     "price": 169.99,
     "originalPrice": 189.99,
     "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "kitchen-appliances",
     "images": [
       "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&h=400&fit=crop"
@@ -3541,6 +3548,7 @@
     "price": 49.99,
     "originalPrice": 59.99,
     "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cleaning",
     "images": [
       "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop"
@@ -3567,6 +3575,7 @@
     "price": 39.99,
     "originalPrice": 49.99,
     "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "cookware",
     "images": [
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop"
@@ -3593,6 +3602,7 @@
     "price": 329.00,
     "originalPrice": 399.00,
     "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "furniture",
     "images": [
       "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=400&h=400&fit=crop"
@@ -3619,6 +3629,7 @@
     "price": 34.99,
     "originalPrice": 44.99,
     "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "bedding",
     "images": [
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=400&fit=crop"
@@ -3645,6 +3656,7 @@
     "price": 29.99,
     "originalPrice": 35.00,
     "category": "home",
+"category": "Home & Kitchen",
     "subcategory": "decor",
     "images": [
       "https://images.unsplash.com/photo-1618220179428-22790b461013?w=400&h=400&fit=crop"
@@ -3671,6 +3683,7 @@
     "price": 16.99,
     "originalPrice": 19.99,
     "category": "books",
+"category": "Books",
     "subcategory": "fiction",
     "images": [
       "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop"
@@ -3697,6 +3710,7 @@
     "price": 18.99,
     "originalPrice": 22.99,
     "category": "books",
+"category": "Books",
     "subcategory": "non-fiction",
     "images": [
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=400&fit=crop"
@@ -3723,6 +3737,7 @@
     "price": 15.99,
     "originalPrice": 18.99,
     "category": "books",
+"category": "Books",
     "subcategory": "thriller",
     "images": [
       "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop"
@@ -3749,6 +3764,7 @@
     "price": 39.99,
     "originalPrice": 50.00,
     "category": "books",
+"category": "Books",
     "subcategory": "cooking",
     "images": [
       "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop"
@@ -3775,6 +3791,7 @@
     "price": 99.99,
     "originalPrice": 119.99,
     "category": "toys",
+"category": "Toys & Games",
     "subcategory": "building-sets",
     "images": [
       "https://images.unsplash.com/photo-1558060370-d644479c6b77?w=400&h=400&fit=crop"
@@ -3801,6 +3818,7 @@
     "price": 299.99,
     "originalPrice": 299.99,
     "category": "toys",
+"category": "Toys & Games",
     "subcategory": "gaming",
     "images": [
       "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=400&h=400&fit=crop"
@@ -3827,6 +3845,7 @@
     "price": 12.99,
     "originalPrice": 14.99,
     "category": "toys",
+"category": "Toys & Games",
     "subcategory": "dolls",
     "images": [
       "https://images.unsplash.com/photo-1599743850450-3b5fd5b4ac9d?w=400&h=400&fit=crop"
@@ -3853,6 +3872,7 @@
     "price": 69.99,
     "originalPrice": 79.99,
     "category": "toys",
+"category": "Toys & Games",
     "subcategory": "educational",
     "images": [
       "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=400&fit=crop"
@@ -3879,6 +3899,7 @@
     "price": 59.99,
     "originalPrice": 69.99,
     "category": "toys",
+"category": "Sports & Outdoors",
     "subcategory": "outdoor",
     "images": [
       "https://images.unsplash.com/photo-1628000781128-140f0e0c9c1b?w=400&h=400&fit=crop"

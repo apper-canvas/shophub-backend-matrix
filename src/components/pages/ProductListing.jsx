@@ -33,9 +33,9 @@ const ProductListing = () => {
   const [sortBy, setSortBy] = useState("relevance");
 
   // Get current filters from URL
-  const getCurrentFilters = () => {
+const getCurrentFilters = () => {
     return {
-category: searchParams.get("category") || "",
+      category: searchParams.get("category") || "",
       subcategory: searchParams.get("subcategory") || "",
       categoryName: "",
       subcategoryName: "",
@@ -170,8 +170,8 @@ const getCurrentQuery = () => {
     
 if (search) return `"${search}"`;
     if (subcategory) return categoryInfo?.subcategory?.name || subcategory;
-    if (category) return categoryInfo?.name || category;
-    return null; // Return null for All Products to handle differently
+    if (category) return category;
+    return "All Products";
   };
 
   const getActiveFiltersCount = () => {
@@ -237,19 +237,14 @@ if (search) return `"${search}"`;
                 Home
               </button>
             </li>
-            {categoryInfo?.name && (
+            {category && (
               <>
                 <span className="breadcrumb-separator">›</span>
-                <li>
-                  <button
-                    onClick={() => navigate(`/category/${searchParams.get("category")}`)}
-                    className="hover:text-amazon-orange transition-colors"
-                  >
-                    {categoryInfo.name}
-                  </button>
+                <li className="text-amazon-dark font-medium">
+                  {category}
                 </li>
               </>
-)}
+            )}
             {categoryInfo?.subcategory?.name && (
               <>
                 <span className="breadcrumb-separator">›</span>
@@ -263,11 +258,11 @@ if (search) return `"${search}"`;
                 </li>
               </>
             )}
-{searchParams.get("search") && (
+{search && (
               <>
                 <span className="breadcrumb-separator">›</span>
                 <li className="text-amazon-dark font-medium">
-                  Search results for "{searchParams.get("search")}"
+                  Search results for "{search}"
                 </li>
               </>
             )}
@@ -293,7 +288,7 @@ if (search) return `"${search}"`;
             <div className="bg-white rounded-lg shadow-sm border p-4 mb-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <h1 className="text-2xl font-bold text-amazon-dark">
+<h1 className="text-2xl font-bold text-amazon-dark">
                     {getCurrentQuery()}
                   </h1>
                   <p className="text-gray-600 text-sm mt-1">
@@ -430,11 +425,11 @@ if (search) return `"${search}"`;
             {/* Product Grid/List */}
             {products.length === 0 ? (
 <Empty
-                variant={getCurrentQuery() ? "search" : "products"}
-                title={getCurrentQuery() ? `No products found for "${getCurrentQuery()}"` : "No products available"}
-                description={getCurrentQuery() ? "Try adjusting your filters or search terms to find what you're looking for." : "Check back soon for new products."}
-                actionText={getCurrentQuery() ? "Clear Filters" : undefined}
-                onAction={getCurrentQuery() ? clearFilters : undefined}
+variant="products"
+                title={category ? `No products found in ${category}` : search ? `No products found for "${search}"` : "No products available"}
+                description={category || search ? "Try adjusting your filters or search terms to find what you're looking for." : "Check back soon for new products."}
+                actionText={category || search ? "Clear Filters" : undefined}
+                onAction={category || search ? clearFilters : undefined}
               />
 ) : (
               <>

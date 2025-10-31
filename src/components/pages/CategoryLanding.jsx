@@ -254,9 +254,9 @@ const CategoryLanding = () => {
             <div className="hidden lg:block w-64 flex-shrink-0">
               <div className="sticky top-4">
                 <FilterSidebar
-                  onFilterChange={() => {}}
+onFilterChange={() => {}}
                   initialFilters={{
-                    category: categorySlug,
+                    category: category?.name || "",
                     subcategory: subcategorySlug || "",
                   }}
                 />
@@ -274,10 +274,10 @@ const CategoryLanding = () => {
                     </button>
                   </div>
                   <div className="p-4">
-                    <FilterSidebar
+<FilterSidebar
                       onFilterChange={() => {}}
                       initialFilters={{
-                        category: categorySlug,
+                        category: category?.name || "",
                         subcategory: subcategorySlug || "",
                       }}
                     />

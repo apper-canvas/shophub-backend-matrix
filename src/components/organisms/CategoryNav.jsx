@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import ApperIcon from "@/components/ApperIcon";
 import { categoryService } from "@/services/api/categoryService";
+import ApperIcon from "@/components/ApperIcon";
 
 const CategoryNav = () => {
   const navigate = useNavigate();
@@ -44,7 +44,6 @@ const handleCategoryClick = (categorySlug) => {
     setShowMegaMenu(false);
   };
 const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
-    navigate(`/category/${categorySlug}/${subcategorySlug}`);
     navigate(`/products?category=${categorySlug}&subcategory=${subcategorySlug}`);
     setShowMegaMenu(false);
   };
@@ -62,13 +61,14 @@ const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
         <div className="flex items-center h-10">
           {/* All Categories Button */}
 <button
-            onMouseEnter={() => {
+onMouseEnter={() => {
               setShowMegaMenu(true);
               if (categories.length > 0 && !hoveredCategory) {
                 setHoveredCategory(categories[0].Id);
               }
             }}
-            className="hidden lg:flex items-center gap-2 hover:bg-amazon-dark px-3 py-2 rounded transition-colors font-medium text-sm"
+            onClick={() => navigate('/products')}
+            className="hidden lg:flex items-center gap-2 hover:bg-amazon-dark px-3 py-2 rounded transition-colors font-medium text-sm cursor-pointer"
           >
             <ApperIcon name="Menu" size={16} />
             <span>All</span>
@@ -107,8 +107,8 @@ const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
           <div className="hidden lg:flex items-center gap-1 ml-auto">
             {featuredCategories.map((category) => (
 <button
-                key={category.id}
-                onClick={() => handleCategoryClick(category.slug)}
+key={category.id}
+                onClick={() => navigate(`/products?category=${encodeURIComponent(category.name)}`)}
                 onMouseEnter={() => {
                   setShowMegaMenu(true);
                   setHoveredCategory(category.id);
@@ -140,8 +140,8 @@ const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
                   <div className="space-y-1">
                     {categories.map((category) => (
 <button
-                        key={category.Id}
-                        onClick={() => handleCategoryClick(category.slug)}
+key={category.Id}
+                        onClick={() => navigate(`/products?category=${encodeURIComponent(category.name)}`)}
                         onMouseEnter={() => setHoveredCategory(category.Id)}
                         className={`w-full text-left px-3 py-2.5 rounded-lg transition-all text-sm group ${
                           hoveredCategory === category.Id
@@ -176,7 +176,7 @@ const handleSubcategoryClick = (categorySlug, subcategorySlug) => {
                   </h3>
                   <div className="space-y-1">
 <button
-                      onClick={() => handleCategoryClick(hoveredCategoryData.slug)}
+                      onClick={() => navigate(`/products?category=${encodeURIComponent(hoveredCategoryData.name)}`)}
                       className="w-full text-left px-3 py-2 rounded-lg hover:bg-blue-50 transition-colors text-sm font-medium text-amazon-info hover:text-amazon-dark"
                     >
                       View All {hoveredCategoryData.name}
