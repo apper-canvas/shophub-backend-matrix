@@ -31,9 +31,14 @@ const CategoryLanding = () => {
     setLoading(true);
     setError(null);
 
-    try {
+try {
       // Load category data
       const category = await categoryService.getBySlug(categorySlug);
+      if (!category) {
+        setError(`Category "${categorySlug}" not found`);
+        setLoading(false);
+        return;
+      }
       setCategoryData(category);
 
       // Load subcategory data if applicable
@@ -42,6 +47,11 @@ const CategoryLanding = () => {
           categorySlug,
           subcategorySlug
         );
+        if (!subcategory) {
+          setError(`Subcategory "${subcategorySlug}" not found`);
+          setLoading(false);
+          return;
+        }
         setSubcategoryData(subcategory);
       } else {
         setSubcategoryData(null);

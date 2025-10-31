@@ -31,7 +31,7 @@ async getBySlug(slug) {
       throw new Error('Category slug is required and cannot be empty');
     }
     
-    const category = this.categories.find(c => c.slug === slug);
+const category = this.categories.find(c => c.slug.toLowerCase() === slug.toLowerCase());
     if (!category) {
       throw new Error(`Category with slug ${slug} not found`);
     }

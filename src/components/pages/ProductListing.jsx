@@ -240,8 +240,8 @@ if (search) return `"${search}"`;
             {searchParams.get("category") && (
               <>
                 <span className="breadcrumb-separator">›</span>
-                <li className="text-amazon-dark font-medium">
-                  {categoryInfo?.name || searchParams.get("category")}
+<li className="text-amazon-dark font-medium">
+                  {categoryInfo?.name || searchParams.get("category") || "Products"}
                 </li>
               </>
             )}
@@ -289,7 +289,7 @@ if (search) return `"${search}"`;
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
 <h1 className="text-2xl font-bold text-amazon-dark">
-                    {getCurrentQuery()}
+                    {getCurrentQuery() || "All Products"}
                   </h1>
                   <p className="text-gray-600 text-sm mt-1">
                     {totalCount > 0 ? (
@@ -425,8 +425,8 @@ if (search) return `"${search}"`;
 {/* Product Grid/List */}
             {products.length === 0 ? (
               <Empty
-                variant="products"
-                title={searchParams.get("category") ? `No products found in ${categoryInfo?.name || searchParams.get("category")}` : searchParams.get("search") ? `No products found for "${searchParams.get("search")}"` : "No products available"}
+variant="products"
+                title={searchParams.get("category") ? `No products found in ${categoryInfo?.name || searchParams.get("category") || "this category"}` : searchParams.get("search") ? `No products found for "${searchParams.get("search")}"` : "No products available"}
                 description={searchParams.get("category") || searchParams.get("search") ? "Try adjusting your filters or search terms to find what you're looking for." : "Check back soon for new products."}
                 actionText={searchParams.get("category") || searchParams.get("search") ? "Clear Filters" : undefined}
                 onAction={searchParams.get("category") || searchParams.get("search") ? clearFilters : undefined}
